@@ -57,6 +57,8 @@
     
       <link rel="stylesheet" href="stylesheets/focus.css">
     
+      <link rel="stylesheet" href="stylesheets/bidi.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -956,9 +958,9 @@
 
 
 <p><a id="refheading399381881943603"></a></p>
-<h1 id="10-php">10. <span style="color: #365f91">خوادم PHP</span></h1>
-<p>نظرًا لأن برامج PHP يمكن تنفيذها بواسطة خادم ويب، فإن مثل هذا البرنامج يصبح برنامجًا من جانب الخادم قادرًا على خدمة عملاء متعددين. من منظور العميل، فإن استدعاء خدمة ويب يعادل طلب عنوان URL لتلك الخدمة. يمكن كتابة العميل بأي لغة، بما في ذلك PHP. في الحالة الأخيرة، نستخدم وظائف الشبكة التي ناقشناها للتو. نحتاج أيضًا إلى معرفة كيفية &quot;التواصل&quot; مع خدمة الويب، أي فهم بروتوكول <em>HTTP</em> المستخدم للتواصل بين خادم الويب وعملائه. هذا هو الغرض من البرامج التالية.</p>
-<p>سمح لنا عميل الويب الموصوف في القسم<a href="#inet02"><u><span style="color: #0563c1"> 9.2</span></u></a> باستكشاف جزء من بروتوكول HTTP.</p>
+<h1 id="10-php">10. <span style="color: #365f91">خوادم <bdi dir="ltr" class="odt-ltr-term">PHP</bdi></span></h1>
+<p>نظرًا لأن برامج <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> يمكن تنفيذها بواسطة خادم ويب، فإن مثل هذا البرنامج يصبح برنامجًا من جانب الخادم قادرًا على خدمة عملاء متعددين. من منظور العميل، فإن استدعاء خدمة ويب يعادل طلب عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> لتلك الخدمة. يمكن كتابة العميل بأي لغة، بما في ذلك <bdi dir="ltr" class="odt-ltr-term">PHP.</bdi> في الحالة الأخيرة، نستخدم وظائف الشبكة التي ناقشناها للتو. نحتاج أيضًا إلى معرفة كيفية &quot;التواصل&quot; مع خدمة الويب، أي فهم بروتوكول <em><bdi dir="ltr" class="odt-ltr-term">HTTP</bdi></em> المستخدم للتواصل بين خادم الويب وعملائه. هذا هو الغرض من البرامج التالية.</p>
+<p>سمح لنا عميل الويب الموصوف في القسم<a href="#inet02"><u><span style="color: #0563c1"> 9.2</span></u></a> باستكشاف جزء من بروتوكول <bdi dir="ltr" class="odt-ltr-term">HTTP.</bdi></p>
 <p><img src="images/10000000000004B0000000E0FF946545.png" width="600" height="112" style="width:15.875cm;height:2.963cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000004B0000000E0FF946545.png" /></p>
 <p>في أبسط صورها، تتم التبادلات بين العميل والخادم على النحو التالي:</p>
 <ul>
@@ -972,24 +974,24 @@
   </li>
 </ul>
 
-<p>يمكن أن يتخذ العميل أشكالاً مختلفة: نص HTML، صورة، فيديو، إلخ. يمكن أن يكون مستنداً موجوداً (مستند ثابت) أو مستنداً يتم إنشاؤه على الفور بواسطة برنامج نصي (مستند ديناميكي). في الحالة الأخيرة، نشير إلى برمجة الويب. يمكن كتابة البرنامج النصي لإنشاء المستندات ديناميكياً بعدة لغات: PHP، Python، Perl، Java، Ruby، C#، VB.NET، إلخ.</p>
-<p>هنا، نستخدم PHP لإنشاء مستندات نصية ديناميكيًا.</p>
+<p>يمكن أن يتخذ العميل أشكالاً مختلفة: نص <bdi dir="ltr" class="odt-ltr-term">HTML</bdi>، صورة، فيديو، إلخ. يمكن أن يكون مستنداً موجوداً (مستند ثابت) أو مستنداً يتم إنشاؤه على الفور بواسطة برنامج نصي (مستند ديناميكي). في الحالة الأخيرة، نشير إلى برمجة الويب. يمكن كتابة البرنامج النصي لإنشاء المستندات ديناميكياً بعدة لغات: <bdi dir="ltr" class="odt-ltr-term">PHP</bdi>، <bdi dir="ltr" class="odt-ltr-term">Python</bdi>، <bdi dir="ltr" class="odt-ltr-term">Perl</bdi>، <bdi dir="ltr" class="odt-ltr-term">Java</bdi>، <bdi dir="ltr" class="odt-ltr-term">Ruby</bdi>، <bdi dir="ltr" class="odt-ltr-term">C#</bdi>، <bdi dir="ltr" class="odt-ltr-term">VB.NET</bdi>، إلخ.</p>
+<p>هنا، نستخدم <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> لإنشاء مستندات نصية ديناميكيًا.</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000638000000E735269C0D.png" width="680" height="99" style="display:inline-block; margin:4px;width:17.997cm;height:2.611cm;" class="odt-zoomable" data-zoom-src="images/1000000000000638000000E735269C0D.png" /></td></tr></table>
 
 <ul>
-  <li>في [1]، يقوم العميل بإنشاء اتصال مع الخادم، ويطلب برنامج PHP نصي، وقد يرسل أو لا يرسل معلمات إلى ذلك البرنامج النصي
+  <li>في [1]، يقوم العميل بإنشاء اتصال مع الخادم، ويطلب برنامج <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> نصي، وقد يرسل أو لا يرسل معلمات إلى ذلك البرنامج النصي
   </li>
-  <li>في [2]، يقوم خادم الويب بتنفيذ البرنامج النصي PHP باستخدام مترجم PHP. يقوم هذا البرنامج النصي بإنشاء مستند يتم إرساله إلى العميل [3]
+  <li>في [2]، يقوم خادم الويب بتنفيذ البرنامج النصي <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> باستخدام مترجم <bdi dir="ltr" class="odt-ltr-term">PHP.</bdi> يقوم هذا البرنامج النصي بإنشاء مستند يتم إرساله إلى العميل [3]
   </li>
   <li>يقوم الخادم بإغلاق الاتصال. ويقوم العميل بالمثل.
   </li>
 </ul>
 
-<p>يمكن لخادم الويب التعامل مع عدة عملاء في وقت واحد. مع حزمة برامج WampServer، يكون خادم الويب هو خادم Apache، وهو خادم مفتوح المصدر من مؤسسة Apache (http://www.apache.org/). في التطبيقات التالية، يجب تشغيل WampServer. يؤدي ذلك إلى تنشيط ثلاثة مكونات: خادم الويب Apache، ونظام إدارة قواعد البيانات MySQL، ومترجم PHP.</p>
-<p>سيتم كتابة البرامج النصية التي ينفذها خادم الويب باستخدام أداة NetBeans. حتى الآن، قمنا بكتابة برامج نصية PHP يتم تنفيذها في بيئة وحدة التحكم:</p>
+<p>يمكن لخادم الويب التعامل مع عدة عملاء في وقت واحد. مع حزمة برامج <bdi dir="ltr" class="odt-ltr-term">WampServer</bdi>، يكون خادم الويب هو خادم <bdi dir="ltr" class="odt-ltr-term">Apache</bdi>، وهو خادم مفتوح المصدر من مؤسسة <bdi dir="ltr" class="odt-ltr-term">Apache</bdi> (<bdi dir="ltr" class="odt-ltr-term">http://www.apache.org/</bdi>). في التطبيقات التالية، يجب تشغيل <bdi dir="ltr" class="odt-ltr-term">WampServer.</bdi> يؤدي ذلك إلى تنشيط ثلاثة مكونات: خادم الويب <bdi dir="ltr" class="odt-ltr-term">Apache</bdi>، ونظام إدارة قواعد البيانات <bdi dir="ltr" class="odt-ltr-term">MySQL</bdi>، ومترجم <bdi dir="ltr" class="odt-ltr-term">PHP.</bdi></p>
+<p>سيتم كتابة البرامج النصية التي ينفذها خادم الويب باستخدام أداة <bdi dir="ltr" class="odt-ltr-term">NetBeans.</bdi> حتى الآن، قمنا بكتابة برامج نصية <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> يتم تنفيذها في بيئة وحدة التحكم:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000592000000DE15D52480.png" width="680" height="106" style="display:inline-block; margin:4px;width:17.997cm;height:2.803cm;" class="odt-zoomable" data-zoom-src="images/1000000000000592000000DE15D52480.png" /></td></tr></table>
 
-<p>يستخدم المستخدم وحدة التحكم لطلب تنفيذ برنامج نصي PHP وتلقي النتائج.</p>
+<p>يستخدم المستخدم وحدة التحكم لطلب تنفيذ برنامج نصي <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> وتلقي النتائج.</p>
 <p>في تطبيقات العميل/الخادم التالية، </p>
 <ul>
   <li>يتم تنفيذ البرنامج النصي للعميل في بيئة وحدة التحكم
@@ -1000,17 +1002,17 @@
 
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000067500000233E047ED66.png" width="680" height="232" style="display:inline-block; margin:4px;width:17.997cm;height:6.13cm;" class="odt-zoomable" data-zoom-src="images/100000000000067500000233E047ED66.png" /></td></tr></table>
 
-<p>لا يمكن وضع البرنامج النصي PHP الخاص بالخادم في أي مكان في نظام الملفات. وذلك لأن خادم الويب يبحث عن المستندات الثابتة والديناميكية المطلوبة منه في المواقع المحددة في التكوين. يؤدي التكوين الافتراضي لـ WampServer إلى البحث عن المستندات في المجلد <em>&lt;WampServer&gt;</em>/www، حيث يمثل &lt;<em>WampServer</em>&gt; مجلد تثبيت WampServer. وبالتالي، إذا طلب عميل الويب مستندًا D بعنوان URL [http://localhost/D]، فسيقوم خادم الويب بتقديم المستند D الموجود في المسار [&lt;WampServer&gt;/www/D].</p>
-<p>في الأمثلة التالية، سنضع نصوص الخادم في المجلد [www/web-examples]. إذا كان اسم نص الخادم هو <em>S.</em>php، فسيتم طلبه من خادم الويب باستخدام عنوان URL [<em>http://localhost/exemples-web/S.php</em>]. سيتم بعد ذلك تقديم المستند [<em>&lt;WampServer&gt;/www/web-examples/S.php</em>].</p>
+<p>لا يمكن وضع البرنامج النصي <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> الخاص بالخادم في أي مكان في نظام الملفات. وذلك لأن خادم الويب يبحث عن المستندات الثابتة والديناميكية المطلوبة منه في المواقع المحددة في التكوين. يؤدي التكوين الافتراضي لـ <bdi dir="ltr" class="odt-ltr-term">WampServer</bdi> إلى البحث عن المستندات في المجلد <em>&lt;<bdi dir="ltr" class="odt-ltr-term">WampServer</bdi>&gt;</em>/www، حيث يمثل &lt;<em><bdi dir="ltr" class="odt-ltr-term">WampServer</bdi></em>&gt; مجلد تثبيت <bdi dir="ltr" class="odt-ltr-term">WampServer.</bdi> وبالتالي، إذا طلب عميل الويب مستندًا <bdi dir="ltr" class="odt-ltr-term">D</bdi> بعنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [<bdi dir="ltr" class="odt-ltr-term">http://localhost/D</bdi>]، فسيقوم خادم الويب بتقديم المستند <bdi dir="ltr" class="odt-ltr-term">D</bdi> الموجود في المسار [&lt;<bdi dir="ltr" class="odt-ltr-term">WampServer</bdi>&gt;/<bdi dir="ltr" class="odt-ltr-term">www/D</bdi>].</p>
+<p>في الأمثلة التالية، سنضع نصوص الخادم في المجلد [<bdi dir="ltr" class="odt-ltr-term">www/web-examples</bdi>]. إذا كان اسم نص الخادم هو <em><bdi dir="ltr" class="odt-ltr-term">S.</bdi></em>php، فسيتم طلبه من خادم الويب باستخدام عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [<em><bdi dir="ltr" class="odt-ltr-term">http://localhost/exemples-web/S.php</bdi></em>]. سيتم بعد ذلك تقديم المستند [<em>&lt;<bdi dir="ltr" class="odt-ltr-term">WampServer</bdi>&gt;/<bdi dir="ltr" class="odt-ltr-term">www/web-examples/S.php</bdi></em>].</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001830000012F6178BA8A.png" width="194" height="152" style="display:inline-block; margin:4px;width:5.121cm;height:4.009cm;" class="odt-zoomable" data-zoom-src="images/10000000000001830000012F6178BA8A.png" /></td></tr></table>
 
-<p>لإنشاء برنامج نصي من جانب الخادم باستخدام NetBeans<a id="confnetbeansphpweb"></a> ، سنقوم بما يلي:</p>
+<p>لإنشاء برنامج نصي من جانب الخادم باستخدام <bdi dir="ltr" class="odt-ltr-term">NetBeans</bdi><a id="confnetbeansphpweb"></a> ، سنقوم بما يلي:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000041000000131E392E087.png" width="520" height="153" style="display:inline-block; margin:4px;width:13.758cm;height:4.036cm;" class="odt-zoomable" data-zoom-src="images/100000000000041000000131E392E087.png" /></td></tr></table>
 
 <ul>
   <li>في [1]، نقوم بإنشاء مشروع جديد
   </li>
-  <li>في [2]، نختار فئة [PHP] ومشروع [PHP Application]
+  <li>في [2]، نختار فئة [<bdi dir="ltr" class="odt-ltr-term">PHP</bdi>] ومشروع [<bdi dir="ltr" class="odt-ltr-term">PHP Application</bdi>]
   </li>
 </ul>
 
@@ -1021,9 +1023,9 @@
   </li>
   <li>في [4]، نختار مجلدًا للمشروع
   </li>
-  <li>في [5]، نحدد أن البرنامج النصي يجب أن يتم تنفيذه بواسطة خادم ويب محلي (سيكون عنوان URL للبرنامج النصي على الشكل http://localhost/...). سيكون خادم الويب المحلي هو خادم الويب Apache من WampServer.
+  <li>في [5]، نحدد أن البرنامج النصي يجب أن يتم تنفيذه بواسطة خادم ويب محلي (سيكون عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> للبرنامج النصي على الشكل <bdi dir="ltr" class="odt-ltr-term">http://localhost/...</bdi>). سيكون خادم الويب المحلي هو خادم الويب <bdi dir="ltr" class="odt-ltr-term">Apache</bdi> من <bdi dir="ltr" class="odt-ltr-term">WampServer.</bdi>
   </li>
-  <li>في [6]، نحدد عنوان URL للمشروع. هنا، نقرر أن البرنامج النصي المسمى S.php في المشروع سيتم الوصول إليه عبر عنوان URL [http://localhost/exemples-web/S.php]. بناءً على ما سبق، هذا يعني أن المسار إلى البرنامج النصي S.php في نظام الملفات سيكون [&lt;WampServer&gt;/www/web-examples/S.php]. وهذا ما تم تحديده في [7]. هنا، نحدد أن أي برنامج نصي S.php في المشروع يجب نسخه إلى بنية دليل خادم الويب Apache.
+  <li>في [6]، نحدد عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> للمشروع. هنا، نقرر أن البرنامج النصي المسمى <bdi dir="ltr" class="odt-ltr-term">S.php</bdi> في المشروع سيتم الوصول إليه عبر عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [<bdi dir="ltr" class="odt-ltr-term">http://localhost/exemples-web/S.php</bdi>]. بناءً على ما سبق، هذا يعني أن المسار إلى البرنامج النصي <bdi dir="ltr" class="odt-ltr-term">S.php</bdi> في نظام الملفات سيكون [&lt;<bdi dir="ltr" class="odt-ltr-term">WampServer</bdi>&gt;/<bdi dir="ltr" class="odt-ltr-term">www/web-examples/S.php</bdi>]. وهذا ما تم تحديده في [7]. هنا، نحدد أن أي برنامج نصي <bdi dir="ltr" class="odt-ltr-term">S.php</bdi> في المشروع يجب نسخه إلى بنية دليل خادم الويب <bdi dir="ltr" class="odt-ltr-term">Apache.</bdi>
   </li>
   <li>في [8]، المشروع الجديد.
   </li>
@@ -1033,7 +1035,7 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005E3000001635FB91E5E.png" width="680" height="160" style="display:inline-block; margin:4px;width:17.997cm;height:4.24cm;" class="odt-zoomable" data-zoom-src="images/10000000000005E3000001635FB91E5E.png" /></td></tr></table>
 
 <ul>
-  <li>في [1]، نقوم بإنشاء أول نص برمجي PHP في مشروع [web-examples]
+  <li>في [1]، نقوم بإنشاء أول نص برمجي <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> في مشروع [<bdi dir="ltr" class="odt-ltr-term">web-examples</bdi>]
   </li>
   <li>في [2]، نسميه
   </li>
@@ -1041,11 +1043,11 @@
   </li>
 </ul>
 
-<p>بعد ذلك، يجب أن يكون WampServer قيد التشغيل.</p>
+<p>بعد ذلك، يجب أن يكون <bdi dir="ltr" class="odt-ltr-term">WampServer</bdi> قيد التشغيل.</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005470000016294D7507E.png" width="676" height="177" style="display:inline-block; margin:4px;width:17.873cm;height:4.683cm;" class="odt-zoomable" data-zoom-src="images/10000000000005470000016294D7507E.png" /></td></tr></table>
 
 <ul>
-  <li>في [4]، نقوم بتشغيل البرنامج النصي للويب [example1.php]. سيقوم NetBeans بعد ذلك بتشغيل المتصفح الافتراضي للجهاز وإعطائه تعليمات لعرض عنوان URL [http://localhost/exemples-web/exemple1.php] [5]
+  <li>في [4]، نقوم بتشغيل البرنامج النصي للويب [<bdi dir="ltr" class="odt-ltr-term">example1.php</bdi>]. سيقوم <bdi dir="ltr" class="odt-ltr-term">NetBeans</bdi> بعد ذلك بتشغيل المتصفح الافتراضي للجهاز وإعطائه تعليمات لعرض عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [<bdi dir="ltr" class="odt-ltr-term">http://localhost/exemples-web/exemple1.php</bdi>] [5]
   </li>
   <li>في [6]، يعرض المتصفح ما أرسله البرنامج النصي للخادم إلى العميل.
   </li>
@@ -1053,15 +1055,15 @@
 
 <p>ومن الآن فصاعدًا، سنواجه نوعين من عملاء الويب:</p>
 <ul>
-  <li>متصفح كما هو موضح أعلاه. لاحظنا أن خادم الويب يرسل استجابة بالشكل التالي: <i>رؤوس HTTP، سطر فارغ، نص</i>. يعرض المتصفح <i>النص</i> فقط.
+  <li>متصفح كما هو موضح أعلاه. لاحظنا أن خادم الويب يرسل استجابة بالشكل التالي: <i>رؤوس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi>، سطر فارغ، نص</i>. يعرض المتصفح <i>النص</i> فقط.
   </li>
-  <li>نص برمجي PHP يعرض الرد بالكامل: <i>رؤوس HTTP، سطر فارغ، نص</i>. 
+  <li>نص برمجي <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> يعرض الرد بالكامل: <i>رؤوس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi>، سطر فارغ، نص</i>. 
   </li>
 </ul>
 
 <p>من الآن فصاعدًا،</p>
 <ul>
-  <li>ستُكتب البرامج النصية من جانب الخادم مثل [example1.php] أعلاه
+  <li>ستُكتب البرامج النصية من جانب الخادم مثل [<bdi dir="ltr" class="odt-ltr-term">example1.php</bdi>] أعلاه
   </li>
   <li>سيتم كتابة البرامج النصية من جانب العميل مثل البرامج النصية الخاصة بوحدة التحكم التي كتبناها حتى الآن.
   </li>
@@ -1083,43 +1085,43 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#000000">date(</span><span style="color:#008000">&quot;d/m/y H:i:s&quot;</span><span style="color:#000000">,time());</span></span></span>
 </code></pre></div>
 
-<p><span style="color: #000000">بشكل أساسي، يعرض البرنامج النصي PHP أعلاه الوقت الحالي على الشاشة. ومع ذلك، عند تنفيذه بواسطة خادم ويب، يتم إعادة توجيه الدفق 1 — الذي يرتبط عادةً بالشاشة — إلى الاتصال الذي يربط الخادم بعميله. لذلك، في سياق الويب، يرسل البرنامج النصي أعلاه الوقت الحالي كنص إلى العميل.</span></p>
-<p><span style="color: #000000">دعونا نُشغّل هذا البرنامج النصي داخل NetBeans:</span></p>
+<p><span style="color: #000000">بشكل أساسي، يعرض البرنامج النصي <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> أعلاه الوقت الحالي على الشاشة. ومع ذلك، عند تنفيذه بواسطة خادم ويب، يتم إعادة توجيه الدفق 1 — الذي يرتبط عادةً بالشاشة — إلى الاتصال الذي يربط الخادم بعميله. لذلك، في سياق الويب، يرسل البرنامج النصي أعلاه الوقت الحالي كنص إلى العميل.</span></p>
+<p><span style="color: #000000">دعونا نُشغّل هذا البرنامج النصي داخل <bdi dir="ltr" class="odt-ltr-term">NetBeans:</bdi></span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000053F000002616446BC9C.png" width="672" height="305" style="display:inline-block; margin:4px;width:17.768cm;height:8.057cm;" class="odt-zoomable" data-zoom-src="images/100000000000053F000002616446BC9C.png" /></td></tr></table>
 
 <ul>
   <li><span style="color: #000000">في [1]، نقوم بتشغيل البرنامج النصي. ثم يتم تشغيل متصفح ويب.</span>
   </li>
-  <li><span style="color: #000000">في [2]، عنوان URL الذي طلبه متصفح الويب</span>
+  <li><span style="color: #000000">في [2]، عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> الذي طلبه متصفح الويب</span>
   </li>
   <li><span style="color: #000000">في [3]، النص الذي أرسله البرنامج النصي للخادم</span>
   </li>
 </ul>
 
-<p><span style="color: #000000">يستخدم متصفح العميل بروتوكول </span>HTTP <span style="color: #000000">للتواصل مع خادم الويب. وقد سبق أن وصفنا بنية هذا البروتوكول.</span></p>
-<p><span style="color: #000000">يرسل العميل أسطر نصية يمكن تقسيمها إلى ثلاثة أجزاء: </span><em>رؤوس HTTP، وسطر فارغ، والمستند</em><span style="color: #000000">. عادةً ما يكون المستند المرسل إلى خادم الويب فارغًا أو يتكون من مجموعة من المعلمات </span><em>في صيغة</em> <span style="color: #000000">parami=vali، حيث </span><em>vali</em> <span style="color: #000000">هي قيمة أدخلها المستخدم في نموذج HTML.</span></p>
-<p><span style="color: #000000">يحتوي رد الخادم على نفس البنية: </span><em>رؤوس HTTP، وسطر فارغ، ووثيقة،</em> <span style="color: #000000">حيث تكون</span> <em>الوثيقة</em> <span style="color: #000000">هذه المرة هي الوثيقة التي طلبها متصفح العميل. إذا أرسل العميل معلمات، فإن الوثيقة التي يتم إرجاعها تعتمد عمومًا على تلك المعلمات.</span></p>
-<p><span style="color: #000000">باستخدام متصفح Firefox، يمكنك عرض البيانات الفعلية المتبادلة بين العميل وخادم الويب. هناك ملحق </span><em>لـ Firefox</em> <span style="color: #000000">يُدعى </span><strong>Firebug</strong> <span style="color: #000000">يتيح لك تتبع عملية تبادل البيانات هذه. Firebug متاح على الرابط [https://addons.mozilla.org/fr/firefox/addon/firebug/]. إذا استخدمت متصفح </span><em>Firefox</em> <span style="color: #000000">لزيارة هذا الرابط، يمكنك تنزيل المكون الإضافي </span><em>Firebug</em><span style="color: #000000">. سنفترض من الآن فصاعدًا أن المكون الإضافي Firebug قد تم تنزيله وتثبيته. يمكن الوصول إليه عبر خيار في قائمة Firefox:</span></p>
+<p><span style="color: #000000">يستخدم متصفح العميل بروتوكول </span><bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> <span style="color: #000000">للتواصل مع خادم الويب. وقد سبق أن وصفنا بنية هذا البروتوكول.</span></p>
+<p><span style="color: #000000">يرسل العميل أسطر نصية يمكن تقسيمها إلى ثلاثة أجزاء: </span><em>رؤوس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi>، وسطر فارغ، والمستند</em><span style="color: #000000">. عادةً ما يكون المستند المرسل إلى خادم الويب فارغًا أو يتكون من مجموعة من المعلمات </span><em>في صيغة</em> <span style="color: #000000"><bdi dir="ltr" class="odt-ltr-term">parami</bdi>=<bdi dir="ltr" class="odt-ltr-term">vali</bdi>، حيث </span><em><bdi dir="ltr" class="odt-ltr-term">vali</bdi></em> <span style="color: #000000">هي قيمة أدخلها المستخدم في نموذج <bdi dir="ltr" class="odt-ltr-term">HTML.</bdi></span></p>
+<p><span style="color: #000000">يحتوي رد الخادم على نفس البنية: </span><em>رؤوس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi>، وسطر فارغ، ووثيقة،</em> <span style="color: #000000">حيث تكون</span> <em>الوثيقة</em> <span style="color: #000000">هذه المرة هي الوثيقة التي طلبها متصفح العميل. إذا أرسل العميل معلمات، فإن الوثيقة التي يتم إرجاعها تعتمد عمومًا على تلك المعلمات.</span></p>
+<p><span style="color: #000000">باستخدام متصفح <bdi dir="ltr" class="odt-ltr-term">Firefox</bdi>، يمكنك عرض البيانات الفعلية المتبادلة بين العميل وخادم الويب. هناك ملحق </span><em>لـ <bdi dir="ltr" class="odt-ltr-term">Firefox</bdi></em> <span style="color: #000000">يُدعى </span><strong><bdi dir="ltr" class="odt-ltr-term">Firebug</bdi></strong> <span style="color: #000000">يتيح لك تتبع عملية تبادل البيانات هذه. <bdi dir="ltr" class="odt-ltr-term">Firebug</bdi> متاح على الرابط [<bdi dir="ltr" class="odt-ltr-term">https://addons.mozilla.org/fr/firefox/addon/firebug/</bdi>]. إذا استخدمت متصفح </span><em><bdi dir="ltr" class="odt-ltr-term">Firefox</bdi></em> <span style="color: #000000">لزيارة هذا الرابط، يمكنك تنزيل المكون الإضافي </span><em><bdi dir="ltr" class="odt-ltr-term">Firebug</bdi></em><span style="color: #000000">. سنفترض من الآن فصاعدًا أن المكون الإضافي <bdi dir="ltr" class="odt-ltr-term">Firebug</bdi> قد تم تنزيله وتثبيته. يمكن الوصول إليه عبر خيار في قائمة <bdi dir="ltr" class="odt-ltr-term">Firefox:</bdi></span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001B8000000C83631F0CC.png" width="322" height="146" style="display:inline-block; margin:4px;width:8.511cm;height:3.868cm;" class="odt-zoomable" data-zoom-src="images/10000000000001B8000000C83631F0CC.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
-<p><span style="color: #000000">تفتح نافذة Firebug داخل نافذة متصفح Firefox. تحتوي هذه النافذة نفسها على قائمة:</span></p>
+<p><span style="color: #000000">تفتح نافذة <bdi dir="ltr" class="odt-ltr-term">Firebug</bdi> داخل نافذة متصفح <bdi dir="ltr" class="odt-ltr-term">Firefox.</bdi> تحتوي هذه النافذة نفسها على قائمة:</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002180000005F9DBEC713.png" width="375" height="67" style="display:inline-block; margin:4px;width:9.931cm;height:1.76cm;" class="odt-zoomable" data-zoom-src="images/10000000000002180000005F9DBEC713.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
-<p><span style="color: #000000">لعرض التبادلات بين العميل والخادم أثناء طلب HTTP، ندخل عنوان URL [</span><mark style="background-color: #fff5ce">http://localhost/exemples-web/web_01.php</mark><span style="color: #000000">] في متصفح Firefox. ثم تمتلئ نافذة Firebug بالمعلومات:</span></p>
+<p><span style="color: #000000">لعرض التبادلات بين العميل والخادم أثناء طلب <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi>، ندخل عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [</span><mark style="background-color: #fff5ce"><bdi dir="ltr" class="odt-ltr-term">http://localhost/exemples-web/web</bdi>_01.php</mark><span style="color: #000000">] في متصفح <bdi dir="ltr" class="odt-ltr-term">Firefox.</bdi> ثم تمتلئ نافذة <bdi dir="ltr" class="odt-ltr-term">Firebug</bdi> بالمعلومات:</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000381000000C34711D784.png" width="449" height="98" style="display:inline-block; margin:4px;width:11.867cm;height:2.581cm;" class="odt-zoomable" data-zoom-src="images/1000000000000381000000C34711D784.png" /></td></tr></table>
 
 <p><span style="color: #000000">فيما يلي ملخص للتبادلات بين العميل والخادم:</span></p>
 <ul>
-  <li>[1]: أرسل العميل طلب HTTP<b>: GET /exemples-web/web_01.php HTTP/1.1 </b>لطلب المستند [web01.php]
+  <li>[1]: أرسل العميل طلب <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi><b>: <bdi dir="ltr" class="odt-ltr-term">GET</bdi> /<bdi dir="ltr" class="odt-ltr-term">exemples-web/web_01.php HTTP/1.1</bdi> </b>لطلب المستند [<bdi dir="ltr" class="odt-ltr-term">web01.php</bdi>]
   </li>
-  <li>[2]: أرسل الخادم الاستجابة: <b>HTTP/1.1 200 OK، </b>مشيرًا إلى أنه عثر على المستند المطلوب.
+  <li>[2]: أرسل الخادم الاستجابة: <b><bdi dir="ltr" class="odt-ltr-term">HTTP/1.1</bdi> 200 <bdi dir="ltr" class="odt-ltr-term">OK</bdi>، </b>مشيرًا إلى أنه عثر على المستند المطلوب.
   </li>
 </ul>
 
-<p>يتيح لك Firebug عرض التبادلات الكاملة. ما عليك سوى &quot;توسيع&quot; عنوان URL:</p>
+<p>يتيح لك <bdi dir="ltr" class="odt-ltr-term">Firebug</bdi> عرض التبادلات الكاملة. ما عليك سوى &quot;توسيع&quot; عنوان <bdi dir="ltr" class="odt-ltr-term">URL:</bdi></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000635000002EA09DD715B.png" width="680" height="319" style="display:inline-block; margin:4px;width:17.997cm;height:8.449cm;" class="odt-zoomable" data-zoom-src="images/1000000000000635000002EA09DD715B.png" /></td></tr></table>
 
-<p>في الأعلى، نرى رؤوس HTTP المتبادلة بين العميل (الطلب) والخادم (الاستجابة). من الممكن الحصول على شفرة المصدر للتبادل، أي الأسطر الفعلية من النص المتبادل [1]. ثم نحصل على شفرة المصدر التالية:</p>
+<p>في الأعلى، نرى رؤوس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> المتبادلة بين العميل (الطلب) والخادم (الاستجابة). من الممكن الحصول على شفرة المصدر للتبادل، أي الأسطر الفعلية من النص المتبادل [1]. ثم نحصل على شفرة المصدر التالية:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000020A0000017A610B8750.png" width="365" height="265" style="display:inline-block; margin:4px;width:9.67cm;height:7.003cm;" class="odt-zoomable" data-zoom-src="images/100000000000020A0000017A610B8750.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <p><span style="color: #000000">لكتابة برنامج نصي من جانب العميل لخادم الويب، نحتاج ببساطة إلى محاكاة سلوك المتصفح. بعد إنشاء اتصال بالخادم، يمكن للبرنامج النصي من جانب العميل إرسال الأسطر الثمانية للطلب الموضحة أعلاه. في الواقع، ليست كل العناصر ضرورية، ولن نرسل سوى الأسطر الثلاثة التالية:</span></p>
@@ -1130,7 +1132,7 @@
 <a id="__codelineno-0-3" name="__codelineno-0-3"></a>Connection: close
 </code></pre></div></td></tr></table></div>
 <ul>
-  <li>السطر 1: يحدد المستند المطلوب وبروتوكول HTTP المستخدم
+  <li>السطر 1: يحدد المستند المطلوب وبروتوكول <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> المستخدم
   </li>
   <li>السطر 2: يوفر اسم مضيف البرنامج النصي للعميل
   </li>
@@ -1138,21 +1140,21 @@
   </li>
 </ul>
 
-<p>لنلقِ نظرة الآن على استجابة الخادم. نعلم أنها تم إنشاؤها بواسطة البرنامج النصي PHP [web_01.php]. أعلاه، نرى رؤوس HTTP للاستجابة. يُظهر كود البرنامج النصي [web01.php] أنه لم يقم بإنشائها. تذكر تكوين البرنامج النصي للخادم:</p>
+<p>لنلقِ نظرة الآن على استجابة الخادم. نعلم أنها تم إنشاؤها بواسطة البرنامج النصي <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> [web_01.php]. أعلاه، نرى رؤوس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> للاستجابة. يُظهر كود البرنامج النصي [<bdi dir="ltr" class="odt-ltr-term">web01.php</bdi>] أنه لم يقم بإنشائها. تذكر تكوين البرنامج النصي للخادم:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000064C000000E0DFF4BA43.png" width="680" height="95" style="display:inline-block; margin:4px;width:17.997cm;height:2.501cm;" class="odt-zoomable" data-zoom-src="images/100000000000064C000000E0DFF4BA43.png" /></td></tr></table>
 
-<p>إن خادم الويب هو الذي أنشأ رؤوس HTTP للاستجابة. يمكن لبرنامج الخادم إنشاءها بنفسه. سنرى مثالاً على ذلك لاحقًا.</p>
-<p>ذكرنا أن استجابة خادم الويب تأخذ الشكل التالي: <em>رؤوس HTTP، سطر فارغ، مستند</em>. إذا كان المستند مستندًا نصيًا، فيمكننا عرضه في علامة التبويب [Response] في Firebug:</p>
+<p>إن خادم الويب هو الذي أنشأ رؤوس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> للاستجابة. يمكن لبرنامج الخادم إنشاءها بنفسه. سنرى مثالاً على ذلك لاحقًا.</p>
+<p>ذكرنا أن استجابة خادم الويب تأخذ الشكل التالي: <em>رؤوس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi>، سطر فارغ، مستند</em>. إذا كان المستند مستندًا نصيًا، فيمكننا عرضه في علامة التبويب [<bdi dir="ltr" class="odt-ltr-term">Response</bdi>] في <bdi dir="ltr" class="odt-ltr-term">Firebug:</bdi></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000D9000000C583576C27.png" width="152" height="138" style="display:inline-block; margin:4px;width:4.02cm;height:3.649cm;" class="odt-zoomable" data-zoom-src="images/10000000000000D9000000C583576C27.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <p>تم إنشاء هذا الرد بواسطة البرنامج النصي [web_01.php].</p>
 <p><a id="refheading399441881943603"></a></p>
-<h3 id="1012-client1_web_01">10.1.2. <span style="color: #4f81bd"><strong><span style="color: #4f81bd">عميل (client1_web_01)</span></strong></span></h3>
+<h3 id="1012-client1_web_01">10.1.2. <span style="color: #4f81bd"><strong><span style="color: #4f81bd">عميل (<bdi dir="ltr" class="odt-ltr-term">client1</bdi>_web_01)</span></strong></span></h3>
 <p>سنقوم الآن بكتابة برنامج نصي للعميل للخدمة السابقة. نحن نعلم أن العميل يجب أن:</p>
 <ul>
   <li>فتح اتصال بخادم الويب
   </li>
-  <li>إرسال النص: <i>رؤوس HTTP، سطر فارغ</i>
+  <li>إرسال النص: <i>رؤوس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi>، سطر فارغ</i>
   </li>
   <li>قراءة الرد الكامل للخادم حتى يغلق الخادم اتصاله بالعميل
   </li>
@@ -1160,19 +1162,19 @@
   </li>
 </ul>
 
-<p>يتم تشغيل البرنامج النصي للعميل في بيئة وحدة التحكم NetBeans:</p>
+<p>يتم تشغيل البرنامج النصي للعميل في بيئة وحدة التحكم <bdi dir="ltr" class="odt-ltr-term">NetBeans:</bdi></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000641000003276A1BFC85.png" width="680" height="343" style="display:inline-block; margin:4px;width:17.997cm;height:9.072cm;" class="odt-zoomable" data-zoom-src="images/1000000000000641000003276A1BFC85.png" /></td></tr></table>
 
 <ul>
-  <li>في [1]، تم تضمين البرنامج النصي للعميل [client1_web_01.php] في مشروع NetBeans [examples]
+  <li>في [1]، تم تضمين البرنامج النصي للعميل [<bdi dir="ltr" class="odt-ltr-term">client1_web_01.php</bdi>] في مشروع <bdi dir="ltr" class="odt-ltr-term">NetBeans</bdi> [<bdi dir="ltr" class="odt-ltr-term">examples</bdi>]
   </li>
-  <li>في [2]، خصائص مشروع NetBeans [examples]
+  <li>في [2]، خصائص مشروع <bdi dir="ltr" class="odt-ltr-term">NetBeans</bdi> [<bdi dir="ltr" class="odt-ltr-term">examples</bdi>]
   </li>
-  <li>في [3]، يعمل مشروع NetBeans [examples] في وضع &quot;سطر الأوامر&quot;، والذي أشرنا إليه أيضًا بوضع &quot;وحدة التحكم&quot;.
+  <li>في [3]، يعمل مشروع <bdi dir="ltr" class="odt-ltr-term">NetBeans</bdi> [<bdi dir="ltr" class="odt-ltr-term">examples</bdi>] في وضع &quot;سطر الأوامر&quot;، والذي أشرنا إليه أيضًا بوضع &quot;وحدة التحكم&quot;.
   </li>
 </ul>
 
-<p>في [2]، خصائص مشروع NetBeans [examples]</p>
+<p>في [2]، خصائص مشروع <bdi dir="ltr" class="odt-ltr-term">NetBeans</bdi> [<bdi dir="ltr" class="odt-ltr-term">examples</bdi>]</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -1212,11 +1214,11 @@
 <ul>
   <li>السطر 8: فتح اتصال بالخادم
   </li>
-  <li>السطر 16: أمر HTTP GET
+  <li>السطر 16: أمر <bdi dir="ltr" class="odt-ltr-term">HTTP GET</bdi>
   </li>
-  <li>السطر 18: أمر HTTP Host
+  <li>السطر 18: أمر <bdi dir="ltr" class="odt-ltr-term">HTTP Host</bdi>
   </li>
-  <li>السطر 20: أمر HTTP Connection
+  <li>السطر 20: أمر <bdi dir="ltr" class="odt-ltr-term">HTTP Connection</bdi>
   </li>
   <li>السطر 22: سطر فارغ
   </li>
@@ -1248,11 +1250,11 @@
 </code></pre></div></td></tr></table></div>
 <p><strong>التعليقات</strong></p>
 <ul>
-  <li>الأسطر 1–7: استجابة HTTP من خادم الويب.
+  <li>الأسطر 1–7: استجابة <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> من خادم الويب.
   </li>
-  <li>السطر 8: السطر الفارغ الذي يشير إلى نهاية رؤوس HTTP
+  <li>السطر 8: السطر الفارغ الذي يشير إلى نهاية رؤوس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi>
   </li>
-  <li>السطور 9 وما بعدها: المستند. هنا، هو نص بسيط يمثل التاريخ والوقت الحاليين. هذا هو النص الذي كتبه البرنامج النصي PHP لإخراج #1.
+  <li>السطور 9 وما بعدها: المستند. هنا، هو نص بسيط يمثل التاريخ والوقت الحاليين. هذا هو النص الذي كتبه البرنامج النصي <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> لإخراج #1.
   </li>
 </ul>
 
@@ -1263,19 +1265,19 @@
   </li>
   <li>السطر 3: هوية خادم الويب
   </li>
-  <li>السطر 4: يشير إلى أن المستند التالي تم إنشاؤه بواسطة برنامج PHP
+  <li>السطر 4: يشير إلى أن المستند التالي تم إنشاؤه بواسطة برنامج <bdi dir="ltr" class="odt-ltr-term">PHP</bdi>
   </li>
   <li>السطر 5: عدد الأحرف في المستند
   </li>
   <li>السطر 6: يشير الخادم إلى أنه بعد إرسال المستند، سيقوم بإغلاق الاتصال
   </li>
-  <li>السطر 7: يشير إلى أن المستند الذي أرسله الخادم هو نص بتنسيق HTML. هذا غير صحيح هنا. المستند هو نص عادي. عندما لا يكون المستند بتنسيق HTML، فإن الأمر متروك لبرنامج PHP النصي للإشارة إلى ذلك. لم نقم بذلك هنا.
+  <li>السطر 7: يشير إلى أن المستند الذي أرسله الخادم هو نص بتنسيق <bdi dir="ltr" class="odt-ltr-term">HTML.</bdi> هذا غير صحيح هنا. المستند هو نص عادي. عندما لا يكون المستند بتنسيق <bdi dir="ltr" class="odt-ltr-term">HTML</bdi>، فإن الأمر متروك لبرنامج <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> النصي للإشارة إلى ذلك. لم نقم بذلك هنا.
   </li>
 </ul>
 
 <p><a id="refheading399481881943603"></a></p>
-<h3 id="1013-client2_web_01">10.1.3. <span style="color: #4f81bd">عميل ثانٍ (client2_web_01)</span></h3>
-<p>عرض العميل السابق كل ما أرسله إليه خادم الويب. في الممارسة العملية، نتجاهل عمومًا رؤوس HTTP في الاستجابة ونركز على نص المستند. هنا، نريد استرداد التاريخ والوقت اللذين أرسلهما البرنامج النصي PHP من جانب الخادم. سنسترد هذه المعلومات باستخدام تعبير عادي.</p>
+<h3 id="1013-client2_web_01">10.1.3. <span style="color: #4f81bd">عميل ثانٍ (<bdi dir="ltr" class="odt-ltr-term">client2</bdi>_web_01)</span></h3>
+<p>عرض العميل السابق كل ما أرسله إليه خادم الويب. في الممارسة العملية، نتجاهل عمومًا رؤوس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> في الاستجابة ونركز على نص المستند. هنا، نريد استرداد التاريخ والوقت اللذين أرسلهما البرنامج النصي <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> من جانب الخادم. سنسترد هذه المعلومات باستخدام تعبير عادي.</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -1343,9 +1345,9 @@
 </code></pre></div></td></tr></table></div>
 <p><a id="refheading399521881943603"></a></p>
 <h2 id="102">10.2. <span style="color: #4f81bd">استرجاع الخادم للمعلمات المرسلة من قبل العميل</span></h2>
-<p>في بروتوكول HTTP، يتوفر للعميل طريقتان لتمرير المعلمات إلى خادم الويب:</p>
+<p>في بروتوكول <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi>، يتوفر للعميل طريقتان لتمرير المعلمات إلى خادم الويب:</p>
 <ul>
-  <li>يطلب عنوان URL للخدمة في النموذج 
+  <li>يطلب عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> للخدمة في النموذج 
   </li>
 </ul>
 
@@ -1355,7 +1357,7 @@
 
 <p>حيث يجب أولاً ترميز القيم <em>الصالحة</em> بحيث يتم استبدال بعض الأحرف المحجوزة بقيمها السداسية العشرية.</p>
 <ul>
-  <li>يطلب عنوان URL للخدمة بالشكل 
+  <li>يطلب عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> للخدمة بالشكل 
   </li>
 </ul>
 
@@ -1363,26 +1365,26 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold">POST</span> url HTTP/1.0</span></span>
 </code></pre></div>
 
-<p>ثم، من بين رؤوس HTTP المرسلة إلى الخادم، تتضمن الرأس التالية:</p>
+<p>ثم، من بين رؤوس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> المرسلة إلى الخادم، تتضمن الرأس التالية:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Content-length=N
 </code></pre></div>
 <p>وتنتهي بقية الرؤوس المرسلة من جانب العميل بسطر فارغ. ويمكنه بعد ذلك إرسال بياناته في شكل</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>val1&amp;param2=val2&amp;param3=val3…
 </code></pre></div>
-<p>حيث يجب ترميز القيم <em>الصالحة</em> مسبقًا، كما هو الحال مع طريقة GET. يجب أن يكون عدد الأحرف المرسلة إلى الخادم N، حيث N هي القيمة المعلنة في الرأس</p>
+<p>حيث يجب ترميز القيم <em>الصالحة</em> مسبقًا، كما هو الحال مع طريقة <bdi dir="ltr" class="odt-ltr-term">GET.</bdi> يجب أن يكون عدد الأحرف المرسلة إلى الخادم <bdi dir="ltr" class="odt-ltr-term">N</bdi>، حيث <bdi dir="ltr" class="odt-ltr-term">N</bdi> هي القيمة المعلنة في الرأس</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Content-length=N
 </code></pre></div>
-<p>يسترد البرنامج النصي PHP المعلمات <em>parami</em> السابقة المرسلة من العميل قيمها من المصفوفة:</p>
+<p>يسترد البرنامج النصي <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> المعلمات <em><bdi dir="ltr" class="odt-ltr-term">parami</bdi></em> السابقة المرسلة من العميل قيمها من المصفوفة:</p>
 <ul>
-  <li>$_GET[&quot;<i>parami</i>&quot;] لطلب GET
+  <li>$_GET[&quot;<i><bdi dir="ltr" class="odt-ltr-term">parami</bdi></i>&quot;] لطلب <bdi dir="ltr" class="odt-ltr-term">GET</bdi>
   </li>
-  <li>$_POST[&quot;<i>parami</i>&quot;] لطلب POST
+  <li>$_POST[&quot;<i><bdi dir="ltr" class="odt-ltr-term">parami</bdi></i>&quot;] لطلب <bdi dir="ltr" class="odt-ltr-term">POST</bdi>
   </li>
 </ul>
 
 <p><a id="refheading399541881943603"></a></p>
-<h3 id="1021-get-client1_web_02">10.2.1. <span style="color: #4f81bd">عميل GET (client1_web_02)</span></h3>
-<p>يرسل البرنامج النصي PHP أدناه ثلاث معلمات [last_name، first_name، age] إلى الخادم.</p>
+<h3 id="1021-get-client1_web_02">10.2.1. <span style="color: #4f81bd">عميل <bdi dir="ltr" class="odt-ltr-term">GET</bdi> (<bdi dir="ltr" class="odt-ltr-term">client1</bdi>_web_02)</span></h3>
+<p>يرسل البرنامج النصي <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> أدناه ثلاث معلمات [<bdi dir="ltr" class="odt-ltr-term">last</bdi>_name، <bdi dir="ltr" class="odt-ltr-term">first</bdi>_name، age] إلى الخادم.</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -1424,15 +1426,15 @@
 
 <p><strong><span style="color: #000000">تعليقات</span></strong></p>
 <ul>
-  <li><span style="color: #000000">السطر 7: عنوان URL لبرنامج الخادم</span>
+  <li><span style="color: #000000">السطر 7: عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> لبرنامج الخادم</span>
   </li>
   <li><span style="color: #000000">السطر 8: قيم المعلمات الثلاثة</span>
   </li>
   <li><span style="color: #000000">السطر 10: يفتح اتصالاً بخادم الويب</span>
   </li>
-  <li><span style="color: #000000">السطر 18: ترميز المعلمات الثلاث. نحن نعمل في برنامج نصي مكتوب في NetBeans باستخدام ترميز الأحرف UTF-8. ولذلك، فإن قيم المعلمات الثلاث الواردة في السطر 8 مرمزة بتنسيق UTF-8. تقوم الدالة utf8_decode بتحويل ترميزها إلى ISO-8859-1. بمجرد الانتهاء من ذلك، يمكن ترميزها لعنوان URL. يتم استبدال جميع الأحرف غير الأبجدية بـ %xx، حيث xx هي القيمة السداسية العشرية للحرف. يتم استبدال المسافات بعلامة +.</span>
+  <li><span style="color: #000000">السطر 18: ترميز المعلمات الثلاث. نحن نعمل في برنامج نصي مكتوب في <bdi dir="ltr" class="odt-ltr-term">NetBeans</bdi> باستخدام ترميز الأحرف <bdi dir="ltr" class="odt-ltr-term">UTF-8.</bdi> ولذلك، فإن قيم المعلمات الثلاث الواردة في السطر 8 مرمزة بتنسيق <bdi dir="ltr" class="odt-ltr-term">UTF-8.</bdi> تقوم الدالة <bdi dir="ltr" class="odt-ltr-term">utf8_decode</bdi> بتحويل ترميزها إلى <bdi dir="ltr" class="odt-ltr-term">ISO-8859-1.</bdi> بمجرد الانتهاء من ذلك، يمكن ترميزها لعنوان <bdi dir="ltr" class="odt-ltr-term">URL.</bdi> يتم استبدال جميع الأحرف غير الأبجدية بـ %xx، حيث xx هي القيمة السداسية العشرية للحرف. يتم استبدال المسافات بعلامة +.</span>
   </li>
-  <li><span style="color: #000000">السطر 24: عنوان URL المطلوب هو </span><b><span style="color: #000000">$URL?$infos، </span></b><span style="color: #000000">حيث يكون</span><i><span style="color: #000000"> $infos </span></i><span style="color: #000000">بالصيغة </span><i><span style="color: #000000">last_name=val1&amp;first_name=val2&amp;age=val3</span></i><span style="color: #000000">.</span>
+  <li><span style="color: #000000">السطر 24: عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> المطلوب هو </span><b><span style="color: #000000">$<bdi dir="ltr" class="odt-ltr-term">URL</bdi>?$<bdi dir="ltr" class="odt-ltr-term">infos</bdi>، </span></b><span style="color: #000000">حيث يكون</span><i><span style="color: #000000"> $<bdi dir="ltr" class="odt-ltr-term">infos</bdi> </span></i><span style="color: #000000">بالصيغة </span><i><span style="color: #000000"><bdi dir="ltr" class="odt-ltr-term">last_name</bdi>=<bdi dir="ltr" class="odt-ltr-term">val1</bdi>&amp;<bdi dir="ltr" class="odt-ltr-term">first_name</bdi>=<bdi dir="ltr" class="odt-ltr-term">val2</bdi>&amp;age=<bdi dir="ltr" class="odt-ltr-term">val3</bdi></span></i><span style="color: #000000">.</span>
   </li>
 </ul>
 <p><a id="refheading399561881943603"></a></p>
@@ -1468,39 +1470,39 @@
 
 <p><strong>تعليقات</strong></p>
 <ul>
-  <li>السطر 13: يحدد رأس HTTP &quot;Content-Type&quot;. بشكل افتراضي، يرسل خادم الويب الرأس
+  <li>السطر 13: يحدد رأس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> &quot;<bdi dir="ltr" class="odt-ltr-term">Content-Type</bdi>&quot;. بشكل افتراضي، يرسل خادم الويب الرأس
   </li>
 </ul>
 
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Content-Type: text/html
 </code></pre></div>
-<p>، مما يشير إلى أن الاستجابة عبارة عن نص بتنسيق HTML. هنا، ستكون الاستجابة نصًا غير منسق مع أحرف مشفرة بـ UTF-8:</p>
+<p>، مما يشير إلى أن الاستجابة عبارة عن نص بتنسيق <bdi dir="ltr" class="odt-ltr-term">HTML.</bdi> هنا، ستكون الاستجابة نصًا غير منسق مع أحرف مشفرة بـ <bdi dir="ltr" class="odt-ltr-term">UTF-8:</bdi></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>Content-Type: text/plain; charset=utf-8
 </code></pre></div>
-<p>يجب إرسال رؤوس HTTP قبل استجابة الخادم. لذلك، في الكود أعلاه، يجب أن يأتي استدعاء دالة <em>الرأس</em> قبل أي عبارات <em>طباعة</em>.</p>
+<p>يجب إرسال رؤوس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> قبل استجابة الخادم. لذلك، في الكود أعلاه، يجب أن يأتي استدعاء دالة <em>الرأس</em> قبل أي عبارات <em>طباعة</em>.</p>
 <ul>
   <li>الأسطر 16–18: نسترد المعلمات الثلاثة من المصفوفة $_GET.
   </li>
-  <li>السطر 21: نقوم بإنشاء السلسلة التي سيتم إرسالها كاستجابة للعميل. تحمل بعض الأحرف معاني خاصة في HTML ويجب استبدالها بكيانات HTML حتى يتم عرضها. تقوم<b> الدالة htmlspecialchars($string) </b>باستبدال كل هذه الأحرف بمكافئاتها في السلسلة <i>$string</i>. على سبيل المثال، يتحول الحرف $ إلى &amp;amp. ثم، بما أننا حددنا في السطر 13 أن الرد سيكون نصًا بتنسيق UTF-8، نقوم بترميز القيم المسترجعة بتنسيق UTF-8.
+  <li>السطر 21: نقوم بإنشاء السلسلة التي سيتم إرسالها كاستجابة للعميل. تحمل بعض الأحرف معاني خاصة في <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> ويجب استبدالها بكيانات <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> حتى يتم عرضها. تقوم<b> الدالة <bdi dir="ltr" class="odt-ltr-term">htmlspecialchars</bdi>($<bdi dir="ltr" class="odt-ltr-term">string</bdi>) </b>باستبدال كل هذه الأحرف بمكافئاتها في السلسلة <i>$<bdi dir="ltr" class="odt-ltr-term">string</bdi></i>. على سبيل المثال، يتحول الحرف $ إلى &amp;<bdi dir="ltr" class="odt-ltr-term">amp.</bdi> ثم، بما أننا حددنا في السطر 13 أن الرد سيكون نصًا بتنسيق <bdi dir="ltr" class="odt-ltr-term">UTF-8</bdi>، نقوم بترميز القيم المسترجعة بتنسيق <bdi dir="ltr" class="odt-ltr-term">UTF-8.</bdi>
   </li>
   <li>السطر 25: يتم إرسال الرد إلى العميل
   </li>
 </ul>
 
 <p><strong><a id="refheading399581881943603"></a>اختبار 1</strong></p>
-<p>دعونا نقوم بتشغيل البرنامج النصي [web_02] من NetBeans. سيتم بعد ذلك فتح متصفح لعرض عنوان URL [http://localhost/exemples-web/web_02.php]:</p>
+<p>دعونا نقوم بتشغيل البرنامج النصي [web_02] من <bdi dir="ltr" class="odt-ltr-term">NetBeans.</bdi> سيتم بعد ذلك فتح متصفح لعرض عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [<bdi dir="ltr" class="odt-ltr-term">http://localhost/exemples-web/web</bdi>_02.php]:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000064E000000E4FBCE101C.png" width="680" height="96" style="display:inline-block; margin:4px;width:17.997cm;height:2.542cm;" class="odt-zoomable" data-zoom-src="images/100000000000064E000000E4FBCE101C.png" /></td></tr></table>
 
 <ul>
-  <li>في [1]، يعرض المتصفح عنوان URL [http://localhost/exemples-web/web_02.php]. ونظرًا لأننا لم نضف معلمات إلى عنوان URL هذا، فقد استجاب الخادم بمعلمات فارغة. تذكر أن استجابة الخادم هي تلك المكتوبة باستخدام عبارة <i>print</i>.
+  <li>في [1]، يعرض المتصفح عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [<bdi dir="ltr" class="odt-ltr-term">http://localhost/exemples-web/web_02.php</bdi>]. ونظرًا لأننا لم نضف معلمات إلى عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> هذا، فقد استجاب الخادم بمعلمات فارغة. تذكر أن استجابة الخادم هي تلك المكتوبة باستخدام عبارة <i><bdi dir="ltr" class="odt-ltr-term">print</bdi></i>.
   </li>
-  <li>في [2]، نضيف معلمات إلى عنوان URL. هذه المرة، يعرضها البرنامج النصي للخادم بشكل صحيح.
+  <li>في [2]، نضيف معلمات إلى عنوان <bdi dir="ltr" class="odt-ltr-term">URL.</bdi> هذه المرة، يعرضها البرنامج النصي للخادم بشكل صحيح.
   </li>
 </ul>
 
-<p>لاحظ أن NetBeans ليس مطلوبًا لتشغيل نص برمجي للخادم. ما عليك سوى إدخال عنوان URL الخاص بالنص البرمجي للخادم في متصفح لتنفيذه.</p>
+<p>لاحظ أن <bdi dir="ltr" class="odt-ltr-term">NetBeans</bdi> ليس مطلوبًا لتشغيل نص برمجي للخادم. ما عليك سوى إدخال عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> الخاص بالنص البرمجي للخادم في متصفح لتنفيذه.</p>
 <p><strong>الاختبار 2</strong></p>
-<p>نقوم بتشغيل العميل [client1_web_02.php] في NetBeans. نتلقى الاستجابة التالية:</p>
+<p>نقوم بتشغيل العميل [<bdi dir="ltr" class="odt-ltr-term">client1</bdi>_web_02.php] في <bdi dir="ltr" class="odt-ltr-term">NetBeans.</bdi> نتلقى الاستجابة التالية:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-8-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-8-3"> 3</a></span>
@@ -1526,27 +1528,27 @@
 <a id="__codelineno-8-12" name="__codelineno-8-12"></a>informations reçues du client [jean-paul,de la hûche,45]
 </code></pre></div></td></tr></table></div>
 <ul>
-  <li>السطر 1: ترميز المعلمات الثلاثة. يمكننا ملاحظة أن الحرف û قد أصبح %FB.
+  <li>السطر 1: ترميز المعلمات الثلاثة. يمكننا ملاحظة أن الحرف <bdi dir="ltr" class="odt-ltr-term">û</bdi> قد أصبح %<bdi dir="ltr" class="odt-ltr-term">FB.</bdi>
   </li>
   <li>السطر 12: استجابة الخادم
   </li>
 </ul>
 
 <p><a id="refheading399601881943603"></a></p>
-<h3 id="1023-post-client2_web_03">10.2.3. <span style="color: #4f81bd"><strong><span style="color: #4f81bd">عميل POST (client2_web_03)</span></strong></span></h3>
-<p>يرسل عميل HTTP التسلسل النصي التالي إلى خادم الويب: <em>رؤوس HTTP، سطر فارغ، مستند</em>. في العميل السابق، كان هذا التسلسل كما يلي: </p>
+<h3 id="1023-post-client2_web_03">10.2.3. <span style="color: #4f81bd"><strong><span style="color: #4f81bd">عميل <bdi dir="ltr" class="odt-ltr-term">POST</bdi> (<bdi dir="ltr" class="odt-ltr-term">client2</bdi>_web_03)</span></strong></span></h3>
+<p>يرسل عميل <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> التسلسل النصي التالي إلى خادم الويب: <em>رؤوس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi>، سطر فارغ، مستند</em>. في العميل السابق، كان هذا التسلسل كما يلي: </p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>GET /url?paramètres HTTP/1.1
 <a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>… autres entêtes HTTP
 <a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>ligne vide
 </code></pre></div>
-<p>لم يكن هناك مستند. وهناك طريقة أخرى لإرسال المعلمات، تُعرف باسم طريقة POST. وفي هذه الحالة، يكون تسلسل النص المرسَل إلى خادم الويب كما يلي:</p>
+<p>لم يكن هناك مستند. وهناك طريقة أخرى لإرسال المعلمات، تُعرف باسم طريقة <bdi dir="ltr" class="odt-ltr-term">POST.</bdi> وفي هذه الحالة، يكون تسلسل النص المرسَل إلى خادم الويب كما يلي:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>POST /url HTTP/1.1
 <a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>… autres entêtes HTTP
 <a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>ligne vide
 <a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>paramètres
 </code></pre></div>
-<p>هذه المرة، المعلمات التي تم تضمينها في رؤوس HTTP لعميل GET هي جزء من المستند المرسل بعد الرؤوس في عميل POST.</p>
-<p>نص برمجة عميل POST هو كما يلي:</p>
+<p>هذه المرة، المعلمات التي تم تضمينها في رؤوس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> لعميل <bdi dir="ltr" class="odt-ltr-term">GET</bdi> هي جزء من المستند المرسل بعد الرؤوس في عميل <bdi dir="ltr" class="odt-ltr-term">POST.</bdi></p>
+<p>نص برمجة عميل <bdi dir="ltr" class="odt-ltr-term">POST</bdi> هو كما يلي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -1595,7 +1597,7 @@
 
 <p><strong>تعليقات</strong></p>
 <ul>
-  <li>السطر 7: عنوان URL لخدمة الويب التي سيتصل بها عميل POST. سيتم وصف هذه الخدمة قريبًا.
+  <li>السطر 7: عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> لخدمة الويب التي سيتصل بها عميل <bdi dir="ltr" class="odt-ltr-term">POST.</bdi> سيتم وصف هذه الخدمة قريبًا.
   </li>
   <li>السطر 8: المعلمات التي سيتم إرسالها إلى خدمة الويب
   </li>
@@ -1603,26 +1605,26 @@
   </li>
   <li>السطر 18: ترميز المعلمات التي سيتم إرسالها إلى خدمة الويب
   </li>
-  <li>السطر 23: أمر HTTP POST
+  <li>السطر 23: أمر <bdi dir="ltr" class="odt-ltr-term">HTTP POST</bdi>
   </li>
-  <li>السطر 25: أمر HTTP Host
+  <li>السطر 25: أمر <bdi dir="ltr" class="odt-ltr-term">HTTP Host</bdi>
   </li>
-  <li>السطر 27: رأس HTTP Connection
+  <li>السطر 27: رأس <bdi dir="ltr" class="odt-ltr-term">HTTP Connection</bdi>
   </li>
-  <li>السطر 29: رأس HTTP <b>Content-Type</b>. لقد صادفنا هذا الرأس HTTP من قبل. وهو موجود في كل مرة يتم فيها إرسال مستند. يستخدم خادم الويب الذي يرسل مستند HTML HTTP
+  <li>السطر 29: رأس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> <b><bdi dir="ltr" class="odt-ltr-term">Content-Type</bdi></b>. لقد صادفنا هذا الرأس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> من قبل. وهو موجود في كل مرة يتم فيها إرسال مستند. يستخدم خادم الويب الذي يرسل مستند <bdi dir="ltr" class="odt-ltr-term">HTML HTTP</bdi>
   </li>
 </ul>
 
 <div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>Content-type : text/html
 </code></pre></div>
-<p>وإذا أرسل نصًا غير منسق، فإنه يستخدم رأس HTTP</p>
+<p>وإذا أرسل نصًا غير منسق، فإنه يستخدم رأس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>Content-type : text/plain
 </code></pre></div>
-<p>يرسل عميل POST الخاص بنا مستندًا نصيًّا على شكل param1=val1&amp;param2=val2&amp;.... ويكون نوع هذا المستند هو <strong>application/x-www-form-urlencoded</strong>. ولن نشرح السبب، لأن ذلك سيتطلب منا شرح ماهية نموذج الويب.</p>
+<p>يرسل عميل <bdi dir="ltr" class="odt-ltr-term">POST</bdi> الخاص بنا مستندًا نصيًّا على شكل <bdi dir="ltr" class="odt-ltr-term">param1</bdi>=<bdi dir="ltr" class="odt-ltr-term">val1</bdi>&amp;<bdi dir="ltr" class="odt-ltr-term">param2</bdi>=<bdi dir="ltr" class="odt-ltr-term">val2</bdi>&amp;.... ويكون نوع هذا المستند هو <strong><bdi dir="ltr" class="odt-ltr-term">application/x-www-form-urlencoded</bdi></strong>. ولن نشرح السبب، لأن ذلك سيتطلب منا شرح ماهية نموذج الويب.</p>
 <ul>
-  <li>السطر 32: توجيه <b>Content-length</b>. لقد صادفنا هذا الرأس HTTP من قبل. وهو موجود في كل مرة يتم فيها إرسال مستند. ويشير إلى عدد البايتات في المستند.
+  <li>السطر 32: توجيه <b><bdi dir="ltr" class="odt-ltr-term">Content-length</bdi></b>. لقد صادفنا هذا الرأس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> من قبل. وهو موجود في كل مرة يتم فيها إرسال مستند. ويشير إلى عدد البايتات في المستند.
   </li>
-  <li>السطر 34: السطر الفارغ الذي يشير إلى نهاية رؤوس HTTP
+  <li>السطر 34: السطر الفارغ الذي يشير إلى نهاية رؤوس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi>
   </li>
   <li>السطر 36: إرسال المعلمات
   </li>
@@ -1633,7 +1635,7 @@
 </ul>
 
 <h3 id="1024-web_03">10.2.4. <span style="color: #4f81bd">الخادم (web_03)</span></h3>
-<p>تقوم خدمة الويب [web_03] بنفس ما تقوم به خدمة الويب [web_02]. فهي تقرأ المعلمات المرسلة من قبل عميل POST وترسلها مرة أخرى إلى العميل. وفيما يلي شفرة البرمجة الخاصة بها:</p>
+<p>تقوم خدمة الويب [web_03] بنفس ما تقوم به خدمة الويب [web_02]. فهي تقرأ المعلمات المرسلة من قبل عميل <bdi dir="ltr" class="odt-ltr-term">POST</bdi> وترسلها مرة أخرى إلى العميل. وفيما يلي شفرة البرمجة الخاصة بها:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -1661,14 +1663,14 @@
 
 <p><strong>تعليقات</strong></p>
 <ul>
-  <li>الأسطر 14–16: تصبح المعلمات المرسلة من قبل عميل POST متاحة في المصفوفة $_POST لخدمة الويب التي تستقبلها.
+  <li>الأسطر 14–16: تصبح المعلمات المرسلة من قبل عميل <bdi dir="ltr" class="odt-ltr-term">POST</bdi> متاحة في المصفوفة $_POST لخدمة الويب التي تستقبلها.
   </li>
-  <li>السطر 6: رأس HTTP <i>Content-Type</i>. قد تتفاجأ بعدم وجود رأس HTTP <i>Content-Length </i>في رؤوس HTTP، والذي يشير إلى حجم المستند الذي يتم إرساله إلى العميل. لقد رأينا أن خادم الويب يرسل رؤوس HTTP بشكل افتراضي. رأس <i>Content-Length </i>هو أحدها.
+  <li>السطر 6: رأس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> <i><bdi dir="ltr" class="odt-ltr-term">Content-Type</bdi></i>. قد تتفاجأ بعدم وجود رأس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> <i><bdi dir="ltr" class="odt-ltr-term">Content-Length</bdi> </i>في رؤوس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi>، والذي يشير إلى حجم المستند الذي يتم إرساله إلى العميل. لقد رأينا أن خادم الويب يرسل رؤوس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> بشكل افتراضي. رأس <i><bdi dir="ltr" class="odt-ltr-term">Content-Length</bdi> </i>هو أحدها.
   </li>
 </ul>
 
 <p><strong><a id="refheading399621881943603"></a>النتائج</strong></p>
-<p>بمجرد كتابة البرنامج النصي للخادم في NetBeans، يصبح متاحًا على الفور عبر خادم WampServer Apache. تذكر أن هذا يتم تحقيقه من خلال التكوين (انظر الفقرة<a href="#confnetbeansphpweb"><u><span style="color: #0563c1"> 10</span></u></a>). نقوم بتشغيل العميل، الذي يستعلم الخادم، ثم نتلقى الاستجابة التالية:</p>
+<p>بمجرد كتابة البرنامج النصي للخادم في <bdi dir="ltr" class="odt-ltr-term">NetBeans</bdi>، يصبح متاحًا على الفور عبر خادم <bdi dir="ltr" class="odt-ltr-term">WampServer Apache.</bdi> تذكر أن هذا يتم تحقيقه من خلال التكوين (انظر الفقرة<a href="#confnetbeansphpweb"><u><span style="color: #0563c1"> 10</span></u></a>). نقوم بتشغيل العميل، الذي يستعلم الخادم، ثم نتلقى الاستجابة التالية:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-13-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-13-3"> 3</a></span>
@@ -1692,11 +1694,11 @@
 <ul>
   <li>السطور 2-10: استجابة الخادم
   </li>
-  <li>الأسطر 2-8: رؤوس HTTP
+  <li>الأسطر 2-8: رؤوس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi>
   </li>
   <li>السطر 10: المستند
   </li>
-  <li>السطر 6: رأس HTTP <i>Content-Length</i>. نظرًا لأن هذا الرأس لم يتم إنشاؤه بواسطة البرنامج النصي للخادم، فقد تم إنشاؤه بواسطة خادم الويب.
+  <li>السطر 6: رأس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> <i><bdi dir="ltr" class="odt-ltr-term">Content-Length</bdi></i>. نظرًا لأن هذا الرأس لم يتم إنشاؤه بواسطة البرنامج النصي للخادم، فقد تم إنشاؤه بواسطة خادم الويب.
   </li>
   <li>السطر 8: الرأس الوحيد الذي تم إنشاؤه بواسطة البرنامج النصي للخادم
   </li>
@@ -1727,23 +1729,23 @@
 
 <p>والنتيجة التي يتم الحصول عليها عندما يكون العميل متصفح ويب هي كما يلي:</p>
 <p><img src="images/1000000000000282000001F8E6F77871.png" width="449" height="353" style="width:11.89cm;height:9.335cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000282000001F8E6F77871.png" /></p>
-<p>فيما يلي معنى بعض المتغيرات (لنظام Windows. في نظام Linux، ستكون مختلفة):</p>
+<p>فيما يلي معنى بعض المتغيرات (لنظام <bdi dir="ltr" class="odt-ltr-term">Windows.</bdi> في نظام <bdi dir="ltr" class="odt-ltr-term">Linux</bdi>، ستكون مختلفة):</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>HTTP_CMDE
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">يمثل CMDE رأس HTTP الذي يرسله العميل. لدينا إمكانية الوصول إلى جميع هذه الرؤوس.</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">يمثل <bdi dir="ltr" class="odt-ltr-term">CMDE</bdi> رأس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> الذي يرسله العميل. لدينا إمكانية الوصول إلى جميع هذه الرؤوس.</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>PATH
 </code></pre></div>
 </div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">مسار الملفات القابلة للتنفيذ على الجهاز الذي يعمل عليه البرنامج النصي للخادم</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>COMSPEC
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">مسار مترجم أوامر DOS</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">مسار مترجم أوامر <bdi dir="ltr" class="odt-ltr-term">DOS</bdi></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>PATHEXT
 </code></pre></div>
 </div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">امتدادات الملفات القابلة للتنفيذ</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>WINDIR
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">مجلد تثبيت Windows</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">مجلد تثبيت <bdi dir="ltr" class="odt-ltr-term">Windows</bdi></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>SERVER_SIGNATURE
 </code></pre></div>
 </div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">توقيع خادم الويب. لا يوجد شيء هنا.</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
@@ -1758,10 +1760,10 @@
 </div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">منفذ الاستماع لخادم الويب</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>SERVER_ADDR
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">عنوان IP لجهاز خادم الويب</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">عنوان <bdi dir="ltr" class="odt-ltr-term">IP</bdi> لجهاز خادم الويب</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>REMOTE_ADDR
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">عنوان IP الخاص بالعميل. في هذه الحالة، كان العميل على نفس الجهاز الذي يوجد عليه الخادم.</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">عنوان <bdi dir="ltr" class="odt-ltr-term">IP</bdi> الخاص بالعميل. في هذه الحالة، كان العميل على نفس الجهاز الذي يوجد عليه الخادم.</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>REMOTE_PORT
 </code></pre></div>
 </div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">منفذ اتصال العميل</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
@@ -1776,22 +1778,22 @@
 </div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">المسار الكامل لبرنامج الخادم النصي</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>SERVER_PROTOCOL
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">إصدار بروتوكول HTTP المستخدم من قبل خادم الويب</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">إصدار بروتوكول <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> المستخدم من قبل خادم الويب</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>طريقة الطلب
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">طريقة HTTP التي يستخدمها العميل. هناك أربع طرق: GET، POST، PUT، DELETE</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">طريقة <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> التي يستخدمها العميل. هناك أربع طرق: <bdi dir="ltr" class="odt-ltr-term">GET</bdi>، <bdi dir="ltr" class="odt-ltr-term">POST</bdi>، <bdi dir="ltr" class="odt-ltr-term">PUT</bdi>، <bdi dir="ltr" class="odt-ltr-term">DELETE</bdi></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>QUERY_STRING
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">المعلمات المرسلة مع طلب GET /url?parameters</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">المعلمات المرسلة مع طلب <bdi dir="ltr" class="odt-ltr-term">GET</bdi> /url?<bdi dir="ltr" class="odt-ltr-term">parameters</bdi></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>REQUEST_URI
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">عنوان URL الذي طلبه العميل. إذا طلب المتصفح عنوان URL http://machine[:port]/uri، فسيكون REQUEST_URI هو uri</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> الذي طلبه العميل. إذا طلب المتصفح عنوان <bdi dir="ltr" class="odt-ltr-term">URL http://machine</bdi>[:<bdi dir="ltr" class="odt-ltr-term">port</bdi>]/uri، فسيكون <bdi dir="ltr" class="odt-ltr-term">REQUEST_URI</bdi> هو uri</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>SCRIPT_NAME
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">$_SERVER[&#x27;SCRIPT_FILENAME&#x27;] = $_SERVER[&#x27;DOCUMENT_ROOT&#x27;] . $_SERVER[&#x27;SCRIPT_NAME&#x27;]</div></td></tr></table>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">$_SERVER[&#x27;<bdi dir="ltr" class="odt-ltr-term">SCRIPT_FILENAME</bdi>&#x27;] = $_SERVER[&#x27;<bdi dir="ltr" class="odt-ltr-term">DOCUMENT_ROOT</bdi>&#x27;] . $_SERVER[&#x27;<bdi dir="ltr" class="odt-ltr-term">SCRIPT_NAME</bdi>&#x27;]</div></td></tr></table>
 
 <p><a id="refheading399681881943603"></a></p>
-<h3 id="1032-client1_web_04">10.3.2. <span style="color: #4f81bd">العميل (client1_web_04)</span></h3>
+<h3 id="1032-client1_web_04">10.3.2. <span style="color: #4f81bd">العميل (<bdi dir="ltr" class="odt-ltr-term">client1</bdi>_web_04)</span></h3>
 <p>يعرض العميل ببساطة كل ما يرسله إليه الخادم.</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
@@ -1903,7 +1905,7 @@
 <ul>
   <li>يفتح العميل اتصالاً بالمنفذ 80 على خادم الويب
   </li>
-  <li>يرسل تسلسل النص: رؤوس HTTP، سطر فارغ، [المستند]
+  <li>يرسل تسلسل النص: رؤوس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi>، سطر فارغ، [المستند]
   </li>
   <li>رداً على ذلك، يرسل الخادم تسلسلاً من نفس النوع
   </li>
@@ -1913,21 +1915,21 @@
   </li>
 </ul>
 
-<p>إذا أرسل نفس العميل طلبًا جديدًا إلى خادم الويب بعد ذلك بوقت قصير، يتم إنشاء اتصال جديد بين العميل والخادم. لا يمكن للخادم معرفة ما إذا كان العميل المتصل قد زار الموقع من قبل أم أن هذا هو الطلب الأول. بين الاتصالات، &quot;ينسى&quot; الخادم عميله. لهذا السبب، يُقال إن بروتوكول HTTP هو بروتوكول عديم الحالة. ومع ذلك، من المفيد أن يتذكر الخادم عملائه. على سبيل المثال، إذا كان التطبيق آمنًا، سيرسل العميل إلى الخادم اسم مستخدم وكلمة مرور لتوثيق هويته. إذا &quot;نسي&quot; الخادم عميله بين الاتصالات، فسيضطر العميل إلى توثيق هويته مع كل اتصال جديد، وهو أمر غير ممكن.</p>
+<p>إذا أرسل نفس العميل طلبًا جديدًا إلى خادم الويب بعد ذلك بوقت قصير، يتم إنشاء اتصال جديد بين العميل والخادم. لا يمكن للخادم معرفة ما إذا كان العميل المتصل قد زار الموقع من قبل أم أن هذا هو الطلب الأول. بين الاتصالات، &quot;ينسى&quot; الخادم عميله. لهذا السبب، يُقال إن بروتوكول <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> هو بروتوكول عديم الحالة. ومع ذلك، من المفيد أن يتذكر الخادم عملائه. على سبيل المثال، إذا كان التطبيق آمنًا، سيرسل العميل إلى الخادم اسم مستخدم وكلمة مرور لتوثيق هويته. إذا &quot;نسي&quot; الخادم عميله بين الاتصالات، فسيضطر العميل إلى توثيق هويته مع كل اتصال جديد، وهو أمر غير ممكن.</p>
 <p>لتتبع العميل، يتصرف الخادم على النحو التالي: عندما يقوم العميل بإرسال طلب أولي، يضم الخادم معرفًا في استجابته، والذي يجب على العميل إرساله مرة أخرى مع كل طلب لاحق. باستخدام هذا المعرف — الذي يكون فريدًا لكل عميل — يمكن للخادم التعرف على العميل. يمكنه بعد ذلك الاحتفاظ بسجل لهذا العميل في شكل ملف مرتبط بشكل فريد بمعرف العميل.</p>
 <p>من الناحية الفنية، هذه هي طريقة عملها:</p>
 <ul>
-  <li>في الرد على عميل جديد، يضم الخادم رأس HTTP <i>Set-Cookie: Key=Identifier</i>. ويقوم بذلك فقط في الطلب الأول.
+  <li>في الرد على عميل جديد، يضم الخادم رأس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> <i><bdi dir="ltr" class="odt-ltr-term">Set-Cookie: Key</bdi>=<bdi dir="ltr" class="odt-ltr-term">Identifier</bdi></i>. ويقوم بذلك فقط في الطلب الأول.
   </li>
-  <li>في الطلبات اللاحقة، سيرسل العميل معرفه عبر رأس <i>ملف تعريف الارتباط</i> HTTP<i>: Key=Identifier </i>حتى يتمكن الخادم من التعرف عليه.
+  <li>في الطلبات اللاحقة، سيرسل العميل معرفه عبر رأس <i>ملف تعريف الارتباط</i> <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi><i>: <bdi dir="ltr" class="odt-ltr-term">Key</bdi>=<bdi dir="ltr" class="odt-ltr-term">Identifier</bdi> </i>حتى يتمكن الخادم من التعرف عليه.
   </li>
 </ul>
 
-<p>قد يتساءل المرء كيف يعرف الخادم أنه يتعامل مع عميل جديد وليس عميلاً عائداً. إن وجود رأس HTTP <em>Cookie</em> في رؤوس HTTP الخاصة بالعميل هو ما يخبره بذلك. بالنسبة للعميل الجديد، يكون هذا الرأس غائباً.</p>
+<p>قد يتساءل المرء كيف يعرف الخادم أنه يتعامل مع عميل جديد وليس عميلاً عائداً. إن وجود رأس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> <em><bdi dir="ltr" class="odt-ltr-term">Cookie</bdi></em> في رؤوس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> الخاصة بالعميل هو ما يخبره بذلك. بالنسبة للعميل الجديد، يكون هذا الرأس غائباً.</p>
 <p>تسمى مجموعة الاتصالات من عميل معين بجلسة عمل.</p>
 <p><a id="refheading399741881943603"></a></p>
 <h3 id="1041">10.4.1. <span style="color: #4f81bd">ملف التكوين</span></h3>
-<p>لكي تعمل إدارة الجلسات بشكل صحيح مع PHP، يجب عليك التحقق من أنها مكونة بشكل صحيح. في نظام Windows، ملف التكوين الخاص بها هو <em>PHP.ini</em>. اعتمادًا على سياق التنفيذ (وحدة التحكم، الويب)، يجب أن يكون ملف التكوين [PHP.ini] موجودًا في دلائل مختلفة. للعثور عليها، استخدم البرنامج النصي التالي:</p>
+<p>لكي تعمل إدارة الجلسات بشكل صحيح مع <bdi dir="ltr" class="odt-ltr-term">PHP</bdi>، يجب عليك التحقق من أنها مكونة بشكل صحيح. في نظام <bdi dir="ltr" class="odt-ltr-term">Windows</bdi>، ملف التكوين الخاص بها هو <em><bdi dir="ltr" class="odt-ltr-term">PHP.ini</bdi></em>. اعتمادًا على سياق التنفيذ (وحدة التحكم، الويب)، يجب أن يكون ملف التكوين [<bdi dir="ltr" class="odt-ltr-term">PHP.ini</bdi>] موجودًا في دلائل مختلفة. للعثور عليها، استخدم البرنامج النصي التالي:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-35-1">1</a></span>
 <span class="normal"><a href="#__codelineno-35-2">2</a></span>
 <span class="normal"><a href="#__codelineno-35-3">3</a></span>
@@ -1936,7 +1938,7 @@
 <a id="__codelineno-35-3" name="__codelineno-35-3"></a><span class="c1">// infos PHP</span>
 <a id="__codelineno-35-4" name="__codelineno-35-4"></a><span class="nb">phpinfo</span><span class="p">();</span>
 </code></pre></div></td></tr></table></div>
-<p>السطر 4: توفر الدالة <em>phpinfo()</em> معلومات حول مترجم PHP الذي يقوم بتنفيذ البرنامج النصي. وعلى وجه الخصوص، فإنها تُرجع المسار إلى ملف التكوين [PHP.ini] المستخدم.</p>
+<p>السطر 4: توفر الدالة <em><bdi dir="ltr" class="odt-ltr-term">phpinfo</bdi>()</em> معلومات حول مترجم <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> الذي يقوم بتنفيذ البرنامج النصي. وعلى وجه الخصوص، فإنها تُرجع المسار إلى ملف التكوين [<bdi dir="ltr" class="odt-ltr-term">PHP.ini</bdi>] المستخدم.</p>
 <p>في بيئة وحدة التحكم، ستحصل على نتيجة مشابهة لما يلي:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-36-1">1</a></span>
 <span class="normal"><a href="#__codelineno-36-2">2</a></span>
@@ -1950,8 +1952,8 @@
 <a id="__codelineno-36-5" name="__codelineno-36-5"></a>Additional .ini files parsed =&gt; (none)
 <a id="__codelineno-36-6" name="__codelineno-36-6"></a>…
 </code></pre></div></td></tr></table></div>
-<p>السطر 2: ملف التكوين الرئيسي هو <em>c:\windows\PHP.ini</em></p>
-<p>السطر 3: ملف التكوين الثانوي هو <em>C:\DBServers\wamp21\bin\PHP\php5.3.5\PHP.ini</em>. وهو يسمح لك بتعديل خيارات تكوين معينة في ملف التكوين الرئيسي.</p>
+<p>السطر 2: ملف التكوين الرئيسي هو <em><bdi dir="ltr" class="odt-ltr-term">c:</bdi>\<bdi dir="ltr" class="odt-ltr-term">windows</bdi>\<bdi dir="ltr" class="odt-ltr-term">PHP.ini</bdi></em></p>
+<p>السطر 3: ملف التكوين الثانوي هو <em><bdi dir="ltr" class="odt-ltr-term">C:</bdi>\<bdi dir="ltr" class="odt-ltr-term">DBServers</bdi>\<bdi dir="ltr" class="odt-ltr-term">wamp21</bdi>\bin\<bdi dir="ltr" class="odt-ltr-term">PHP</bdi>\<bdi dir="ltr" class="odt-ltr-term">php5.3.5</bdi>\<bdi dir="ltr" class="odt-ltr-term">PHP.ini</bdi></em>. وهو يسمح لك بتعديل خيارات تكوين معينة في ملف التكوين الرئيسي.</p>
 <p>في بيئة الويب، يتم الحصول على النتيجة التالية:</p>
 <p><img src="images/100000000000031700000110014C8B41.png" width="554" height="190" style="width:14.651cm;height:5.038cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000031700000110014C8B41.png" /></p>
 <p>ملف التكوين الثانوي هنا يختلف عن ملف التكوين الثانوي في بيئة وحدة التحكم. وسنقوم بفحص هذا الأخير. في هذا الملف، يوجد قسم <strong>خاص بالجلسة</strong>: </p>
@@ -1986,16 +1988,16 @@
   </li>
   <li>السطر 3: الدليل الذي يتم حفظ بيانات الجلسة فيه. إذا لم يكن هذا الدليل موجودًا، فلن يتم الإبلاغ عن أي خطأ ولن تعمل إدارة الجلسة.
   </li>
-  <li>السطران 4-5: يشيران إلى أن معرف الجلسة يُدار بواسطة رؤوس HTTP <i>Set-Cookie </i>و <i>Cookie</i>
+  <li>السطران 4-5: يشيران إلى أن معرف الجلسة يُدار بواسطة رؤوس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> <i><bdi dir="ltr" class="odt-ltr-term">Set-Cookie</bdi> </i>و <i><bdi dir="ltr" class="odt-ltr-term">Cookie</bdi></i>
   </li>
-  <li>السطر 6: سيكون رأس <i>Set-Cookie </i>بالصيغة <i>Set-Cookie: PHPSESSID=session_id</i>
+  <li>السطر 6: سيكون رأس <i><bdi dir="ltr" class="odt-ltr-term">Set-Cookie</bdi> </i>بالصيغة <i><bdi dir="ltr" class="odt-ltr-term">Set-Cookie: PHPSESSID</bdi>=<bdi dir="ltr" class="odt-ltr-term">session_id</bdi></i>
   </li>
-  <li>السطر 7: لا يتم بدء جلسة عمل العميل تلقائيًا. يجب أن يطلبها البرنامج النصي للخادم صراحةً باستخدام الدالة <i>session_start()</i>.
+  <li>السطر 7: لا يتم بدء جلسة عمل العميل تلقائيًا. يجب أن يطلبها البرنامج النصي للخادم صراحةً باستخدام الدالة <i><bdi dir="ltr" class="odt-ltr-term">session_start</bdi>()</i>.
   </li>
 </ul>
 <p><a id="refheading399761881943603"></a></p>
 <h3 id="1042-1-web_05">10.4.2. <span style="color: #4f81bd">الخادم 1 (web_05)</span></h3>
-<p>تكون إدارة معرف الجلسة شفافة بالنسبة لخدمة الويب. يتم إدارة هذا المعرف بواسطة خادم الويب. تصل خدمة الويب إلى جلسة العميل عبر الدالة <em>session_start()</em>. ومن تلك النقطة فصاعدًا، يمكن لخدمة الويب القراءة من جلسة العميل والكتابة إليها عبر المصفوفة $_SESSION. يوضح الكود التالي إدارة الجلسة لثلاثة عدادات.</p>
+<p>تكون إدارة معرف الجلسة شفافة بالنسبة لخدمة الويب. يتم إدارة هذا المعرف بواسطة خادم الويب. تصل خدمة الويب إلى جلسة العميل عبر الدالة <em><bdi dir="ltr" class="odt-ltr-term">session</bdi>_start()</em>. ومن تلك النقطة فصاعدًا، يمكن لخدمة الويب القراءة من جلسة العميل والكتابة إليها عبر المصفوفة $_SESSION. يوضح الكود التالي إدارة الجلسة لثلاثة عدادات.</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -2033,7 +2035,7 @@
   </li>
   <li>الأسطر 11-13: المصفوفة $_SESSION هي قاموس مفتاح-قيمة. البيانات المخزنة في هذا القاموس تبقى عبر الطلبات من نفس العميل. وهي تعمل كذاكرة العميل على الخادم.
   </li>
-  <li>الأسطر 11-19: إذا لم تكن العدادات الثلاثة N1 و N2 و N3 موجودة في الجلسة، يتم إضافتها إليها.
+  <li>الأسطر 11-19: إذا لم تكن العدادات الثلاثة <bdi dir="ltr" class="odt-ltr-term">N1</bdi> و <bdi dir="ltr" class="odt-ltr-term">N2</bdi> و <bdi dir="ltr" class="odt-ltr-term">N3</bdi> موجودة في الجلسة، يتم إضافتها إليها.
   </li>
   <li>الأسطر 21–23: يتم زيادة قيمتها بمقدار واحد
   </li>
@@ -2054,33 +2056,33 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005720000011829CAC443.png" width="680" height="137" style="display:inline-block; margin:4px;width:17.997cm;height:3.614cm;" class="odt-zoomable" data-zoom-src="images/10000000000005720000011829CAC443.png" /></td></tr></table>
 
 <ul>
-  <li>في [1]، الطلب الأول إلى خدمة الويب [web_05]
+  <li>في [1]، الطلب الأول إلى خدمة الويب [<bdi dir="ltr" class="odt-ltr-term">web_05</bdi>]
   </li>
   <li>في [2]، يُظهر الطلب الثالث أن العدادات قد زادت بالفعل. يتم بالفعل تخزين قيم العدادات عبر الطلبات.
   </li>
 </ul>
 
-<p>دعونا نستخدم Firebug لعرض رؤوس HTTP المتبادلة بين الخادم والعميل. نغلق Firefox لإنهاء الجلسة الحالية مع الخادم، ثم نعيد فتحه، ونقوم بتفعيل Firebug. نطلب الخدمة [web_05]:</p>
+<p>دعونا نستخدم <bdi dir="ltr" class="odt-ltr-term">Firebug</bdi> لعرض رؤوس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> المتبادلة بين الخادم والعميل. نغلق <bdi dir="ltr" class="odt-ltr-term">Firefox</bdi> لإنهاء الجلسة الحالية مع الخادم، ثم نعيد فتحه، ونقوم بتفعيل <bdi dir="ltr" class="odt-ltr-term">Firebug.</bdi> نطلب الخدمة [web_05]:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003BF0000041C37AF4874.png" width="480" height="526" style="display:inline-block; margin:4px;width:12.688cm;height:13.919cm;" class="odt-zoomable" data-zoom-src="images/10000000000003BF0000041C37AF4874.png" /></td></tr></table>
 
-<p>في الأعلى، نرى معرف الجلسة الذي أرسله الخادم في رده على الطلب الأول للعميل. ويستخدم رأس HTTP <em>Set-Cookie</em>.</p>
-<p>لنقم بإرسال طلب جديد عن طريق تحديث (F5) الصفحة في متصفح الويب:</p>
+<p>في الأعلى، نرى معرف الجلسة الذي أرسله الخادم في رده على الطلب الأول للعميل. ويستخدم رأس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> <em><bdi dir="ltr" class="odt-ltr-term">Set-Cookie</bdi></em>.</p>
+<p>لنقم بإرسال طلب جديد عن طريق تحديث (<bdi dir="ltr" class="odt-ltr-term">F5</bdi>) الصفحة في متصفح الويب:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003AF00000350DC8301EB.png" width="472" height="424" style="display:inline-block; margin:4px;width:12.476cm;height:11.218cm;" class="odt-zoomable" data-zoom-src="images/10000000000003AF00000350DC8301EB.png" /></td></tr></table>
 
 <p>هنا، سنلاحظ أمرين:</p>
 <ul>
-  <li>يرسل متصفح الويب معرف الجلسة مرة أخرى مع رأس <i>ملف تعريف الارتباط</i> HTTP.
+  <li>يرسل متصفح الويب معرف الجلسة مرة أخرى مع رأس <i>ملف تعريف الارتباط</i> <bdi dir="ltr" class="odt-ltr-term">HTTP.</bdi>
   </li>
   <li>في ردها، لم تعد خدمة الويب تتضمن هذا المعرف. أصبح الآن من مسؤولية العميل إرساله مع كل طلب من طلباته.
   </li>
 </ul>
 <p><a id="refheading399781881943603"></a></p>
-<h3 id="1043-1-client1_web_05">10.4.3. <span style="color: #4f81bd">العميل 1 (client1_web_05)</span></h3>
+<h3 id="1043-1-client1_web_05">10.4.3. <span style="color: #4f81bd">العميل 1 (<bdi dir="ltr" class="odt-ltr-term">client1</bdi>_web_05)</span></h3>
 <p>سنقوم الآن بكتابة برنامج نصي من جانب العميل استنادًا إلى البرنامج النصي السابق من جانب الخادم. في إدارة الجلسة، يجب أن يتصرف مثل متصفح الويب:</p>
 <ul>
-  <li>في استجابة الخادم لطلبه الأول، يجب أن يجد معرف الجلسة الذي يرسله الخادم إليه. وهو يعلم أنه سيجده في رأس HTTP <i>Set-Cookie</i>.
+  <li>في استجابة الخادم لطلبه الأول، يجب أن يجد معرف الجلسة الذي يرسله الخادم إليه. وهو يعلم أنه سيجده في رأس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> <i><bdi dir="ltr" class="odt-ltr-term">Set-Cookie</bdi></i>.
   </li>
-  <li>بالنسبة لكل طلب لاحق، يجب أن يرسل المعرف الذي تلقّاه إلى الخادم. وسيقوم بذلك باستخدام رأس HTTP <i>Cookie</i>.
+  <li>بالنسبة لكل طلب لاحق، يجب أن يرسل المعرف الذي تلقّاه إلى الخادم. وسيقوم بذلك باستخدام رأس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> <i><bdi dir="ltr" class="odt-ltr-term">Cookie</bdi></i>.
   </li>
 </ul>
 
@@ -2160,23 +2162,23 @@
   </li>
   <li>الأسطر 18–67: وظيفة <i>الاتصال</i>
   </li>
-  <li>الأسطر 9-14: يقوم العميل بالاتصال بالخادم خمس مرات ويعرض القيم المتتالية للعدادات N1 و N2 و N3. إذا تمت إدارة الجلسة بشكل صحيح، فيجب زيادة هذه العدادات بمقدار 1 مع كل طلب جديد.
+  <li>الأسطر 9-14: يقوم العميل بالاتصال بالخادم خمس مرات ويعرض القيم المتتالية للعدادات <bdi dir="ltr" class="odt-ltr-term">N1</bdi> و <bdi dir="ltr" class="odt-ltr-term">N2</bdi> و <bdi dir="ltr" class="odt-ltr-term">N3.</bdi> إذا تمت إدارة الجلسة بشكل صحيح، فيجب زيادة هذه العدادات بمقدار 1 مع كل طلب جديد.
   </li>
-  <li>السطر 10: تستخدم وظيفة<i> `connecte` </i>المعلمات `<i>$HOTE</i>` و<i>`$PORT</i>` و<i>`$urlServeur` </i>لتوصيل العميل بخدمة الويب. تمثل المعلمة <i>`$cookie</i>` معرف الجلسة. في المكالمة الأولى، تكون سلسلة فارغة. في المكالمات اللاحقة، تكون معرف الجلسة الذي أرسله الخادم ردًا على المكالمة الأولى للعميل. تُرجع الدالة <i>`connecte</i>` قيم العدادات الثلاثة `$N1` و`$N2` و`$N3`، ومعرف الجلسة `<i>$cookie</i>`، وأي أخطاء في `<i>$erreur</i>`.
+  <li>السطر 10: تستخدم وظيفة<i> `<bdi dir="ltr" class="odt-ltr-term">connecte</bdi>` </i>المعلمات `<i>$<bdi dir="ltr" class="odt-ltr-term">HOTE</bdi></i>` و<i>`$<bdi dir="ltr" class="odt-ltr-term">PORT</bdi></i>` و<i>`$<bdi dir="ltr" class="odt-ltr-term">urlServeur</bdi>` </i>لتوصيل العميل بخدمة الويب. تمثل المعلمة <i>`$<bdi dir="ltr" class="odt-ltr-term">cookie</bdi></i>` معرف الجلسة. في المكالمة الأولى، تكون سلسلة فارغة. في المكالمات اللاحقة، تكون معرف الجلسة الذي أرسله الخادم ردًا على المكالمة الأولى للعميل. تُرجع الدالة <i>`<bdi dir="ltr" class="odt-ltr-term">connecte</bdi></i>` قيم العدادات الثلاثة `$<bdi dir="ltr" class="odt-ltr-term">N1</bdi>` و`$<bdi dir="ltr" class="odt-ltr-term">N2</bdi>` و`$<bdi dir="ltr" class="odt-ltr-term">N3</bdi>`، ومعرف الجلسة `<i>$<bdi dir="ltr" class="odt-ltr-term">cookie</bdi></i>`، وأي أخطاء في `<i>$<bdi dir="ltr" class="odt-ltr-term">erreur</bdi></i>`.
   </li>
-  <li>السطر 18: تتميز الدالة `<i>connecte` </i>بخصائص عميل HTTP قياسي. سنعلق فقط على الميزات الجديدة.
+  <li>السطر 18: تتميز الدالة `<i><bdi dir="ltr" class="odt-ltr-term">connecte</bdi>` </i>بخصائص عميل <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> قياسي. سنعلق فقط على الميزات الجديدة.
   </li>
-  <li>الأسطر 30–40: إرسال رؤوس HTTP.
+  <li>الأسطر 30–40: إرسال رؤوس <bdi dir="ltr" class="odt-ltr-term">HTTP.</bdi>
   </li>
   <li>الأسطر 36-38: إذا كان معرف الجلسة معروفًا، يتم إرساله إلى الخادم
   </li>
   <li>الأسطر 44–66: معالجة جميع الأسطر النصية المرسلة من الخادم
   </li>
-  <li>الأسطر 47–51: إذا لم يتم استرداد معرف الجلسة بعد، يتم استرداده من رأس HTTP <i>Set-Cookie </i>باستخدام تعبير عادي.
+  <li>الأسطر 47–51: إذا لم يتم استرداد معرف الجلسة بعد، يتم استرداده من رأس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> <i><bdi dir="ltr" class="odt-ltr-term">Set-Cookie</bdi> </i>باستخدام تعبير عادي.
   </li>
-  <li>السطور 53-54: يتم الحصول على عداد N1 أيضًا باستخدام تعبير عادي
+  <li>السطور 53-54: يتم الحصول على عداد <bdi dir="ltr" class="odt-ltr-term">N1</bdi> أيضًا باستخدام تعبير عادي
   </li>
-  <li>السطور 56-57، 59-60: الأمر نفسه بالنسبة للعدادين N2 و N3
+  <li>السطور 56-57، 59-60: الأمر نفسه بالنسبة للعدادين <bdi dir="ltr" class="odt-ltr-term">N2</bdi> و <bdi dir="ltr" class="odt-ltr-term">N3</bdi>
   </li>
   <li>السطر 63: إغلاق الاتصال بالخادم.
   </li>
@@ -2185,7 +2187,7 @@
 </ul>
 
 <p><strong><a id="refheading399801881943603"></a>النتائج</strong></p>
-<p>يؤدي تنفيذ البرنامج النصي للعميل إلى عرض ما يلي في وحدة تحكم NetBeans:</p>
+<p>يؤدي تنفيذ البرنامج النصي للعميل إلى عرض ما يلي في وحدة تحكم <bdi dir="ltr" class="odt-ltr-term">NetBeans:</bdi></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-38-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-38-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-38-3"> 3</a></span>
@@ -2359,7 +2361,7 @@
 <ul>
   <li>السطر 5: في استجابته الأولى، يرسل الخادم معرف الجلسة. وفي الاستجابات اللاحقة، لا يرسله بعد ذلك.
   </li>
-  <li>من الواضح أن خادم الويب يحتفظ بقيم (N1، N2، N3) عبر طلبات العميل. وهذا ما يُسمى بتتبع الجلسة.
+  <li>من الواضح أن خادم الويب يحتفظ بقيم (<bdi dir="ltr" class="odt-ltr-term">N1</bdi>، <bdi dir="ltr" class="odt-ltr-term">N2</bdi>، <bdi dir="ltr" class="odt-ltr-term">N3</bdi>) عبر طلبات العميل. وهذا ما يُسمى بتتبع الجلسة.
   </li>
 </ul>
 
@@ -2419,7 +2421,7 @@
   </li>
 </ul>
 <p><a id="refheading399841881943603"></a></p>
-<h3 id="1045-2-client1_web_06">10.4.5. <span style="color: #4f81bd">العميل 2 (client1_web_06)</span></h3>
+<h3 id="1045-2-client1_web_06">10.4.5. <span style="color: #4f81bd">العميل 2 (<bdi dir="ltr" class="odt-ltr-term">client1</bdi>_web_06)</span></h3>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -2619,16 +2621,16 @@
 
 <p><strong>تعليقات</strong></p>
 <ul>
-  <li>السطر 17: نضيف كائن <i>Person </i>إلى الجلسة إذا لم يكن موجودًا بالفعل.
+  <li>السطر 17: نضيف كائن <i><bdi dir="ltr" class="odt-ltr-term">Person</bdi> </i>إلى الجلسة إذا لم يكن موجودًا بالفعل.
   </li>
   <li>الأسطر 11-15: إذا كان موجودًا بالفعل، نزيد عمره بمقدار 1
   </li>
-  <li>السطر 20: نرسل كائن <i>Person </i>إلى العميل.
+  <li>السطر 20: نرسل كائن <i><bdi dir="ltr" class="odt-ltr-term">Person</bdi> </i>إلى العميل.
   </li>
 </ul>
 
 <p><a id="refheading399901881943603"></a></p>
-<h3 id="1047-3-client1_web_07">10.4.7. <span style="color: #4f81bd">العميل 3 (client1_web_07)</span></h3>
+<h3 id="1047-3-client1_web_07">10.4.7. <span style="color: #4f81bd">العميل 3 (<bdi dir="ltr" class="odt-ltr-term">client1</bdi>_web_07)</span></h3>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -2651,7 +2653,7 @@
 
 <p><strong>تعليقات</strong> </p>
 <ul>
-  <li>السطر 15: وظيفة <i>connect </i>مطابقة لتلك الموجودة في البرنامج النصي للعميل السابق
+  <li>السطر 15: وظيفة <i><bdi dir="ltr" class="odt-ltr-term">connect</bdi> </i>مطابقة لتلك الموجودة في البرنامج النصي للعميل السابق
   </li>
 </ul>
 

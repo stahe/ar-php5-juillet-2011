@@ -57,6 +57,8 @@
     
       <link rel="stylesheet" href="stylesheets/focus.css">
     
+      <link rel="stylesheet" href="stylesheets/bidi.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -756,10 +758,10 @@
 
 
 <p><a id="refheading399301881943603"></a></p>
-<h1 id="9-php">9. <span style="color: #365f91">وظائف الشبكة في PHP</span></h1>
-<p>سنناقش الآن وظائف الشبكة في PHP، والتي تسمح لنا بتنفيذ برمجة TCP/IP (بروتوكول التحكم في الإرسال/بروتوكول الإنترنت).</p>
+<h1 id="9-php">9. <span style="color: #365f91">وظائف الشبكة في <bdi dir="ltr" class="odt-ltr-term">PHP</bdi></span></h1>
+<p>سنناقش الآن وظائف الشبكة في <bdi dir="ltr" class="odt-ltr-term">PHP</bdi>، والتي تسمح لنا بتنفيذ برمجة <bdi dir="ltr" class="odt-ltr-term">TCP/IP</bdi> (بروتوكول التحكم في الإرسال/بروتوكول الإنترنت).</p>
 <p><a id="refheading399321881943603"></a></p>
-<h2 id="91-ip-inet_01">9.1. <span style="color: #4f81bd">استرداد اسم أو عنوان IP لجهاز على الإنترنت (inet_01)</span></h2>
+<h2 id="91-ip-inet_01">9.1. <span style="color: #4f81bd">استرداد اسم أو عنوان <bdi dir="ltr" class="odt-ltr-term">IP</bdi> لجهاز على الإنترنت (<bdi dir="ltr" class="odt-ltr-term">inet</bdi>_01)</span></h2>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -813,16 +815,16 @@
   </li>
 </ul>
 
-<p>تُستخدم وظائف الشبكة في PHP في الدالة <em>getIpandName</em> في السطر 15.</p>
+<p>تُستخدم وظائف الشبكة في <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> في الدالة <em><bdi dir="ltr" class="odt-ltr-term">getIpandName</bdi></em> في السطر 15.</p>
 <ul>
-  <li>السطر 18: تسترد الدالة<i> gethostbyname($name) </i>عنوان IP &quot;ip3.ip2.ip1.ip0&quot; للجهاز المسمى <i>$name</i>. إذا كان الجهاز <i>$name </i>غير موجود، تعرض الدالة <i>$name </i>كنتيجة.
+  <li>السطر 18: تسترد الدالة<i> <bdi dir="ltr" class="odt-ltr-term">gethostbyname</bdi>($<bdi dir="ltr" class="odt-ltr-term">name</bdi>) </i>عنوان <bdi dir="ltr" class="odt-ltr-term">IP</bdi> &quot;<bdi dir="ltr" class="odt-ltr-term">ip3.ip2.ip1.ip0</bdi>&quot; للجهاز المسمى <i>$<bdi dir="ltr" class="odt-ltr-term">name</bdi></i>. إذا كان الجهاز <i>$<bdi dir="ltr" class="odt-ltr-term">name</bdi> </i>غير موجود، تعرض الدالة <i>$<bdi dir="ltr" class="odt-ltr-term">name</bdi> </i>كنتيجة.
   </li>
-  <li>السطر 22: تسترد الدالة<i> gethostbyaddr($ip) </i>اسم المضيف للجهاز الذي يحمل عنوان IP $ip بالتنسيق &quot;ip3.ip2.ip1.ip0&quot;. إذا كان الجهاز <i>$ip </i>غير موجود، فإن الدالة تُرجع <i>$ip </i>كنتيجة.
+  <li>السطر 22: تسترد الدالة<i> <bdi dir="ltr" class="odt-ltr-term">gethostbyaddr</bdi>($ip) </i>اسم المضيف للجهاز الذي يحمل عنوان <bdi dir="ltr" class="odt-ltr-term">IP</bdi> $ip بالتنسيق &quot;<bdi dir="ltr" class="odt-ltr-term">ip3.ip2.ip1.ip0</bdi>&quot;. إذا كان الجهاز <i>$ip </i>غير موجود، فإن الدالة تُرجع <i>$ip </i>كنتيجة.
   </li>
 </ul>
 <p><a id="refheading399341881943603"></a>
 <a id="inet02"></a></p>
-<h2 id="92-inet_02">9.2. <span style="color: #4f81bd"><strong>عميل ويب (</strong> <strong>inet_02)</strong></span></h2>
+<h2 id="92-inet_02">9.2. <span style="color: #4f81bd"><strong>عميل ويب (</strong> <strong><bdi dir="ltr" class="odt-ltr-term">inet</bdi>_02)</strong></span></h2>
 <p>نص برمجي لاسترداد محتوى صفحة فهرس موقع ويب.</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
@@ -877,7 +879,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p><strong>النتائج</strong>: على سبيل المثال، الملف الذي تم استلامه للموقع [www.ibm.com]:</p>
+<p><strong>النتائج</strong>: على سبيل المثال، الملف الذي تم استلامه للموقع [<bdi dir="ltr" class="odt-ltr-term">www.ibm.com</bdi>]:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
@@ -917,52 +919,52 @@
 <a id="__codelineno-1-19" name="__codelineno-1-19"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></table></div>
 <ul>
-  <li>الأسطر 1–11 هي رؤوس HTTP لاستجابة الخادم
+  <li>الأسطر 1–11 هي رؤوس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> لاستجابة الخادم
   </li>
-  <li>السطر 1: يوجه الخادم العميل إلى إعادة التوجيه إلى عنوان URL المحدد في السطر 8
+  <li>السطر 1: يوجه الخادم العميل إلى إعادة التوجيه إلى عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> المحدد في السطر 8
   </li>
   <li>السطر 2: تاريخ ووقت الاستجابة
   </li>
   <li>السطر 3: هوية خادم الويب
   </li>
-  <li>السطر 4: المحتوى المرسل من الخادم. هنا، صفحة HTML تبدأ في السطر 13
+  <li>السطر 4: المحتوى المرسل من الخادم. هنا، صفحة <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> تبدأ في السطر 13
   </li>
-  <li>السطر 12: السطر الفارغ الذي ينهي رؤوس HTTP
+  <li>السطر 12: السطر الفارغ الذي ينهي رؤوس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi>
   </li>
-  <li>الأسطر 13–19: صفحة HTML التي أرسلها خادم الويب.
+  <li>الأسطر 13–19: صفحة <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> التي أرسلها خادم الويب.
   </li>
 </ul>
 
 <p><strong>تعليقات على الكود:</strong></p>
 <ul>
-  <li>السطر 7: قائمة عناوين URL لمواقع الويب التي نريد صفحاتها الرئيسية. سيتم تخزين هذه العناوين في ملف نصي [sitename.html].
+  <li>السطر 7: قائمة عناوين <bdi dir="ltr" class="odt-ltr-term">URL</bdi> لمواقع الويب التي نريد صفحاتها الرئيسية. سيتم تخزين هذه العناوين في ملف نصي [<bdi dir="ltr" class="odt-ltr-term">sitename.html</bdi>].
   </li>
-  <li>السطر 11: تقوم الدالة <i>getIndex </i>بهذه المهمة
+  <li>السطر 11: تقوم الدالة <i><bdi dir="ltr" class="odt-ltr-term">getIndex</bdi> </i>بهذه المهمة
   </li>
-  <li>السطر 19: تقوم الدالة<i> getIndex($site) </i>بتنزيل الصفحة الجذرية (أو الصفحة الرئيسية) لموقع الويب <i>$site </i>وتخزينها في الملف النصي <i>$site.html</i>.
+  <li>السطر 19: تقوم الدالة<i> <bdi dir="ltr" class="odt-ltr-term">getIndex</bdi>($<bdi dir="ltr" class="odt-ltr-term">site</bdi>) </i>بتنزيل الصفحة الجذرية (أو الصفحة الرئيسية) لموقع الويب <i>$<bdi dir="ltr" class="odt-ltr-term">site</bdi> </i>وتخزينها في الملف النصي <i>$<bdi dir="ltr" class="odt-ltr-term">site.html</bdi></i>.
   </li>
-  <li>السطر 27: تقوم الدالة<i> fsockopen($site,$port) </i>بإنشاء اتصال بخدمة TCP/IP تعمل على المنفذ <i>$port </i>لجهاز <i>$site</i>. بمجرد فتح اتصال العميل/الخادم، تتبادل العديد من خدمات TCP/IP أسطر النص. وهذا هو الحال هنا مع HTTP (بروتوكول نقل النص التشعبي). يمكن بعد ذلك التعامل مع تدفق البيانات من الخادم إلى العميل كملف نصي. وينطبق الأمر نفسه على تدفق البيانات من العميل إلى الخادم.
+  <li>السطر 27: تقوم الدالة<i> <bdi dir="ltr" class="odt-ltr-term">fsockopen</bdi>($<bdi dir="ltr" class="odt-ltr-term">site</bdi>,$<bdi dir="ltr" class="odt-ltr-term">port</bdi>) </i>بإنشاء اتصال بخدمة <bdi dir="ltr" class="odt-ltr-term">TCP/IP</bdi> تعمل على المنفذ <i>$<bdi dir="ltr" class="odt-ltr-term">port</bdi> </i>لجهاز <i>$<bdi dir="ltr" class="odt-ltr-term">site</bdi></i>. بمجرد فتح اتصال العميل/الخادم، تتبادل العديد من خدمات <bdi dir="ltr" class="odt-ltr-term">TCP/IP</bdi> أسطر النص. وهذا هو الحال هنا مع <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> (بروتوكول نقل النص التشعبي). يمكن بعد ذلك التعامل مع تدفق البيانات من الخادم إلى العميل كملف نصي. وينطبق الأمر نفسه على تدفق البيانات من العميل إلى الخادم.
   </li>
-  <li>السطر 38: تسمح الدالة <i>fputs </i>للعميل بإرسال البيانات إلى الخادم. هنا، السطر النصي المرسل له المعنى التالي: &quot;أريد (GET) الصفحة الجذرية (/) للموقع الإلكتروني الذي أنا متصل به. أنا أستخدم HTTP الإصدار 1.0.&quot; الإصدار الحالي لهذا البروتوكول هو 1.1.
+  <li>السطر 38: تسمح الدالة <i><bdi dir="ltr" class="odt-ltr-term">fputs</bdi> </i>للعميل بإرسال البيانات إلى الخادم. هنا، السطر النصي المرسل له المعنى التالي: &quot;أريد (<bdi dir="ltr" class="odt-ltr-term">GET</bdi>) الصفحة الجذرية (/) للموقع الإلكتروني الذي أنا متصل به. أنا أستخدم <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> الإصدار 1.0.&quot; الإصدار الحالي لهذا البروتوكول هو 1.1.
   </li>
-  <li>السطر 42: يمكن قراءة الأسطر النصية لاستجابة الخادم سطراً سطراً باستخدام حلقة <i>while </i>وحفظها في الملف النصي [$site.html]. بمجرد أن يرسل خادم الويب الصفحة المطلوبة، فإنه يغلق اتصاله مع العميل. على جانب العميل، سيتم اكتشاف ذلك على أنه نهاية الملف.
+  <li>السطر 42: يمكن قراءة الأسطر النصية لاستجابة الخادم سطراً سطراً باستخدام حلقة <i><bdi dir="ltr" class="odt-ltr-term">while</bdi> </i>وحفظها في الملف النصي [$<bdi dir="ltr" class="odt-ltr-term">site.html</bdi>]. بمجرد أن يرسل خادم الويب الصفحة المطلوبة، فإنه يغلق اتصاله مع العميل. على جانب العميل، سيتم اكتشاف ذلك على أنه نهاية الملف.
   </li>
 </ul>
 <p><a id="refheading399361881943603"></a></p>
-<h2 id="93-smtp-inet_03">9.3. <span style="color: #4f81bd">عميل SMTP (inet_03)</span></h2>
-<p>من بين بروتوكولات TCP/IP، يعد SMTP (بروتوكول نقل البريد البسيط) بروتوكول الاتصال لخدمة توصيل البريد.</p>
+<h2 id="93-smtp-inet_03">9.3. <span style="color: #4f81bd">عميل <bdi dir="ltr" class="odt-ltr-term">SMTP</bdi> (<bdi dir="ltr" class="odt-ltr-term">inet</bdi>_03)</span></h2>
+<p>من بين بروتوكولات <bdi dir="ltr" class="odt-ltr-term">TCP/IP</bdi>، يعد <bdi dir="ltr" class="odt-ltr-term">SMTP</bdi> (بروتوكول نقل البريد البسيط) بروتوكول الاتصال لخدمة توصيل البريد.</p>
 <p>ملاحظات:</p>
 <ul>
-  <li>على جهاز يعمل بنظام Windows مزود ببرنامج مكافحة فيروسات، من المحتمل أن يمنع برنامج مكافحة الفيروسات البرنامج النصي PHP من الاتصال بالمنفذ 25 لخادم SMTP. لذلك، يجب تعطيل برنامج مكافحة الفيروسات. بالنسبة لبرنامج McAfee، على سبيل المثال، يمكنك القيام بذلك:
+  <li>على جهاز يعمل بنظام <bdi dir="ltr" class="odt-ltr-term">Windows</bdi> مزود ببرنامج مكافحة فيروسات، من المحتمل أن يمنع برنامج مكافحة الفيروسات البرنامج النصي <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> من الاتصال بالمنفذ 25 لخادم <bdi dir="ltr" class="odt-ltr-term">SMTP.</bdi> لذلك، يجب تعطيل برنامج مكافحة الفيروسات. بالنسبة لبرنامج <bdi dir="ltr" class="odt-ltr-term">McAfee</bdi>، على سبيل المثال، يمكنك القيام بذلك:
   </li>
 </ul>
 
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000643000001ECE58BB136.png" width="680" height="209" style="display:inline-block; margin:4px;width:17.997cm;height:5.525cm;" class="odt-zoomable" data-zoom-src="images/1000000000000643000001ECE58BB136.png" /></td></tr></table>
 
 <ul>
-  <li>في [1]، افتح وحدة تحكم VirusScan
+  <li>في [1]، افتح وحدة تحكم <bdi dir="ltr" class="odt-ltr-term">VirusScan</bdi>
   </li>
-  <li>في [2]، أوقف خدمة [On-Access Protection]
+  <li>في [2]، أوقف خدمة [<bdi dir="ltr" class="odt-ltr-term">On-Access Protection</bdi>]
   </li>
   <li>في [3]، تم إيقافها
   </li>
@@ -1204,7 +1206,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p>ملف <em>infos.txt</em>:</p>
+<p>ملف <em><bdi dir="ltr" class="odt-ltr-term">infos.txt</bdi></em>:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
 <span class="normal"><a href="#__codelineno-2-2">2</a></span>
 <span class="normal"><a href="#__codelineno-2-3">3</a></span>
@@ -1220,7 +1222,7 @@
 <a id="__codelineno-2-7" name="__codelineno-2-7"></a>ligne3
 </code></pre></div></td></tr></table></div>
 <ul>
-  <li>السطر 1: [smtp.orange.fr] الخادم المستخدم لإرسال البريد الإلكتروني، [serge.tahe@univ-angers.fr] عنوان المرسل، [serge.tahe@istia.univ-angers.fr] عنوان المستلم
+  <li>السطر 1: [<bdi dir="ltr" class="odt-ltr-term">smtp.orange.fr</bdi>] الخادم المستخدم لإرسال البريد الإلكتروني، [<bdi dir="ltr" class="odt-ltr-term">serge.tahe@univ-angers.fr</bdi>] عنوان المرسل، [<bdi dir="ltr" class="odt-ltr-term">serge.tahe@istia.univ-angers.fr</bdi>] عنوان المستلم
   </li>
   <li>السطر 2: رؤوس الرسالة. يوجد هنا رأس واحد فقط، وهو موضوع الرسالة.
   </li>
@@ -1292,29 +1294,29 @@
 <ul>
   <li>السطر 1: رسالة تتبع تنفيذ البرنامج النصي
   </li>
-  <li>السطر 2: أول استجابة من خادم SMTP. يأتي هذا بعد اتصال العميل بالمنفذ 25 لخادم SMTP. استجابات الخادم هي أسطر على شكل [xxx message] أو [xxx-message]. تشير الصيغة الأولى إلى أن الاستجابة كاملة. xxx هو رمز الحالة. تشير القيمة الأكبر من أو تساوي 500 إلى وجود خطأ. تشير الصيغة الثانية إلى أن الاستجابة غير كاملة وأن سطرًا آخر سيتبعها.
+  <li>السطر 2: أول استجابة من خادم <bdi dir="ltr" class="odt-ltr-term">SMTP.</bdi> يأتي هذا بعد اتصال العميل بالمنفذ 25 لخادم <bdi dir="ltr" class="odt-ltr-term">SMTP.</bdi> استجابات الخادم هي أسطر على شكل [<bdi dir="ltr" class="odt-ltr-term">xxx message</bdi>] أو [<bdi dir="ltr" class="odt-ltr-term">xxx-message</bdi>]. تشير الصيغة الأولى إلى أن الاستجابة كاملة. xxx هو رمز الحالة. تشير القيمة الأكبر من أو تساوي 500 إلى وجود خطأ. تشير الصيغة الثانية إلى أن الاستجابة غير كاملة وأن سطرًا آخر سيتبعها.
   </li>
-  <li>السطر 2: يشير خادم SMTP إلى أنه جاهز لتلقي الأوامر
+  <li>السطر 2: يشير خادم <bdi dir="ltr" class="odt-ltr-term">SMTP</bdi> إلى أنه جاهز لتلقي الأوامر
   </li>
-  <li>السطر 3: يرسل العميل الأمر [EHLO machineName]، حيث machineName هو اسم المضيف للجهاز الذي يعمل عليه العميل
+  <li>السطر 3: يرسل العميل الأمر [<bdi dir="ltr" class="odt-ltr-term">EHLO machineName</bdi>]، حيث <bdi dir="ltr" class="odt-ltr-term">machineName</bdi> هو اسم المضيف للجهاز الذي يعمل عليه العميل
   </li>
-  <li>الأسطر 4-10: استجابة من خادم SMTP
+  <li>الأسطر 4-10: استجابة من خادم <bdi dir="ltr" class="odt-ltr-term">SMTP</bdi>
   </li>
-  <li>السطر 11: يرسل العميل الأمر [MAIL FROM: &lt;sender&gt;]، الذي يحدد عنوان البريد الإلكتروني للمرسل.
+  <li>السطر 11: يرسل العميل الأمر [<bdi dir="ltr" class="odt-ltr-term">MAIL FROM:</bdi> &lt;<bdi dir="ltr" class="odt-ltr-term">sender</bdi>&gt;]، الذي يحدد عنوان البريد الإلكتروني للمرسل.
   </li>
-  <li>السطر 12: يشير خادم SMTP إلى أنه يقبل هذا العنوان. كان من الممكن أن يرفضه إذا كانت الصيغة غير صحيحة. ومع ذلك، فإنه لا يتحقق من وجود عنوان البريد الإلكتروني فعليًا.
+  <li>السطر 12: يشير خادم <bdi dir="ltr" class="odt-ltr-term">SMTP</bdi> إلى أنه يقبل هذا العنوان. كان من الممكن أن يرفضه إذا كانت الصيغة غير صحيحة. ومع ذلك، فإنه لا يتحقق من وجود عنوان البريد الإلكتروني فعليًا.
   </li>
-  <li>السطر 13: يرسل العميل الأمر [RCPT TO: &lt;recipient&gt;]، الذي يحدد عنوان البريد الإلكتروني لمستلم الرسالة.
+  <li>السطر 13: يرسل العميل الأمر [<bdi dir="ltr" class="odt-ltr-term">RCPT TO:</bdi> &lt;<bdi dir="ltr" class="odt-ltr-term">recipient</bdi>&gt;]، الذي يحدد عنوان البريد الإلكتروني لمستلم الرسالة.
   </li>
-  <li>السطر 14: يرد خادم SMTP بأنه يقبل هذا العنوان. ومرة أخرى، يتم إجراء فحص لصيغة العنوان.
+  <li>السطر 14: يرد خادم <bdi dir="ltr" class="odt-ltr-term">SMTP</bdi> بأنه يقبل هذا العنوان. ومرة أخرى، يتم إجراء فحص لصيغة العنوان.
   </li>
-  <li>السطر 15: يرسل العميل الأمر [DATA]، الذي يشير للمستخدم إلى أن الأسطر التالية هي نص الرسالة.
+  <li>السطر 15: يرسل العميل الأمر [<bdi dir="ltr" class="odt-ltr-term">DATA</bdi>]، الذي يشير للمستخدم إلى أن الأسطر التالية هي نص الرسالة.
   </li>
   <li>السطر 16: يرد الخادم بأنه يمكن إرسال الرسالة. الرسالة عبارة عن سلسلة من الأسطر النصية التي يجب أن تنتهي بسطر مكون من حرف واحد: نقطة.
   </li>
   <li>الأسطر 17-25: الرسالة المرسلة من قبل العميل
   </li>
-  <li>الأسطر 17-19: تشير رؤوس الرسالة [From:, To:, Subject:] إلى المرسل والمستلم وموضوع الرسالة، على التوالي.
+  <li>الأسطر 17-19: تشير رؤوس الرسالة [<bdi dir="ltr" class="odt-ltr-term">From:</bdi>, <bdi dir="ltr" class="odt-ltr-term">To:</bdi>, <bdi dir="ltr" class="odt-ltr-term">Subject:</bdi>] إلى المرسل والمستلم وموضوع الرسالة، على التوالي.
   </li>
   <li>السطر 20: سطر فارغ يشير إلى نهاية الرؤوس
   </li>
@@ -1322,50 +1324,50 @@
   </li>
   <li>السطر 24: السطر المكون من نقطة واحدة التي تشير إلى نهاية الرسالة.
   </li>
-  <li>السطر 26: يرد خادم SMTP بأنه يقبل الرسالة
+  <li>السطر 26: يرد خادم <bdi dir="ltr" class="odt-ltr-term">SMTP</bdi> بأنه يقبل الرسالة
   </li>
-  <li>السطر 27: يرسل العميل الأمر [QUIT] للإشارة إلى أنه قد انتهى
+  <li>السطر 27: يرسل العميل الأمر [<bdi dir="ltr" class="odt-ltr-term">QUIT</bdi>] للإشارة إلى أنه قد انتهى
   </li>
-  <li>السطر 28: يرد خادم SMTP بأنه سيغلق الاتصال بالعميل
+  <li>السطر 28: يرد خادم <bdi dir="ltr" class="odt-ltr-term">SMTP</bdi> بأنه سيغلق الاتصال بالعميل
   </li>
 </ul>
 
 <p><strong>تعليقات على</strong> الكود</p>
 <p>لن نخوض في تفاصيل كثيرة حول كود البرنامج النصي لأنه تم توضيحه بالتفصيل.</p>
 <ul>
-  <li>الأسطر 48–80: الدالة التي تعالج ملف [infos.txt]، الذي يحتوي على الرسالة المراد إرسالها بالإضافة إلى المعلومات الضرورية لإرسالها. وتُرجع مصفوفة ($error, $smtpServer, $sender, $recipient, $message) تحتوي على:
+  <li>الأسطر 48–80: الدالة التي تعالج ملف [<bdi dir="ltr" class="odt-ltr-term">infos.txt</bdi>]، الذي يحتوي على الرسالة المراد إرسالها بالإضافة إلى المعلومات الضرورية لإرسالها. وتُرجع مصفوفة ($<bdi dir="ltr" class="odt-ltr-term">error</bdi>, $<bdi dir="ltr" class="odt-ltr-term">smtpServer</bdi>, $<bdi dir="ltr" class="odt-ltr-term">sender</bdi>, $<bdi dir="ltr" class="odt-ltr-term">recipient</bdi>, $<bdi dir="ltr" class="odt-ltr-term">message</bdi>) تحتوي على:
     <ul>
-      <li><i>$error</i>: رسالة خطأ محتملة؛ وإلا تكون فارغة.
+      <li><i>$<bdi dir="ltr" class="odt-ltr-term">error</bdi></i>: رسالة خطأ محتملة؛ وإلا تكون فارغة.
       </li>
-      <li><i>$smtpServer</i>: اسم خادم SMTP المراد الاتصال به
+      <li><i>$<bdi dir="ltr" class="odt-ltr-term">smtpServer</bdi></i>: اسم خادم <bdi dir="ltr" class="odt-ltr-term">SMTP</bdi> المراد الاتصال به
       </li>
-      <li><i>$sender</i>: عنوان البريد الإلكتروني للمرسل
+      <li><i>$<bdi dir="ltr" class="odt-ltr-term">sender</bdi></i>: عنوان البريد الإلكتروني للمرسل
       </li>
-      <li><i>$recipient</i>: عنوان البريد الإلكتروني للمستلم
+      <li><i>$<bdi dir="ltr" class="odt-ltr-term">recipient</bdi></i>: عنوان البريد الإلكتروني للمستلم
       </li>
-      <li><i>$message</i>: الرسالة المراد إرسالها. بالإضافة إلى نص الرسالة، قد تكون هناك رؤوس.
+      <li><i>$<bdi dir="ltr" class="odt-ltr-term">message</bdi></i>: الرسالة المراد إرسالها. بالإضافة إلى نص الرسالة، قد تكون هناك رؤوس.
       </li>
     </ul>
   </li>
-  <li>الأسطر 84-157: وظيفة <i>sendMail </i>مسؤولة عن إرسال الرسالة. معلماتها هي كما يلي:
+  <li>الأسطر 84-157: وظيفة <i><bdi dir="ltr" class="odt-ltr-term">sendMail</bdi> </i>مسؤولة عن إرسال الرسالة. معلماتها هي كما يلي:
     <ul>
-      <li><i>$smtpServer</i>: اسم خادم SMTP المراد الاتصال به
+      <li><i>$<bdi dir="ltr" class="odt-ltr-term">smtpServer</bdi></i>: اسم خادم <bdi dir="ltr" class="odt-ltr-term">SMTP</bdi> المراد الاتصال به
       </li>
-      <li><i>$sender</i>: عنوان البريد الإلكتروني للمرسل
+      <li><i>$<bdi dir="ltr" class="odt-ltr-term">sender</bdi></i>: عنوان البريد الإلكتروني للمرسل
       </li>
-      <li><i>$recipient</i>: عنوان البريد الإلكتروني للمستلم
+      <li><i>$<bdi dir="ltr" class="odt-ltr-term">recipient</bdi></i>: عنوان البريد الإلكتروني للمستلم
       </li>
-      <li><i>$message</i>: الرسالة المراد إرسالها.
+      <li><i>$<bdi dir="ltr" class="odt-ltr-term">message</bdi></i>: الرسالة المراد إرسالها.
       </li>
-      <li><i>$verbose</i>: إذا تم تعيينها على 1، فهذا يشير إلى أنه يجب تسجيل الاتصال بخادم SMTP في وحدة التحكم.
+      <li><i>$<bdi dir="ltr" class="odt-ltr-term">verbose</bdi></i>: إذا تم تعيينها على 1، فهذا يشير إلى أنه يجب تسجيل الاتصال بخادم <bdi dir="ltr" class="odt-ltr-term">SMTP</bdi> في وحدة التحكم.
       </li>
     </ul>
   </li>
 </ul>
 
-<p>تُرجع الدالة <em>sendMail</em> رسالة خطأ؛ وتُرجع سلسلة فارغة في حالة عدم وجود أخطاء.</p>
+<p>تُرجع الدالة <em><bdi dir="ltr" class="odt-ltr-term">sendMail</bdi></em> رسالة خطأ؛ وتُرجع سلسلة فارغة في حالة عدم وجود أخطاء.</p>
 <ul>
-  <li>السطر 88: يسترد اسم Windows لجهاز كمبيوتر يعمل بنظام التشغيل Windows.
+  <li>السطر 88: يسترد اسم <bdi dir="ltr" class="odt-ltr-term">Windows</bdi> لجهاز كمبيوتر يعمل بنظام التشغيل <bdi dir="ltr" class="odt-ltr-term">Windows.</bdi>
   </li>
   <li>السطر 99: لقد رأينا أن الحوار بين العميل والخادم يتبع هذا النمط:
     <ul>
@@ -1375,56 +1377,56 @@
       </li>
     </ul>
   </li>
-  <li>الأسطر 161–208: تقبل الدالة `<i>sendCommand` </i>المعلمات التالية:
+  <li>الأسطر 161–208: تقبل الدالة `<i><bdi dir="ltr" class="odt-ltr-term">sendCommand</bdi>` </i>المعلمات التالية:
     <ul>
-      <li>$connection: قناة TCP/IP التي تربط العميل بالخادم
+      <li>$<bdi dir="ltr" class="odt-ltr-term">connection:</bdi> قناة <bdi dir="ltr" class="odt-ltr-term">TCP/IP</bdi> التي تربط العميل بالخادم
       </li>
-      <li>$command: الأمر المراد إرساله عبر هذه القناة. سيتم قراءة استجابة الخادم لهذا الأمر.
+      <li>$<bdi dir="ltr" class="odt-ltr-term">command:</bdi> الأمر المراد إرساله عبر هذه القناة. سيتم قراءة استجابة الخادم لهذا الأمر.
       </li>
-      <li>$verbose: إذا تم تعيينها على 1، فهذا يشير إلى أنه يجب عرض التبادلات مع خادم SMTP على وحدة التحكم.
+      <li>$<bdi dir="ltr" class="odt-ltr-term">verbose:</bdi> إذا تم تعيينها على 1، فهذا يشير إلى أنه يجب عرض التبادلات مع خادم <bdi dir="ltr" class="odt-ltr-term">SMTP</bdi> على وحدة التحكم.
       </li>
-      <li>$withRCLF: إذا تم تعيينه على 1، فهذا يشير إلى أنه يجب إضافة علامة نهاية السطر &quot;\r\n&quot; إلى نهاية الأمر
+      <li>$<bdi dir="ltr" class="odt-ltr-term">withRCLF:</bdi> إذا تم تعيينه على 1، فهذا يشير إلى أنه يجب إضافة علامة نهاية السطر &quot;\r\n&quot; إلى نهاية الأمر
       </li>
     </ul>
   </li>
   <li>السطر 173: يرسل العميل الأمر
   </li>
-  <li>السطر 181: قراءة السطر الأول من استجابة خادم SMTP في شكل xxx text أو xxx-text. تشير الحالة الأخيرة إلى أن الخادم لديه سطر آخر لإرساله. xxx هو رمز الخطأ المرسل من الخادم.
+  <li>السطر 181: قراءة السطر الأول من استجابة خادم <bdi dir="ltr" class="odt-ltr-term">SMTP</bdi> في شكل <bdi dir="ltr" class="odt-ltr-term">xxx text</bdi> أو <bdi dir="ltr" class="odt-ltr-term">xxx-text.</bdi> تشير الحالة الأخيرة إلى أن الخادم لديه سطر آخر لإرساله. xxx هو رمز الخطأ المرسل من الخادم.
   </li>
   <li>السطر 188 – استرداد رمز الخطأ من الرد
   </li>
   <li>الأسطر 191–199: قراءة الأسطر الأخرى من الرد
   </li>
-  <li>السطران 203–204: إذا كان رمز الخطأ &gt;=500، فإن خادم SMTP يبلغ عن وجود خطأ.
+  <li>السطران 203–204: إذا كان رمز الخطأ &gt;=500، فإن خادم <bdi dir="ltr" class="odt-ltr-term">SMTP</bdi> يبلغ عن وجود خطأ.
   </li>
 </ul>
-<h2 id="94-inet_04">9.4. <span style="color: #4f81bd">برنامج ثانٍ لإرسال البريد الإلكتروني (inet_04)</span></h2>
-<p>يتمتع هذا البرنامج النصي بنفس وظيفة البرنامج السابق: إرسال بريد إلكتروني. نستخدم وحدات من مكتبة PEAR لهذا الغرض. تحتوي هذه المكتبة على عشرات الوحدات التي تغطي مجالات متنوعة. سنستخدم ما يلي:</p>
+<h2 id="94-inet_04">9.4. <span style="color: #4f81bd">برنامج ثانٍ لإرسال البريد الإلكتروني (<bdi dir="ltr" class="odt-ltr-term">inet</bdi>_04)</span></h2>
+<p>يتمتع هذا البرنامج النصي بنفس وظيفة البرنامج السابق: إرسال بريد إلكتروني. نستخدم وحدات من مكتبة <bdi dir="ltr" class="odt-ltr-term">PEAR</bdi> لهذا الغرض. تحتوي هذه المكتبة على عشرات الوحدات التي تغطي مجالات متنوعة. سنستخدم ما يلي:</p>
 <ul>
-  <li><i>Net/SMTP</i>: وحدة للتواصل مع خادم SMTP
+  <li><i><bdi dir="ltr" class="odt-ltr-term">Net/SMTP</bdi></i>: وحدة للتواصل مع خادم <bdi dir="ltr" class="odt-ltr-term">SMTP</bdi>
   </li>
-  <li><i>Mail</i>: وحدة لإدارة إرسال البريد الإلكتروني باستخدام بروتوكولات مختلفة.
+  <li><i><bdi dir="ltr" class="odt-ltr-term">Mail</bdi></i>: وحدة لإدارة إرسال البريد الإلكتروني باستخدام بروتوكولات مختلفة.
   </li>
-  <li><i>Mail/Mime</i>: وحدة لإنشاء رسالة يمكن أن تتضمن مستندات مرفقة.
+  <li><i><bdi dir="ltr" class="odt-ltr-term">Mail/Mime</bdi></i>: وحدة لإنشاء رسالة يمكن أن تتضمن مستندات مرفقة.
   </li>
 </ul>
 
-<p>لاستخدام هذه الوحدات، يجب أولاً تثبيتها على الجهاز الذي يعمل عليه البرنامج النصي PHP. أدى تثبيت حزمة برامج <em>WampServer</em> إلى تثبيت مترجم PHP. ويمكنك تثبيت وحدات PEAR ضمن بنية الدلائل الخاصة به.</p>
+<p>لاستخدام هذه الوحدات، يجب أولاً تثبيتها على الجهاز الذي يعمل عليه البرنامج النصي <bdi dir="ltr" class="odt-ltr-term">PHP.</bdi> أدى تثبيت حزمة برامج <em><bdi dir="ltr" class="odt-ltr-term">WampServer</bdi></em> إلى تثبيت مترجم <bdi dir="ltr" class="odt-ltr-term">PHP.</bdi> ويمكنك تثبيت وحدات <bdi dir="ltr" class="odt-ltr-term">PEAR</bdi> ضمن بنية الدلائل الخاصة به.</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000020800000285D75E6C46.png" width="260" height="323" style="display:inline-block; margin:4px;width:6.879cm;height:8.534cm;" class="odt-zoomable" data-zoom-src="images/100000000000020800000285D75E6C46.png" /></td></tr></table>
 
 <ul>
-  <li>في [1]، دليل تثبيت مترجم PHP
+  <li>في [1]، دليل تثبيت مترجم <bdi dir="ltr" class="odt-ltr-term">PHP</bdi>
   </li>
-  <li>في [2]، مجلد PEAR الذي سيحتوي على وحدات PEAR المراد تثبيتها
+  <li>في [2]، مجلد <bdi dir="ltr" class="odt-ltr-term">PEAR</bdi> الذي سيحتوي على وحدات <bdi dir="ltr" class="odt-ltr-term">PEAR</bdi> المراد تثبيتها
   </li>
-  <li>[3] هو ملف الدفعة [go-pear.bat] الذي يقوم بتهيئة مكتبة PEAR
+  <li>[3] هو ملف الدفعة [<bdi dir="ltr" class="odt-ltr-term">go-pear.bat</bdi>] الذي يقوم بتهيئة مكتبة <bdi dir="ltr" class="odt-ltr-term">PEAR</bdi>
   </li>
 </ul>
 
-<p>لتهيئة مكتبة PEAR، افتح نافذة DOS وقم بتشغيل الملف [go-pear.bat]. سيتصل هذا البرنامج النصي بموقع مكتبة PEAR. لذلك، يلزم وجود اتصال بالإنترنت.</p>
+<p>لتهيئة مكتبة <bdi dir="ltr" class="odt-ltr-term">PEAR</bdi>، افتح نافذة <bdi dir="ltr" class="odt-ltr-term">DOS</bdi> وقم بتشغيل الملف [<bdi dir="ltr" class="odt-ltr-term">go-pear.bat</bdi>]. سيتصل هذا البرنامج النصي بموقع مكتبة <bdi dir="ltr" class="odt-ltr-term">PEAR.</bdi> لذلك، يلزم وجود اتصال بالإنترنت.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>C:\serveursSGBD\wamp21\bin\PHP\php5.3.5&gt;go-pear.bat
 </code></pre></div>
-<p>بمجرد الاتصال بموقع مكتبة PEAR، سيقوم البرنامج النصي بتنزيل عدد من العناصر. ومن بينها برنامج نصي جديد [pear.bat]. سنستخدم هذا البرنامج النصي لتثبيت مختلف وحدات PEAR التي نحتاجها. يتم استدعاء هذا البرنامج النصي مع معلمات. ومن بينها، توفر المعلمة [help] قائمة بالأوامر التي يقبلها البرنامج النصي:</p>
+<p>بمجرد الاتصال بموقع مكتبة <bdi dir="ltr" class="odt-ltr-term">PEAR</bdi>، سيقوم البرنامج النصي بتنزيل عدد من العناصر. ومن بينها برنامج نصي جديد [<bdi dir="ltr" class="odt-ltr-term">pear.bat</bdi>]. سنستخدم هذا البرنامج النصي لتثبيت مختلف وحدات <bdi dir="ltr" class="odt-ltr-term">PEAR</bdi> التي نحتاجها. يتم استدعاء هذا البرنامج النصي مع معلمات. ومن بينها، توفر المعلمة [<bdi dir="ltr" class="odt-ltr-term">help</bdi>] قائمة بالأوامر التي يقبلها البرنامج النصي:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">C</span><span class="p">:</span>\<span class="n">serveursSGBD</span>\<span class="n">wamp21</span>\<span class="nb">bin</span>\<span class="n">PHP</span>\<span class="n">php5</span><span class="mf">.3.5</span><span class="o">&gt;</span><span class="n">pear</span> <span class="n">help</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">Commands</span><span class="p">:</span>
 <a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">build</span>                  <span class="n">Build</span> <span class="n">an</span> <span class="n">Extension</span> <span class="n">From</span> <span class="n">C</span> <span class="n">Source</span>
@@ -1483,7 +1485,7 @@
 <a id="__codelineno-5-56" name="__codelineno-5-56" href="#__codelineno-5-56"></a><span class="n">Type</span> <span class="s2">&quot;pear help shortcuts&quot;</span> <span class="n">to</span> <span class="nb">list</span> <span class="nb">all</span> <span class="n">command</span> <span class="n">shortcuts</span><span class="o">.</span>
 <a id="__codelineno-5-57" name="__codelineno-5-57" href="#__codelineno-5-57"></a><span class="n">Type</span> <span class="s2">&quot;pear help &lt;command&gt;&quot;</span> <span class="n">to</span> <span class="n">get</span> <span class="n">the</span> <span class="n">help</span> <span class="k">for</span> <span class="n">the</span> <span class="n">specified</span> <span class="n">command</span><span class="o">.</span>
 </code></pre></div>
-<p>يُستخدم الأمر [install] لتثبيت وحدات PEAR. يمكنك الحصول على المساعدة بشأن الأمر [install]:</p>
+<p>يُستخدم الأمر [<bdi dir="ltr" class="odt-ltr-term">install</bdi>] لتثبيت وحدات <bdi dir="ltr" class="odt-ltr-term">PEAR.</bdi> يمكنك الحصول على المساعدة بشأن الأمر [<bdi dir="ltr" class="odt-ltr-term">install</bdi>]:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">C</span><span class="p">:</span>\<span class="n">serveursSGBD</span>\<span class="n">wamp21</span>\<span class="nb">bin</span>\<span class="n">PHP</span>\<span class="n">php5</span><span class="mf">.3.5</span><span class="o">&gt;</span><span class="n">pear</span> <span class="n">help</span> <span class="n">install</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">pear</span> <span class="n">install</span> <span class="p">[</span><span class="n">options</span><span class="p">]</span> <span class="p">[</span><span class="n">channel</span><span class="o">/</span><span class="p">]</span><span class="o">&lt;</span><span class="n">package</span><span class="o">&gt;</span> <span class="o">...</span>
 <a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">Installs</span> <span class="n">one</span> <span class="ow">or</span> <span class="n">more</span> <span class="n">PEAR</span> <span class="n">packages</span><span class="o">.</span>  <span class="n">You</span> <span class="n">can</span> <span class="n">specify</span> <span class="n">a</span> <span class="n">package</span> <span class="n">to</span> <span class="n">install</span> <span class="ow">in</span> <span class="n">four</span> <span class="n">ways</span><span class="p">:</span>
@@ -1532,7 +1534,7 @@
 <a id="__codelineno-6-46" name="__codelineno-6-46" href="#__codelineno-6-46"></a>  <span class="o">-</span><span class="n">p</span><span class="p">,</span> <span class="o">--</span><span class="n">pretend</span>
 <a id="__codelineno-6-47" name="__codelineno-6-47" href="#__codelineno-6-47"></a>        <span class="n">Only</span> <span class="nb">list</span> <span class="n">the</span> <span class="n">packages</span> <span class="n">that</span> <span class="n">would</span> <span class="n">be</span> <span class="n">downloaded</span>
 </code></pre></div>
-<p>وحدات PEAR المطلوب تثبيتها هي: [Mail]، [Mail_Mime]، [Net_SMTP]. في نافذة موجه الأوامر، أدخل الأوامر التالية واحدة تلو الأخرى:</p>
+<p>وحدات <bdi dir="ltr" class="odt-ltr-term">PEAR</bdi> المطلوب تثبيتها هي: [<bdi dir="ltr" class="odt-ltr-term">Mail</bdi>]، [<bdi dir="ltr" class="odt-ltr-term">Mail</bdi>_Mime]، [<bdi dir="ltr" class="odt-ltr-term">Net</bdi>_SMTP]. في نافذة موجه الأوامر، أدخل الأوامر التالية واحدة تلو الأخرى:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>&lt;PHP_installDir&gt;pear install Mail
 <a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>...
 <a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>&lt;PHP_installDir&gt;pear install Mail_Mime
@@ -1540,7 +1542,7 @@
 <a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>&lt;PHP_installDir&gt;pear install Net_SMTP
 <a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>…
 </code></pre></div>
-<p>حيث &lt;PHP_installDir&gt; هو دليل تثبيت مترجم PHP (C:\serveursSGBD\wamp21\bin\PHP\php5.3.5 في هذا المثال)</p>
+<p>حيث &lt;<bdi dir="ltr" class="odt-ltr-term">PHP</bdi>_installDir&gt; هو دليل تثبيت مترجم <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> (<bdi dir="ltr" class="odt-ltr-term">C:</bdi>\<bdi dir="ltr" class="odt-ltr-term">serveursSGBD</bdi>\<bdi dir="ltr" class="odt-ltr-term">wamp21</bdi>\bin\<bdi dir="ltr" class="odt-ltr-term">PHP</bdi>\<bdi dir="ltr" class="odt-ltr-term">php5.3.5</bdi> في هذا المثال)</p>
 <p>يمكنك عرض الوحدات المثبتة:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>C:\serveursSGBD\wamp21\bin\PHP\php5.3.5&gt;pear list
 <a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>INSTALLED PACKAGES, CHANNEL PEAR.php.NET:
@@ -1557,10 +1559,10 @@
 <a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>Structures_Graph 1.0.4   stable
 <a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>XML_Util         1.2.1   stable
 </code></pre></div>
-<p>يتم تثبيت الوحدات النمطية في المجلد &lt;PHP_installDir&gt;/PEAR:</p>
+<p>يتم تثبيت الوحدات النمطية في المجلد &lt;<bdi dir="ltr" class="odt-ltr-term">PHP</bdi>_installDir&gt;/<bdi dir="ltr" class="odt-ltr-term">PEAR:</bdi></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000020B000003164B6AAF0C.png" width="262" height="395" style="display:inline-block; margin:4px;width:6.92cm;height:10.453cm;" class="odt-zoomable" data-zoom-src="images/100000000000020B000003164B6AAF0C.png" /></td></tr></table>
 
-<p>بعد تثبيت وحدات PEAR، يبدو نص PHP الخاص بإرسال البريد الإلكتروني كما يلي:</p>
+<p>بعد تثبيت وحدات <bdi dir="ltr" class="odt-ltr-term">PEAR</bdi>، يبدو نص <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> الخاص بإرسال البريد الإلكتروني كما يلي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -1639,7 +1641,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p>ملف [mail2.txt]:</p>
+<p>ملف [<bdi dir="ltr" class="odt-ltr-term">mail2.txt</bdi>]:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
 <span class="normal"><a href="#__codelineno-9-2">2</a></span>
 <span class="normal"><a href="#__codelineno-9-3">3</a></span>
@@ -1649,7 +1651,7 @@
 <a id="__codelineno-9-4" name="__codelineno-9-4"></a>ligne3
 </code></pre></div></td></tr></table></div>
 <ul>
-  <li>السطر 1: بالترتيب، خادم SMTP، عنوان المرسل، عنوان المستلم، موضوع الرسالة، المستند المراد إرفاقه.
+  <li>السطر 1: بالترتيب، خادم <bdi dir="ltr" class="odt-ltr-term">SMTP</bdi>، عنوان المرسل، عنوان المستلم، موضوع الرسالة، المستند المراد إرفاقه.
   </li>
   <li>السطور 2-4: نص الرسالة
   </li>
@@ -1660,52 +1662,52 @@
 <a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>Résultat de l&#39;envoi : Message envoyé
 </code></pre></div>
 <p><strong>تعليقات</strong></p>
-<p>يختلف هذا البرنامج النصي عن البرنامج النصي السابق فقط في استخدامه لوظيفة <em>sendmail</em>. نصف هذه الوظيفة أدناه:</p>
+<p>يختلف هذا البرنامج النصي عن البرنامج النصي السابق فقط في استخدامه لوظيفة <em><bdi dir="ltr" class="odt-ltr-term">sendmail</bdi></em>. نصف هذه الوظيفة أدناه:</p>
 <ul>
-  <li>السطر 6: تم تثبيت نصوص PHP الخاصة بوحدات PEAR في دليل لا يبحث فيه مترجم PHP بشكل افتراضي. لضمان أن المترجم يمكنه العثور على وحدات PEAR، نحدد يدويًا الدلائل التي يجب أن يبحث فيها. من الممكن تعديل بعض معلمات التكوين لمترجم PHP أثناء التشغيل. هذا التعديل مرئي فقط للنص البرمجي الذي يقوم به وفقط طوال مدة تنفيذه. يمكن العثور على التكوين الافتراضي لمترجم PHP في الملف <i>&lt;PHP_installdir&gt;/PHP.ini</i>. يحتوي هذا الملف على أسطر بالشكل 
+  <li>السطر 6: تم تثبيت نصوص <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> الخاصة بوحدات <bdi dir="ltr" class="odt-ltr-term">PEAR</bdi> في دليل لا يبحث فيه مترجم <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> بشكل افتراضي. لضمان أن المترجم يمكنه العثور على وحدات <bdi dir="ltr" class="odt-ltr-term">PEAR</bdi>، نحدد يدويًا الدلائل التي يجب أن يبحث فيها. من الممكن تعديل بعض معلمات التكوين لمترجم <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> أثناء التشغيل. هذا التعديل مرئي فقط للنص البرمجي الذي يقوم به وفقط طوال مدة تنفيذه. يمكن العثور على التكوين الافتراضي لمترجم <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> في الملف <i>&lt;<bdi dir="ltr" class="odt-ltr-term">PHP_installdir</bdi>&gt;/<bdi dir="ltr" class="odt-ltr-term">PHP.ini</bdi></i>. يحتوي هذا الملف على أسطر بالشكل 
   </li>
 </ul>
 
 <div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>clé=valeur
 </code></pre></div>
-<p>يمكن تعديل قيمة المفتاح أثناء التشغيل باستخدام الدالة <em>ini_set(key, new_value)</em>. المفتاح المستخدم لتحديد مسار البحث عن دوال وفئات PHP التي يشير إليها البرنامج النصي هو <em>&#x27;include_path</em>&#x27;. هنا، نضيف كل من دليل البرنامج النصي (.) ودليل PEAR داخل دليل تثبيت مترجم PHP إلى مسار البحث.</p>
+<p>يمكن تعديل قيمة المفتاح أثناء التشغيل باستخدام الدالة <em>ini_set(key, new_value)</em>. المفتاح المستخدم لتحديد مسار البحث عن دوال وفئات <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> التي يشير إليها البرنامج النصي هو <em>&#x27;<bdi dir="ltr" class="odt-ltr-term">include</bdi>_path</em>&#x27;. هنا، نضيف كل من دليل البرنامج النصي (.) ودليل <bdi dir="ltr" class="odt-ltr-term">PEAR</bdi> داخل دليل تثبيت مترجم <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> إلى مسار البحث.</p>
 <ul>
-  <li>الأسطر 7–9: يتم تحميل البرامج النصية PHP لإرسال البريد الإلكتروني.
+  <li>الأسطر 7–9: يتم تحميل البرامج النصية <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> لإرسال البريد الإلكتروني.
   </li>
-  <li>السطر 50: دالة <i>sendmail</i>، التي تتولى إرسال البريد الإلكتروني. معلماتها هي كما يلي:
+  <li>السطر 50: دالة <i><bdi dir="ltr" class="odt-ltr-term">sendmail</bdi></i>، التي تتولى إرسال البريد الإلكتروني. معلماتها هي كما يلي:
   </li>
 </ul>
 
 <ol>
     <ul>
-      <li><i>$smtpServer</i>: اسم خادم SMTP المراد الاتصال به
+      <li><i>$<bdi dir="ltr" class="odt-ltr-term">smtpServer</bdi></i>: اسم خادم <bdi dir="ltr" class="odt-ltr-term">SMTP</bdi> المراد الاتصال به
       </li>
-      <li><i>$sender</i>: عنوان البريد الإلكتروني للمرسل
+      <li><i>$<bdi dir="ltr" class="odt-ltr-term">sender</bdi></i>: عنوان البريد الإلكتروني للمرسل
       </li>
-      <li><i>$recipient</i>: عنوان البريد الإلكتروني للمستلم
+      <li><i>$<bdi dir="ltr" class="odt-ltr-term">recipient</bdi></i>: عنوان البريد الإلكتروني للمستلم
       </li>
-      <li><i>$message</i>: الرسالة المراد إرسالها.
+      <li><i>$<bdi dir="ltr" class="odt-ltr-term">message</bdi></i>: الرسالة المراد إرسالها.
       </li>
-      <li><i>$subject</i>: موضوع الرسالة
+      <li><i>$<bdi dir="ltr" class="odt-ltr-term">subject</bdi></i>: موضوع الرسالة
       </li>
-      <li><i>$attachment</i>: اسم المستند المراد إرفاقه بالرسالة
+      <li><i>$<bdi dir="ltr" class="odt-ltr-term">attachment</bdi></i>: اسم المستند المراد إرفاقه بالرسالة
       </li>
     </ul>
 </ol>
 
-<p>تُرجع الدالة <em>sendMail</em> رسالة خطأ؛ وتكون فارغة في حالة عدم حدوث أي خطأ.</p>
+<p>تُرجع الدالة <em><bdi dir="ltr" class="odt-ltr-term">sendMail</bdi></em> رسالة خطأ؛ وتكون فارغة في حالة عدم حدوث أي خطأ.</p>
 <ul>
-  <li>السطر 56: إنشاء رسالة <i>Mail_Mime</i>. تتكون هذه الرسالة من رؤوس (From، To، Subject) ونص (الرسالة نفسها)
+  <li>السطر 56: إنشاء رسالة <i><bdi dir="ltr" class="odt-ltr-term">Mail_Mime</bdi></i>. تتكون هذه الرسالة من رؤوس (<bdi dir="ltr" class="odt-ltr-term">From</bdi>، <bdi dir="ltr" class="odt-ltr-term">To</bdi>، <bdi dir="ltr" class="odt-ltr-term">Subject</bdi>) ونص (الرسالة نفسها)
   </li>
-  <li>السطر 57: يتم تعيين نص رسالة <i>Mail_Mime</i>.
+  <li>السطر 57: يتم تعيين نص رسالة <i><bdi dir="ltr" class="odt-ltr-term">Mail_Mime</bdi></i>.
   </li>
   <li>السطر 58: إرفاق مستند بالرسالة
   </li>
-  <li>السطر 59: تعيين الرؤوس (From، To، Subject) لرسالة <i>Mail_Mime</i>
+  <li>السطر 59: تعيين الرؤوس (<bdi dir="ltr" class="odt-ltr-term">From</bdi>، <bdi dir="ltr" class="odt-ltr-term">To</bdi>، <bdi dir="ltr" class="odt-ltr-term">Subject</bdi>) لرسالة <i><bdi dir="ltr" class="odt-ltr-term">Mail_Mime</bdi></i>
   </li>
-  <li>السطر 61: إنشاء الفئة المسؤولة عن إرسال رسالة <i>Mail_Mime. </i>المعلمة الأولى للطريقة هي اسم البروتوكول المراد استخدامه، وهو في هذه الحالة بروتوكول SMTP. المعلمة الثانية هي مصفوفة تحدد اسم ومنفذ خدمة SMTP المراد استخدامها
+  <li>السطر 61: إنشاء الفئة المسؤولة عن إرسال رسالة <i><bdi dir="ltr" class="odt-ltr-term">Mail_Mime.</bdi> </i>المعلمة الأولى للطريقة هي اسم البروتوكول المراد استخدامه، وهو في هذه الحالة بروتوكول <bdi dir="ltr" class="odt-ltr-term">SMTP.</bdi> المعلمة الثانية هي مصفوفة تحدد اسم ومنفذ خدمة <bdi dir="ltr" class="odt-ltr-term">SMTP</bdi> المراد استخدامها
   </li>
-  <li>السطر 62: إرسال الرسالة. تأخذ طريقة الإرسال ثلاث معلمات: عنوان المرسل، ورؤوس رسالة Mail_Mime، ونص رسالة <i>Mail_Mime</i>. ترجع دالة الإرسال القيمة المنطقية TRUE إذا تم إرسال الرسالة بنجاح، أو رسالة خطأ في حالة عدم نجاح الإرسال.
+  <li>السطر 62: إرسال الرسالة. تأخذ طريقة الإرسال ثلاث معلمات: عنوان المرسل، ورؤوس رسالة <bdi dir="ltr" class="odt-ltr-term">Mail_Mime</bdi>، ونص رسالة <i><bdi dir="ltr" class="odt-ltr-term">Mail_Mime</bdi></i>. ترجع دالة الإرسال القيمة المنطقية <bdi dir="ltr" class="odt-ltr-term">TRUE</bdi> إذا تم إرسال الرسالة بنجاح، أو رسالة خطأ في حالة عدم نجاح الإرسال.
   </li>
 </ul>
 

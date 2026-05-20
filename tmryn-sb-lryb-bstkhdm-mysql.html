@@ -57,6 +57,8 @@
     
       <link rel="stylesheet" href="stylesheets/focus.css">
     
+      <link rel="stylesheet" href="stylesheets/bidi.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -734,9 +736,9 @@
 
 
 <p><a id="refheading399241881943603"></a></p>
-<h1 id="8-mysql">8. <span style="color: #365f91">تمرين حساب الضرائب باستخدام MySQL</span></h1>
+<h1 id="8-mysql">8. <span style="color: #365f91">تمرين حساب الضرائب باستخدام <bdi dir="ltr" class="odt-ltr-term">MySQL</bdi></span></h1>
 <p>لقد كتبنا بالفعل ثلاث نسخ من هذا التمرين. استخدمت أحدث نسخة فئة لحساب الضرائب. استردت هذه الفئة البيانات اللازمة للحساب من ملف نصي. وستستردها الآن من قاعدة بيانات. للقيام بذلك، نكتب كودًا أوليًا ينقل البيانات من الملف النصي إلى قاعدة البيانات.</p>
-<p>الملف النصي <em>impots.txt</em> هو كما يلي:</p>
+<p>الملف النصي <em><bdi dir="ltr" class="odt-ltr-term">impots.txt</bdi></em> هو كما يلي:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>12620:13190:15640:24740:31810:39970:48360:55790:92970:127860:151250:172040:195000:0
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>0:0.05:0.1:0.15:0.2:0.25:0.3:0.35:0.4:0.45:0.5:0.55:0.6:0.65
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>0:631:1290.5:272.5:3309.5:4900:6898.5:9316.5:12106:16754.5:23147.5:30710:39312:49062
@@ -744,9 +746,9 @@
 <p>قاعدة البيانات المراد إنشاؤها هي كما يلي:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000111000000973A734987.png" width="191" height="106" style="display:inline-block; margin:4px;width:5.061cm;height:2.799cm;" class="odt-zoomable" data-zoom-src="images/1000000000000111000000973A734987.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000D4000001721F293454.png" width="149" height="259" style="display:inline-block; margin:4px;width:3.93cm;height:6.86cm;" class="odt-zoomable" data-zoom-src="images/10000000000000D4000001721F293454.png" /></td></tr></table>
 
-<p>تسمى قاعدة البيانات [dbimpots] وتحتوي على جدول واحد [impots]. يتم الوصول إليها بواسطة المستخدم [root] بدون كلمة مرور.</p>
+<p>تسمى قاعدة البيانات [<bdi dir="ltr" class="odt-ltr-term">dbimpots</bdi>] وتحتوي على جدول واحد [<bdi dir="ltr" class="odt-ltr-term">impots</bdi>]. يتم الوصول إليها بواسطة المستخدم [<bdi dir="ltr" class="odt-ltr-term">root</bdi>] بدون كلمة مرور.</p>
 <p><a id="refheading399261881943603"></a></p>
-<h2 id="81-mysql-txt2mysql">8.1. <span style="color: #4f81bd"><strong><span style="color: #4f81bd">استيراد ملف نصي إلى جدول MySQL (txt2mysql)</span></strong></span></h2>
+<h2 id="81-mysql-txt2mysql">8.1. <span style="color: #4f81bd"><strong><span style="color: #4f81bd">استيراد ملف نصي إلى جدول <bdi dir="ltr" class="odt-ltr-term">MySQL</bdi> (<bdi dir="ltr" class="odt-ltr-term">txt2mysql</bdi>)</span></strong></span></h2>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -852,29 +854,29 @@
 </code></pre></div>
 <p><a id="refheading399281881943603"></a>
 <a id="impots04"></a></p>
-<h2 id="82-impots_04">8.2. <span style="color: #4f81bd"><strong>برنامج حساب الضرائب (</strong> <strong>impots_04)</strong></span></h2>
-<p>تستخدم هذه النسخة فئة <em><code>Impôts</code></em> التي تسترد القيم اللازمة لحساب الضريبة من قاعدة البيانات. نقدم هنا مفهومًا جديدًا: <strong>العبارة المعدة مسبقًا</strong>. يتم تنفيذ عبارة SQL بواسطة نظام إدارة قواعد البيانات (DBMS) على مرحلتين:</p>
+<h2 id="82-impots_04">8.2. <span style="color: #4f81bd"><strong>برنامج حساب الضرائب (</strong> <strong><bdi dir="ltr" class="odt-ltr-term">impots</bdi>_04)</strong></span></h2>
+<p>تستخدم هذه النسخة فئة <em><code>Impôts</code></em> التي تسترد القيم اللازمة لحساب الضريبة من قاعدة البيانات. نقدم هنا مفهومًا جديدًا: <strong>العبارة المعدة مسبقًا</strong>. يتم تنفيذ عبارة <bdi dir="ltr" class="odt-ltr-term">SQL</bdi> بواسطة نظام إدارة قواعد البيانات (<bdi dir="ltr" class="odt-ltr-term">DBMS</bdi>) على مرحلتين:</p>
 <ol>
-<li>يتم إعداد الاستعلام: يقوم نظام إدارة قواعد البيانات (DBMS) بإعداد خطة تنفيذ محسّنة للاستعلام. والهدف هو تنفيذه بأكبر قدر ممكن من الكفاءة.</li>
+<li>يتم إعداد الاستعلام: يقوم نظام إدارة قواعد البيانات (<bdi dir="ltr" class="odt-ltr-term">DBMS</bdi>) بإعداد خطة تنفيذ محسّنة للاستعلام. والهدف هو تنفيذه بأكبر قدر ممكن من الكفاءة.</li>
 </ol>
 <ol start="2">
   <li>تنفيذ الاستعلام.
   </li>
 </ol>
 
-<p>إذا تم تنفيذ نفس الاستعلام N مرات، يتم تنفيذ الخطوتين السابقتين N مرات. ومع ذلك، من الممكن إعداد الاستعلام مرة واحدة وتنفيذه N مرات. للقيام بذلك، يجب استخدام الاستعلامات المعدة مسبقًا. إذا كان <em>$query</em> هو عبارة SQL المراد تنفيذها <em>و$connection هو</em> كائن PDO الذي يمثل الاتصال:</p>
+<p>إذا تم تنفيذ نفس الاستعلام <bdi dir="ltr" class="odt-ltr-term">N</bdi> مرات، يتم تنفيذ الخطوتين السابقتين <bdi dir="ltr" class="odt-ltr-term">N</bdi> مرات. ومع ذلك، من الممكن إعداد الاستعلام مرة واحدة وتنفيذه <bdi dir="ltr" class="odt-ltr-term">N</bdi> مرات. للقيام بذلك، يجب استخدام الاستعلامات المعدة مسبقًا. إذا كان <em>$<bdi dir="ltr" class="odt-ltr-term">query</bdi></em> هو عبارة <bdi dir="ltr" class="odt-ltr-term">SQL</bdi> المراد تنفيذها <em>و$<bdi dir="ltr" class="odt-ltr-term">connection</bdi> هو</em> كائن <bdi dir="ltr" class="odt-ltr-term">PDO</bdi> الذي يمثل الاتصال:</p>
 <ul>
-  <li><i>$statement = $connection-&gt;prepare($query) </i>يقوم بإعداد استعلام وإرجاع الاستعلام &quot;المُعد&quot;
+  <li><i>$<bdi dir="ltr" class="odt-ltr-term">statement</bdi> = $<bdi dir="ltr" class="odt-ltr-term">connection-</bdi>&gt;<bdi dir="ltr" class="odt-ltr-term">prepare</bdi>($<bdi dir="ltr" class="odt-ltr-term">query</bdi>) </i>يقوم بإعداد استعلام وإرجاع الاستعلام &quot;المُعد&quot;
   </li>
-  <li><i>$statement-&gt;execute() </i>ينفذ الاستعلام المُعد.
+  <li><i>$<bdi dir="ltr" class="odt-ltr-term">statement-</bdi>&gt;<bdi dir="ltr" class="odt-ltr-term">execute</bdi>() </i>ينفذ الاستعلام المُعد.
   </li>
 </ul>
 
-<p>إذا كان الاستعلام المُعد عبارة عن عبارة SELECT، فإن </p>
+<p>إذا كان الاستعلام المُعد عبارة عن عبارة <bdi dir="ltr" class="odt-ltr-term">SELECT</bdi>، فإن </p>
 <ul>
-  <li><i>$statement-&gt;fetchAll() </i>تُرجع جميع الصفوف من جدول نتائج <i>استعلام SELECT </i>كمصفوفة T، حيث <i>T[i,j] </i>هي قيمة العمود <i>j </i>في الصف <i>i </i>من الجدول
+  <li><i>$<bdi dir="ltr" class="odt-ltr-term">statement-</bdi>&gt;<bdi dir="ltr" class="odt-ltr-term">fetchAll</bdi>() </i>تُرجع جميع الصفوف من جدول نتائج <i>استعلام <bdi dir="ltr" class="odt-ltr-term">SELECT</bdi> </i>كمصفوفة <bdi dir="ltr" class="odt-ltr-term">T</bdi>، حيث <i><bdi dir="ltr" class="odt-ltr-term">T</bdi>[i,j] </i>هي قيمة العمود <i>j </i>في الصف <i>i </i>من الجدول
   </li>
-  <li>تُرجع الدالة <i>$statement-&gt;fetch() </i>الصف الحالي من الجدول على شكل مصفوفة T، حيث تمثل<i> T[j] </i>قيمة العمود <i>j </i>في الصف
+  <li>تُرجع الدالة <i>$<bdi dir="ltr" class="odt-ltr-term">statement-</bdi>&gt;<bdi dir="ltr" class="odt-ltr-term">fetch</bdi>() </i>الصف الحالي من الجدول على شكل مصفوفة <bdi dir="ltr" class="odt-ltr-term">T</bdi>، حيث تمثل<i> <bdi dir="ltr" class="odt-ltr-term">T</bdi>[j] </i>قيمة العمود <i>j </i>في الصف
   </li>
 </ul>
 
@@ -1044,13 +1046,13 @@
 <p><strong>تعليقات</strong></p>
 <p>الميزات الجديدة موجودة في الأسطر 98–109:</p>
 <ul>
-  <li>السطر 99: عبارة SQL <i>SELECT </i>التي تسترد البيانات اللازمة لحساب الضريبة.
+  <li>السطر 99: عبارة <bdi dir="ltr" class="odt-ltr-term">SQL</bdi> <i><bdi dir="ltr" class="odt-ltr-term">SELECT</bdi> </i>التي تسترد البيانات اللازمة لحساب الضريبة.
   </li>
-  <li>السطر 102: إعداد عبارة SQL <i>SELECT</i> 
+  <li>السطر 102: إعداد عبارة <bdi dir="ltr" class="odt-ltr-term">SQL</bdi> <i><bdi dir="ltr" class="odt-ltr-term">SELECT</bdi></i> 
   </li>
   <li>السطر 103: تنفيذ الجملة المعدة
   </li>
-  <li>الأسطر 105-109: معالجة جدول نتائج <i>جملة SELECT </i>سطراً سطراً
+  <li>الأسطر 105-109: معالجة جدول نتائج <i>جملة <bdi dir="ltr" class="odt-ltr-term">SELECT</bdi> </i>سطراً سطراً
   </li>
 </ul>
 

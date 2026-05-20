@@ -57,6 +57,8 @@
     
       <link rel="stylesheet" href="stylesheets/focus.css">
     
+      <link rel="stylesheet" href="stylesheets/bidi.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -784,11 +786,11 @@
 
 
 <h1 id="11">11. <span style="color: #365f91">حساب الضرائب: تمرين باستخدام خدمة ويب وبنية ثلاثية المستويات</span></h1>
-<p>سنعيد النظر في تمرين IMPOTS (انظر الأقسام<a href="#impots01"><u><span style="color: #0563c1"> 4.2 </span></u></a><a href="#impots02"><u><span style="color: #0563c1">و4.3 </span></u></a><a href="#impots03"><u><span style="color: #0563c1">و6</span></u></a>) ونحوله إلى تطبيق عميل/خادم. سيتم تقسيم البرنامج النصي للخادم إلى ثلاثة مكونات:</p>
+<p>سنعيد النظر في تمرين <bdi dir="ltr" class="odt-ltr-term">IMPOTS</bdi> (انظر الأقسام<a href="#impots01"><u><span style="color: #0563c1"> 4.2 </span></u></a><a href="#impots02"><u><span style="color: #0563c1">و4.3 </span></u></a><a href="#impots03"><u><span style="color: #0563c1">و6</span></u></a>) ونحوله إلى تطبيق عميل/خادم. سيتم تقسيم البرنامج النصي للخادم إلى ثلاثة مكونات:</p>
 <ul>
-  <li>طبقة تسمى [DAO] (كائنات الوصول إلى البيانات) ستتولى التعامل مع قاعدة بيانات MySQL
+  <li>طبقة تسمى [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>] (كائنات الوصول إلى البيانات) ستتولى التعامل مع قاعدة بيانات <bdi dir="ltr" class="odt-ltr-term">MySQL</bdi>
   </li>
-  <li>طبقة تسمى [business] ستقوم بحساب الضريبة
+  <li>طبقة تسمى [<bdi dir="ltr" class="odt-ltr-term">business</bdi>] ستقوم بحساب الضريبة
   </li>
   <li>طبقة [web] ستتولى الاتصال مع عملاء الويب.
   </li>
@@ -798,7 +800,7 @@
 
 <p>يُرسل البرنامج النصي للعميل [1]:</p>
 <ul>
-  <li>يرسل المعلومات الثلاث ($married، $children، $salary) اللازمة لحساب الضريبة إلى البرنامج النصي للخادم
+  <li>يرسل المعلومات الثلاث ($<bdi dir="ltr" class="odt-ltr-term">married</bdi>، $<bdi dir="ltr" class="odt-ltr-term">children</bdi>، $<bdi dir="ltr" class="odt-ltr-term">salary</bdi>) اللازمة لحساب الضريبة إلى البرنامج النصي للخادم
   </li>
   <li>يعرض استجابة الخادم على وحدة التحكم
   </li>
@@ -806,26 +808,26 @@
 
 <p>يتكون البرنامج النصي للخادم [2] من طبقة [الويب] الخاصة بالخادم.</p>
 <ul>
-  <li>في بداية جلسة عميل جديدة، سيملأ المصفوفات بالبيانات من قاعدة بيانات MySQL [dbimpots]. للقيام بذلك، سيستدعي طبقة [DAO]. سيتم وضع المصفوفات التي تم إنشاؤها بهذه الطريقة في جلسة العميل بحيث يمكن استخدامها في طلبات العميل اللاحقة.
+  <li>في بداية جلسة عميل جديدة، سيملأ المصفوفات بالبيانات من قاعدة بيانات <bdi dir="ltr" class="odt-ltr-term">MySQL</bdi> [<bdi dir="ltr" class="odt-ltr-term">dbimpots</bdi>]. للقيام بذلك، سيستدعي طبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>]. سيتم وضع المصفوفات التي تم إنشاؤها بهذه الطريقة في جلسة العميل بحيث يمكن استخدامها في طلبات العميل اللاحقة.
   </li>
-  <li>عندما يقوم العميل بتقديم طلب، فإنه يمرر المعلومات الثلاث ($married، $children، $salary) إلى طبقة [منطق الأعمال]، والتي ستحسب الضريبة $tax.
+  <li>عندما يقوم العميل بتقديم طلب، فإنه يمرر المعلومات الثلاث ($<bdi dir="ltr" class="odt-ltr-term">married</bdi>، $<bdi dir="ltr" class="odt-ltr-term">children</bdi>، $<bdi dir="ltr" class="odt-ltr-term">salary</bdi>) إلى طبقة [منطق الأعمال]، والتي ستحسب الضريبة $<bdi dir="ltr" class="odt-ltr-term">tax.</bdi>
   </li>
-  <li>سيُرجع البرنامج النصي للخادم الضريبة المحسوبة $tax.
+  <li>سيُرجع البرنامج النصي للخادم الضريبة المحسوبة $<bdi dir="ltr" class="odt-ltr-term">tax.</bdi>
   </li>
 </ul>
-<h2 id="111-clients_impots_05_web">11.1. <span style="color: #4f81bd">نص العميل (clients_impots_05_web)</span></h2>
-<p>سيكون البرنامج النصي للعميل عميلاً لخدمة الويب لحساب الضريبة. وسيقوم بإرسال (POST) المعلمات إلى الخادم بالصيغة التالية:</p>
-<p><strong>params=$married,$children,$salary</strong> حيث </p>
+<h2 id="111-clients_impots_05_web">11.1. <span style="color: #4f81bd">نص العميل (<bdi dir="ltr" class="odt-ltr-term">clients</bdi>_impots_05_web)</span></h2>
+<p>سيكون البرنامج النصي للعميل عميلاً لخدمة الويب لحساب الضريبة. وسيقوم بإرسال (<bdi dir="ltr" class="odt-ltr-term">POST</bdi>) المعلمات إلى الخادم بالصيغة التالية:</p>
+<p><strong><bdi dir="ltr" class="odt-ltr-term">params</bdi>=$<bdi dir="ltr" class="odt-ltr-term">married</bdi>,$<bdi dir="ltr" class="odt-ltr-term">children</bdi>,$<bdi dir="ltr" class="odt-ltr-term">salary</bdi></strong> حيث </p>
 <ul>
-  <li><i>$married </i>ستكون السلسلة <i>&quot;yes&quot; </i>أو &quot;<i>no&quot;</i>، 
+  <li><i>$<bdi dir="ltr" class="odt-ltr-term">married</bdi> </i>ستكون السلسلة <i>&quot;yes&quot; </i>أو &quot;<i>no&quot;</i>، 
   </li>
-  <li><i>$children </i>سيكون عدد الأطفال، 
+  <li><i>$<bdi dir="ltr" class="odt-ltr-term">children</bdi> </i>سيكون عدد الأطفال، 
   </li>
-  <li><i>$salary هو </i>راتب دافع الضرائب
+  <li><i>$<bdi dir="ltr" class="odt-ltr-term">salary</bdi> هو </i>راتب دافع الضرائب
   </li>
 </ul>
 
-<p>يسترد المعلمات الثلاثة المذكورة أعلاه من ملف نصي [data.txt] بالتنسيق (married, children, salary):</p>
+<p>يسترد المعلمات الثلاثة المذكورة أعلاه من ملف نصي [<bdi dir="ltr" class="odt-ltr-term">data.txt</bdi>] بالتنسيق (<bdi dir="ltr" class="odt-ltr-term">married</bdi>, <bdi dir="ltr" class="odt-ltr-term">children</bdi>, <bdi dir="ltr" class="odt-ltr-term">salary</bdi>):</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>oui,2,200000
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>non,2,200000
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>oui,3,200000
@@ -835,9 +837,9 @@
 </code></pre></div>
 <p>نص البرنامج النصي للعميل </p>
 <ul>
-  <li>سيقوم بقراءة الملف النصي [data.txt] سطراً سطراً
+  <li>سيقوم بقراءة الملف النصي [<bdi dir="ltr" class="odt-ltr-term">data.txt</bdi>] سطراً سطراً
   </li>
-  <li>سيرسل السلسلة <b>params=$married,$children,$salary </b>إلى خدمة الويب لحساب الضرائب
+  <li>سيرسل السلسلة <b><bdi dir="ltr" class="odt-ltr-term">params</bdi>=$<bdi dir="ltr" class="odt-ltr-term">married</bdi>,$<bdi dir="ltr" class="odt-ltr-term">children</bdi>,$<bdi dir="ltr" class="odt-ltr-term">salary</bdi> </b>إلى خدمة الويب لحساب الضرائب
   </li>
   <li>سيسترد الرد من الخدمة. يمكن أن يتخذ هذا الرد شكلين:
   </li>
@@ -847,7 +849,7 @@
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>&lt;impot&gt;montant de l&#39;impôt&lt;/impot&gt;
 </code></pre></div>
 <ul>
-  <li>سيحفظ استجابة الخادم في ملف نصي [results.txt] بأحد التنسيقين التاليين:
+  <li>سيحفظ استجابة الخادم في ملف نصي [<bdi dir="ltr" class="odt-ltr-term">results.txt</bdi>] بأحد التنسيقين التاليين:
   </li>
 </ul>
 
@@ -995,39 +997,39 @@
 <p><strong>تعليقات</strong></p>
 <p>يتضمن كود البرنامج النصي من جانب العميل عناصر سبق أن رأيناها من قبل:</p>
 <ul>
-  <li>الأسطر 9–15: تم تقديم فئة [Utilities] في الإصدار 3، القسم<a href="#impots03"><u><span style="color: #0563c1"> 6</span></u></a>
+  <li>الأسطر 9–15: تم تقديم فئة [<bdi dir="ltr" class="odt-ltr-term">Utilities</bdi>] في الإصدار 3، القسم<a href="#impots03"><u><span style="color: #0563c1"> 6</span></u></a>
   </li>
   <li>الأسطر 17–68: يشبه البرنامج الرئيسي ذلك الموجود في الإصدار 1، القسم<a href="#impots01"><u><span style="color: #0563c1"> 4.2</span></u></a>. ويختلف عنه فقط في حساب الضريبة، السطر 56.
   </li>
   <li>السطر 56: تقبل دالة حساب الضريبة المعلمات التالية:
     <ul>
-      <li><i>$HOST</i>، <i>$PORT</i>، <i>$serverURL</i>: تُستخدم للاتصال بخدمة الويب
+      <li><i>$<bdi dir="ltr" class="odt-ltr-term">HOST</bdi></i>، <i>$<bdi dir="ltr" class="odt-ltr-term">PORT</bdi></i>، <i>$<bdi dir="ltr" class="odt-ltr-term">serverURL</bdi></i>: تُستخدم للاتصال بخدمة الويب
       </li>
-      <li><i>$cookie</i>: هي ملف تعريف الارتباط للجلسة. يتم تمرير هذه المعلمة بالرجوع إليها. يتم تعيين قيمتها بواسطة وظيفة حساب الضريبة. عند الاستدعاء الأول، لا تحتوي على أي قيمة. بعد ذلك، تحتوي على قيمة.
+      <li><i>$<bdi dir="ltr" class="odt-ltr-term">cookie</bdi></i>: هي ملف تعريف الارتباط للجلسة. يتم تمرير هذه المعلمة بالرجوع إليها. يتم تعيين قيمتها بواسطة وظيفة حساب الضريبة. عند الاستدعاء الأول، لا تحتوي على أي قيمة. بعد ذلك، تحتوي على قيمة.
       </li>
-      <li><b>array</b>($married, $children, $salary): تمثل صفًا من ملف [data.txt]
+      <li><b><bdi dir="ltr" class="odt-ltr-term">array</bdi></b>($<bdi dir="ltr" class="odt-ltr-term">married</bdi>, $<bdi dir="ltr" class="odt-ltr-term">children</bdi>, $<bdi dir="ltr" class="odt-ltr-term">salary</bdi>): تمثل صفًا من ملف [<bdi dir="ltr" class="odt-ltr-term">data.txt</bdi>]
       </li>
     </ul>
   </li>
 </ul>
 
-<p>تُرجع دالة حساب الضريبة مصفوفة من نتيجتين ($error، $tax) حيث $error هي رسالة خطأ محتملة و$tax هي مبلغ الضريبة.</p>
+<p>تُرجع دالة حساب الضريبة مصفوفة من نتيجتين ($<bdi dir="ltr" class="odt-ltr-term">error</bdi>، $tax) حيث $<bdi dir="ltr" class="odt-ltr-term">error</bdi> هي رسالة خطأ محتملة و$tax هي مبلغ الضريبة.</p>
 <ul>
-  <li>الأسطر 70–134: هذا عميل HTTP كلاسيكي، من النوع الذي صادفناه مرات عديدة. لاحظ النقاط التالية:
+  <li>الأسطر 70–134: هذا عميل <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> كلاسيكي، من النوع الذي صادفناه مرات عديدة. لاحظ النقاط التالية:
   </li>
-  <li>السطر 83: يتم إرسال المعلمات ($married، $children، $salary) إلى الخادم عبر طلب POST
+  <li>السطر 83: يتم إرسال المعلمات ($<bdi dir="ltr" class="odt-ltr-term">married</bdi>، $<bdi dir="ltr" class="odt-ltr-term">children</bdi>، $<bdi dir="ltr" class="odt-ltr-term">salary</bdi>) إلى الخادم عبر طلب <bdi dir="ltr" class="odt-ltr-term">POST</bdi>
   </li>
   <li>الأسطر 89–91: إذا كان لدى العميل معرف جلسة، فإنه يرسله إلى الخادم
   </li>
-  <li>السطر 93: إنشاء المعلمة <i>params</i>
+  <li>السطر 93: إنشاء المعلمة <i><bdi dir="ltr" class="odt-ltr-term">params</bdi></i>
   </li>
-  <li>السطر 101: يتم إرسال المعلمة `<i>params`</i>
+  <li>السطر 101: يتم إرسال المعلمة `<i><bdi dir="ltr" class="odt-ltr-term">params</bdi>`</i>
   </li>
-  <li>الأسطر 104–115: يقرأ العميل جميع رؤوس HTTP المرسلة من الخادم حتى يصادف السطر الفارغ الذي يشير إلى نهاية الرؤوس. ويستغل هذه الفرصة لاسترداد معرف الجلسة من الاستجابة لطلبه الأول.
+  <li>الأسطر 104–115: يقرأ العميل جميع رؤوس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> المرسلة من الخادم حتى يصادف السطر الفارغ الذي يشير إلى نهاية الرؤوس. ويستغل هذه الفرصة لاسترداد معرف الجلسة من الاستجابة لطلبه الأول.
   </li>
-  <li>الأسطر 123–125: معالجة أي سطر بالصيغة <i>&lt;error&gt;message&lt;/error&gt;</i>
+  <li>الأسطر 123–125: معالجة أي سطر بالصيغة <i>&lt;<bdi dir="ltr" class="odt-ltr-term">error</bdi>&gt;<bdi dir="ltr" class="odt-ltr-term">message</bdi>&lt;/<bdi dir="ltr" class="odt-ltr-term">error</bdi>&gt;</i>
   </li>
-  <li>الأسطر 126–128: نفعل الشيء نفسه مع أي سطر بالصيغة <i>&lt;tax&gt;amount&lt;/tax&gt;</i>
+  <li>الأسطر 126–128: نفعل الشيء نفسه مع أي سطر بالصيغة <i>&lt;tax&gt;<bdi dir="ltr" class="odt-ltr-term">amount</bdi>&lt;/tax&gt;</i>
   </li>
   <li>السطر 133: يتم إرجاع النتيجة
   </li>
@@ -1037,27 +1039,27 @@
 <p>نحن مهتمون هنا بالبرامج النصية الثلاثة التي يتكون منها الخادم:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000045E000000DCBEEE7EA8.png" width="559" height="110" style="display:inline-block; margin:4px;width:14.79cm;height:2.91cm;" class="odt-zoomable" data-zoom-src="images/100000000000045E000000DCBEEE7EA8.png" /></td></tr></table>
 
-<p>مشروع NetBeans المقابل هو كما يلي:</p>
+<p>مشروع <bdi dir="ltr" class="odt-ltr-term">NetBeans</bdi> المقابل هو كما يلي:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001A1000000F216E9E2D5.png" width="209" height="121" style="display:inline-block; margin:4px;width:5.517cm;height:3.201cm;" class="odt-zoomable" data-zoom-src="images/10000000000001A1000000F216E9E2D5.png" /></td></tr></table>
 
-<p>في [1]، يتكون الخادم من البرامج النصية PHP التالية:</p>
+<p>في [1]، يتكون الخادم من البرامج النصية <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> التالية:</p>
 <ul>
-  <li>[impots_05_entites] يحتوي على الفئات التي يستخدمها الخادم
+  <li>[<bdi dir="ltr" class="odt-ltr-term">impots_05_entites</bdi>] يحتوي على الفئات التي يستخدمها الخادم
   </li>
-  <li>[impots_05_dao] يحتوي على الفئات والواجهات الخاصة بطبقة [dao]
+  <li>[<bdi dir="ltr" class="odt-ltr-term">impots_05_dao</bdi>] يحتوي على الفئات والواجهات الخاصة بطبقة [dao]
   </li>
-  <li>[impots_05_metier] يحتوي على الفئات والواجهات الخاصة بطبقة [business]
+  <li>[<bdi dir="ltr" class="odt-ltr-term">impots_05_metier</bdi>] يحتوي على الفئات والواجهات الخاصة بطبقة [<bdi dir="ltr" class="odt-ltr-term">business</bdi>]
   </li>
-  <li>[impots_05_web] يحتوي على الفئات والواجهات الخاصة بطبقة [dao]
+  <li>[<bdi dir="ltr" class="odt-ltr-term">impots_05_web</bdi>] يحتوي على الفئات والواجهات الخاصة بطبقة [dao]
   </li>
 </ul>
 
 <p>نبدأ بعرض فئتين تستخدمهما الطبقات المختلفة لخدمة الويب.</p>
-<h3 id="1121-impots_05_entities">11.2.1. <span style="color: #4f81bd">كيانات خدمة الويب (impots_05_entities)</span></h3>
-<p>تحتوي قاعدة بيانات MySQL [dbimpots] على جدول [impots] يحتوي على البيانات اللازمة لحساب الضريبة [1]:</p>
+<h3 id="1121-impots_05_entities">11.2.1. <span style="color: #4f81bd">كيانات خدمة الويب (<bdi dir="ltr" class="odt-ltr-term">impots</bdi>_05_entities)</span></h3>
+<p>تحتوي قاعدة بيانات <bdi dir="ltr" class="odt-ltr-term">MySQL</bdi> [<bdi dir="ltr" class="odt-ltr-term">dbimpots</bdi>] على جدول [<bdi dir="ltr" class="odt-ltr-term">impots</bdi>] يحتوي على البيانات اللازمة لحساب الضريبة [1]:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000186000002A44A24E50E.png" width="195" height="338" style="display:inline-block; margin:4px;width:5.159cm;height:8.941cm;" class="odt-zoomable" data-zoom-src="images/1000000000000186000002A44A24E50E.png" /></td></tr></table>
 
-<p>سنقوم بتخزين البيانات من جدول MySQL [impots] في مصفوفة من كائنات <em>Tranche</em>، حيث <em>Tranche</em> هي الفئة التالية:</p>
+<p>سنقوم بتخزين البيانات من جدول <bdi dir="ltr" class="odt-ltr-term">MySQL</bdi> [<bdi dir="ltr" class="odt-ltr-term">impots</bdi>] في مصفوفة من كائنات <em><bdi dir="ltr" class="odt-ltr-term">Tranche</bdi></em>، حيث <em><bdi dir="ltr" class="odt-ltr-term">Tranche</bdi></em> هي الفئة التالية:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -1108,8 +1110,8 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p>سيتم استخدام الحقول الخاصة [$limite, $coeffR, $coeffN] لتخزين الأعمدة [limites, coeffR, coeffN] لصف في جدول MySQL [impots].</p>
-<p>بالإضافة إلى ذلك، سيستخدم كود الخادم استثناءً مخصصًا، وهو فئة <em>ImpotsException</em>:</p>
+<p>سيتم استخدام الحقول الخاصة [$<bdi dir="ltr" class="odt-ltr-term">limite</bdi>, $<bdi dir="ltr" class="odt-ltr-term">coeffR</bdi>, $<bdi dir="ltr" class="odt-ltr-term">coeffN</bdi>] لتخزين الأعمدة [<bdi dir="ltr" class="odt-ltr-term">limites</bdi>, <bdi dir="ltr" class="odt-ltr-term">coeffR</bdi>, <bdi dir="ltr" class="odt-ltr-term">coeffN</bdi>] لصف في جدول <bdi dir="ltr" class="odt-ltr-term">MySQL</bdi> [<bdi dir="ltr" class="odt-ltr-term">impots</bdi>].</p>
+<p>بالإضافة إلى ذلك، سيستخدم كود الخادم استثناءً مخصصًا، وهو فئة <em><bdi dir="ltr" class="odt-ltr-term">ImpotsException</bdi></em>:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
 <span class="normal"><a href="#__codelineno-3-2">2</a></span>
 <span class="normal"><a href="#__codelineno-3-3">3</a></span>
@@ -1125,18 +1127,18 @@
 <a id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="x">}</span>
 </code></pre></div></td></tr></table></div>
 <ul>
-  <li>السطر 1: تمتد فئة [ImpotsException] من فئة [Exception] المحددة مسبقًا في PHP 5
+  <li>السطر 1: تمتد فئة [<bdi dir="ltr" class="odt-ltr-term">ImpotsException</bdi>] من فئة [<bdi dir="ltr" class="odt-ltr-term">Exception</bdi>] المحددة مسبقًا في <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> 5
   </li>
-  <li>السطر 3: يقبل منشئ فئة [ImpotsException] معلمتين:
+  <li>السطر 3: يقبل منشئ فئة [<bdi dir="ltr" class="odt-ltr-term">ImpotsException</bdi>] معلمتين:
     <ul>
-      <li><i>$message</i>: رسالة خطأ
+      <li><i>$<bdi dir="ltr" class="odt-ltr-term">message</bdi></i>: رسالة خطأ
       </li>
-      <li><i>$code</i>: رمز الخطأ
+      <li><i>$<bdi dir="ltr" class="odt-ltr-term">code</bdi></i>: رمز الخطأ
       </li>
     </ul>
   </li>
 </ul>
-<h3 id="1122-dao-impots_05_dao">11.2.2. <span style="color: #4f81bd">طبقة [dao] (impots_05_dao)</span></h3>
+<h3 id="1122-dao-impots_05_dao">11.2.2. <span style="color: #4f81bd">طبقة [dao] (<bdi dir="ltr" class="odt-ltr-term">impots</bdi>_05_dao)</span></h3>
 <p>توفر طبقة [dao] الوصول إلى بيانات قاعدة البيانات:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000446000000D780AA153B.png" width="547" height="107" style="display:inline-block; margin:4px;width:14.473cm;height:2.843cm;" class="odt-zoomable" data-zoom-src="images/1000000000000446000000D780AA153B.png" /></td></tr></table>
 
@@ -1153,7 +1155,7 @@
 <a id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="x">  function getData();</span>
 <a id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="x">}</span>
 </code></pre></div></td></tr></table></div>
-<p>تُظهر واجهة <em>IImpotsDao</em> الدالة <em>getData</em> فقط. تضع هذه الدالة الصفوف المختلفة لجدول MySQL [dbimpots.impots] في مصفوفة من كائنات <em>Tranche</em>.</p>
+<p>تُظهر واجهة <em><bdi dir="ltr" class="odt-ltr-term">IImpotsDao</bdi></em> الدالة <em><bdi dir="ltr" class="odt-ltr-term">getData</bdi></em> فقط. تضع هذه الدالة الصفوف المختلفة لجدول <bdi dir="ltr" class="odt-ltr-term">MySQL</bdi> [<bdi dir="ltr" class="odt-ltr-term">dbimpots.impots</bdi>] في مصفوفة من كائنات <em><bdi dir="ltr" class="odt-ltr-term">Tranche</bdi></em>.</p>
 <p>فئة التنفيذ هي كما يلي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
@@ -1234,27 +1236,27 @@
 </code></pre></div>
 
 <ul>
-  <li>السطر 5: يتطلب تنفيذ واجهة [IImpotsDao] الفئات المحددة في البرنامج النصي [impots_05_entities].
+  <li>السطر 5: يتطلب تنفيذ واجهة [<bdi dir="ltr" class="odt-ltr-term">IImpotsDao</bdi>] الفئات المحددة في البرنامج النصي [<bdi dir="ltr" class="odt-ltr-term">impots_05_entities</bdi>].
   </li>
-  <li>السطر 11: تعريف فئة مجردة. الفئة المجردة هي فئة لا يمكن إنشاء مثيل لها. يجب أن تكون الفئة المجردة مشتقة من فئة أخرى حتى يمكن إنشاء مثيل لها. يمكن إعلان فئة ما على أنها مجردة لأنها لا يمكن إنشاء مثيل لها (بعض أساليبها غير محددة) أو لأننا لا <b>نريد </b>إنشاء مثيل لها. هنا، لا نريد إنشاء مثيل لفئة [<span style="color: #000000">ImpotsDaoWithPdo]. سنقوم بإنشاء مثيلات للفئات المشتقة.</span>
+  <li>السطر 11: تعريف فئة مجردة. الفئة المجردة هي فئة لا يمكن إنشاء مثيل لها. يجب أن تكون الفئة المجردة مشتقة من فئة أخرى حتى يمكن إنشاء مثيل لها. يمكن إعلان فئة ما على أنها مجردة لأنها لا يمكن إنشاء مثيل لها (بعض أساليبها غير محددة) أو لأننا لا <b>نريد </b>إنشاء مثيل لها. هنا، لا نريد إنشاء مثيل لفئة [<span style="color: #000000"><bdi dir="ltr" class="odt-ltr-term">ImpotsDaoWithPdo</bdi>]. سنقوم بإنشاء مثيلات للفئات المشتقة.</span>
   </li>
-  <li><span style="color: #000000">السطر 11: تنفذ فئة [ImpotsDaoWithPdo] واجهة [IImpotsDao]. لذلك يجب أن تحدد طريقة </span><i><span style="color: #000000">getData</span></i><span style="color: #000000">. توجد هذه الطريقة في الأسطر 72-74.</span>
+  <li><span style="color: #000000">السطر 11: تنفذ فئة [<bdi dir="ltr" class="odt-ltr-term">ImpotsDaoWithPdo</bdi>] واجهة [<bdi dir="ltr" class="odt-ltr-term">IImpotsDao</bdi>]. لذلك يجب أن تحدد طريقة </span><i><span style="color: #000000"><bdi dir="ltr" class="odt-ltr-term">getData</bdi></span></i><span style="color: #000000">. توجد هذه الطريقة في الأسطر 72-74.</span>
   </li>
-  <li><span style="color: #000000">السطر 14: </span><i><span style="color: #000000">$dsn </span></i><span style="color: #000000">(اسم مصدر البيانات) هو سلسلة تحدد بشكل فريد نظام إدارة قواعد البيانات (DBMS) وقاعدة البيانات المستخدمة.</span>
+  <li><span style="color: #000000">السطر 14: </span><i><span style="color: #000000">$dsn </span></i><span style="color: #000000">(اسم مصدر البيانات) هو سلسلة تحدد بشكل فريد نظام إدارة قواعد البيانات (<bdi dir="ltr" class="odt-ltr-term">DBMS</bdi>) وقاعدة البيانات المستخدمة.</span>
   </li>
-  <li><span style="color: #000000">السطر 15: </span><i><span style="color: #000000">$user </span></i><span style="color: #000000">يحدد المستخدم المتصل بقاعدة البيانات</span>
+  <li><span style="color: #000000">السطر 15: </span><i><span style="color: #000000">$<bdi dir="ltr" class="odt-ltr-term">user</bdi> </span></i><span style="color: #000000">يحدد المستخدم المتصل بقاعدة البيانات</span>
   </li>
-  <li><span style="color: #000000">السطر 16: </span><i><span style="color: #000000">$passwd </span></i><span style="color: #000000">هي كلمة مرور المستخدم السابق</span>
+  <li><span style="color: #000000">السطر 16: </span><i><span style="color: #000000">$<bdi dir="ltr" class="odt-ltr-term">passwd</bdi> </span></i><span style="color: #000000">هي كلمة مرور المستخدم السابق</span>
   </li>
-  <li><span style="color: #000000">السطر 17: </span><i><span style="color: #000000">$tranches </span></i><span style="color: #000000">هو مصفوفة كائنات </span><i><span style="color: #000000">Tranche </span></i><span style="color: #000000">التي سيتم تخزين جدول MySQL [dbimpots.impots] فيها.</span>
+  <li><span style="color: #000000">السطر 17: </span><i><span style="color: #000000">$<bdi dir="ltr" class="odt-ltr-term">tranches</bdi> </span></i><span style="color: #000000">هو مصفوفة كائنات </span><i><span style="color: #000000"><bdi dir="ltr" class="odt-ltr-term">Tranche</bdi> </span></i><span style="color: #000000">التي سيتم تخزين جدول <bdi dir="ltr" class="odt-ltr-term">MySQL</bdi> [<bdi dir="ltr" class="odt-ltr-term">dbimpots.impots</bdi>] فيها.</span>
   </li>
-  <li><span style="color: #000000">الأسطر 45–70: منشئ الفئة. تم تناول هذا الرمز بالفعل في الإصدار 4، القسم</span><a href="#constructeurimpots04"><u><span style="color: #0563c1"> 8.2</span></u></a><span style="color: #000000">. لاحظ أن إنشاء كائن [ImpotsDaoWithPdo] قد يفشل. عندئذ يتم إلقاء استثناء [ImpotsException].</span>
+  <li><span style="color: #000000">الأسطر 45–70: منشئ الفئة. تم تناول هذا الرمز بالفعل في الإصدار 4، القسم</span><a href="#constructeurimpots04"><u><span style="color: #0563c1"> 8.2</span></u></a><span style="color: #000000">. لاحظ أن إنشاء كائن [<bdi dir="ltr" class="odt-ltr-term">ImpotsDaoWithPdo</bdi>] قد يفشل. عندئذ يتم إلقاء استثناء [<bdi dir="ltr" class="odt-ltr-term">ImpotsException</bdi>].</span>
   </li>
-  <li><span style="color: #000000">الأسطر 72–74: طريقة [getData] لواجهة [IImpotsDao].</span>
+  <li><span style="color: #000000">الأسطر 72–74: طريقة [<bdi dir="ltr" class="odt-ltr-term">getData</bdi>] لواجهة [<bdi dir="ltr" class="odt-ltr-term">IImpotsDao</bdi>].</span>
   </li>
 </ul>
 
-<p><span style="color: #000000">تعد</span> فئة<span style="color: #000000"> [ImpotsDaoWithPdo] مناسبة لأي نظام إدارة قواعد البيانات (DBMS). يتطلب منشئ الفئة، في السطر 45، معرفة </span><em><span style="color: #000000">اسم مصدر البيانات</span></em><span style="color: #000000"> الخاص بقاعدة البيانات. تعتمد هذه السلسلة على نظام إدارة قواعد البيانات المستخدم. لقد اخترنا ألا نطلب من مستخدم الفئة معرفة </span><em><span style="color: #000000">اسم مصدر البيانات</span></em><span style="color: #000000"> هذا. لكل نظام إدارة قواعد بيانات (DBMS)، ستكون هناك فئة محددة مشتقة من [ImpotsDaoWithPdo]. بالنسبة لنظام إدارة قواعد البيانات MySQL، ستكون هذه الفئة كما يلي:</span></p>
+<p><span style="color: #000000">تعد</span> فئة<span style="color: #000000"> [<bdi dir="ltr" class="odt-ltr-term">ImpotsDaoWithPdo</bdi>] مناسبة لأي نظام إدارة قواعد البيانات (<bdi dir="ltr" class="odt-ltr-term">DBMS</bdi>). يتطلب منشئ الفئة، في السطر 45، معرفة </span><em><span style="color: #000000">اسم مصدر البيانات</span></em><span style="color: #000000"> الخاص بقاعدة البيانات. تعتمد هذه السلسلة على نظام إدارة قواعد البيانات المستخدم. لقد اخترنا ألا نطلب من مستخدم الفئة معرفة </span><em><span style="color: #000000">اسم مصدر البيانات</span></em><span style="color: #000000"> هذا. لكل نظام إدارة قواعد بيانات (<bdi dir="ltr" class="odt-ltr-term">DBMS</bdi>)، ستكون هناك فئة محددة مشتقة من [<bdi dir="ltr" class="odt-ltr-term">ImpotsDaoWithPdo</bdi>]. بالنسبة لنظام إدارة قواعد البيانات <bdi dir="ltr" class="odt-ltr-term">MySQL</bdi>، ستكون هذه الفئة كما يلي:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">class</span><span style="color:#008080"> </span><span style="color:#000000">ImpotsDaoWithMySQL</span><span style="color:#008080"> </span><span style="font-weight:bold;color:#000000">extends</span><span style="color:#008080"> </span><span style="color:#000000">ImpotsDaoWithPdo</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -1266,15 +1268,15 @@
 </code></pre></div>
 
 <ul>
-  <li>في السطر 3، لا يطلب المنشئ <i><span style="color: #000000">اسم مصدر البيانات</span></i><span style="color: #000000">، بل </span>يطلب <span style="color: #000000">فقط اسم جهاز مضيف نظام إدارة قواعد البيانات ($host)، ومنفذ الاستماع الخاص به ($port)، واسم قاعدة البيانات ($base).</span>
+  <li>في السطر 3، لا يطلب المنشئ <i><span style="color: #000000">اسم مصدر البيانات</span></i><span style="color: #000000">، بل </span>يطلب <span style="color: #000000">فقط اسم جهاز مضيف نظام إدارة قواعد البيانات ($<bdi dir="ltr" class="odt-ltr-term">host</bdi>)، ومنفذ الاستماع الخاص به ($<bdi dir="ltr" class="odt-ltr-term">port</bdi>)، واسم قاعدة البيانات ($<bdi dir="ltr" class="odt-ltr-term">base</bdi>).</span>
   </li>
-  <li><span style="color: #000000">السطر 4: يتم إنشاء </span><i><span style="color: #000000">اسم مصدر البيانات </span></i><span style="color: #000000">لقاعدة بيانات MySQL واستخدامه لاستدعاء منشئ الفئة الأصلية.</span>
+  <li><span style="color: #000000">السطر 4: يتم إنشاء </span><i><span style="color: #000000">اسم مصدر البيانات </span></i><span style="color: #000000">لقاعدة بيانات <bdi dir="ltr" class="odt-ltr-term">MySQL</bdi> واستخدامه لاستدعاء منشئ الفئة الأصلية.</span>
   </li>
 </ul>
 
-<p><span style="color: #000000">لاحظ أنه للتكيف مع نظام إدارة قواعد بيانات آخر، ما عليك سوى كتابة الفئة المناسبة المشتقة من [ImpotsDaoWithPdo]. في كل حالة، يجب إنشاء </span><em><span style="color: #000000">اسم مصدر البيانات </span></em><span style="color: #000000">الخاص بنظام إدارة قواعد البيانات المستخدم.</span></p>
-<h3 id="1123-business-impots_05_metier">11.2.3. <span style="color: #4f81bd">طبقة [business] (impots_05_metier)</span></h3>
-<p>تحتوي طبقة [business] على منطق حساب الضرائب:</p>
+<p><span style="color: #000000">لاحظ أنه للتكيف مع نظام إدارة قواعد بيانات آخر، ما عليك سوى كتابة الفئة المناسبة المشتقة من [<bdi dir="ltr" class="odt-ltr-term">ImpotsDaoWithPdo</bdi>]. في كل حالة، يجب إنشاء </span><em><span style="color: #000000">اسم مصدر البيانات </span></em><span style="color: #000000">الخاص بنظام إدارة قواعد البيانات المستخدم.</span></p>
+<h3 id="1123-business-impots_05_metier">11.2.3. <span style="color: #4f81bd">طبقة [<bdi dir="ltr" class="odt-ltr-term">business</bdi>] (<bdi dir="ltr" class="odt-ltr-term">impots</bdi>_05_metier)</span></h3>
+<p>تحتوي طبقة [<bdi dir="ltr" class="odt-ltr-term">business</bdi>] على منطق حساب الضرائب:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000046A000000D7FE8CB350.png" width="565" height="107" style="display:inline-block; margin:4px;width:14.949cm;height:2.843cm;" class="odt-zoomable" data-zoom-src="images/100000000000046A000000D7FE8CB350.png" /></td></tr></table>
 
 <p>تحتوي طبقة [الأعمال] على الواجهة التالية:</p>
@@ -1287,18 +1289,18 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p>تُظهر واجهة [IImpotsMetier] طريقة واحدة فقط، وهي طريقة [calculateTax]، التي تحسب ضريبة دافع الضرائب بناءً على المعلمات التالية: </p>
+<p>تُظهر واجهة [<bdi dir="ltr" class="odt-ltr-term">IImpotsMetier</bdi>] طريقة واحدة فقط، وهي طريقة [<bdi dir="ltr" class="odt-ltr-term">calculateTax</bdi>]، التي تحسب ضريبة دافع الضرائب بناءً على المعلمات التالية: </p>
 <ul>
-  <li><i>$married</i>: سلسلة من &quot;yes&quot; أو &quot;no&quot; اعتمادًا على ما إذا كان دافع الضرائب متزوجًا أم لا
+  <li><i>$<bdi dir="ltr" class="odt-ltr-term">married</bdi></i>: سلسلة من &quot;yes&quot; أو &quot;no&quot; اعتمادًا على ما إذا كان دافع الضرائب متزوجًا أم لا
   </li>
-  <li><i>$children</i>: عدد أطفال المكلف
+  <li><i>$<bdi dir="ltr" class="odt-ltr-term">children</bdi></i>: عدد أطفال المكلف
   </li>
-  <li><i>$salary</i>: راتب دافع الضرائب
+  <li><i>$<bdi dir="ltr" class="odt-ltr-term">salary</bdi></i>: راتب دافع الضرائب
   </li>
 </ul>
 
 <p>ستوفر طبقة [web] هذه المعلمات.</p>
-<p>يتم تنفيذ واجهة [IImpotsMetier] على النحو التالي:</p>
+<p>يتم تنفيذ واجهة [<bdi dir="ltr" class="odt-ltr-term">IImpotsMetier</bdi>] على النحو التالي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">// dependencies</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">require_once</span><span style="color:#008080"> </span><span style="color:#008000">&quot;impots_05_dao.php&quot;</span><span style="color:#000000">;</span></span></span>
@@ -1366,29 +1368,29 @@
 </code></pre></div>
 
 <ul>
-  <li>السطر 2: تتطلب طبقة [business] فئات من طبقة [DAO] وكيانات (<i>Tranche</i>، <i>ImpotsException</i>).
+  <li>السطر 2: تتطلب طبقة [<bdi dir="ltr" class="odt-ltr-term">business</bdi>] فئات من طبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>] وكيانات (<i><bdi dir="ltr" class="odt-ltr-term">Tranche</bdi></i>، <i><bdi dir="ltr" class="odt-ltr-term">ImpotsException</bdi></i>).
   </li>
-  <li>السطر 6: تنفذ فئة [ImpotsMetier] واجهة [IimpotsMetier].
+  <li>السطر 6: تنفذ فئة [<bdi dir="ltr" class="odt-ltr-term">ImpotsMetier</bdi>] واجهة [<bdi dir="ltr" class="odt-ltr-term">IimpotsMetier</bdi>].
   </li>
   <li>الأسطر 9-11: الحقول الخاصة بالفئة:
     <ul>
       <li><i>$dao</i>: مرجع إلى طبقة [dao]
       </li>
-      <li><i>$data</i>: مصفوفة من الكائنات من النوع [Tranche] مقدمة من طبقة [dao]
+      <li><i>$<bdi dir="ltr" class="odt-ltr-term">data</bdi></i>: مصفوفة من الكائنات من النوع [<bdi dir="ltr" class="odt-ltr-term">Tranche</bdi>] مقدمة من طبقة [dao]
       </li>
     </ul>
   </li>
   <li>الأسطر 26-30: يقوم منشئ الفئة بتهيئة الحقلين السابقين. ويتلقى إشارة إلى طبقة [dao] كمعلمة.
   </li>
-  <li>الأسطر 32-61: تنفيذ طريقة [calculerImpot] لواجهة [IimpotsMetier]. تم تقديم هذه الطريقة في الإصدار 1 (القسم<a href="#impots01"><u><span style="color: #0563c1"> 4.2</span></u></a>).
+  <li>الأسطر 32-61: تنفيذ طريقة [<bdi dir="ltr" class="odt-ltr-term">calculerImpot</bdi>] لواجهة [<bdi dir="ltr" class="odt-ltr-term">IimpotsMetier</bdi>]. تم تقديم هذه الطريقة في الإصدار 1 (القسم<a href="#impots01"><u><span style="color: #0563c1"> 4.2</span></u></a>).
   </li>
 </ul>
 
-<h3 id="1124-web-impots_05_web">11.2.4. <span style="color: #4f81bd">طبقة [web] (impots_05_web)</span></h3>
-<p>تحتوي طبقة [business] على منطق حساب الضرائب:</p>
+<h3 id="1124-web-impots_05_web">11.2.4. <span style="color: #4f81bd">طبقة [web] (<bdi dir="ltr" class="odt-ltr-term">impots</bdi>_05_web)</span></h3>
+<p>تحتوي طبقة [<bdi dir="ltr" class="odt-ltr-term">business</bdi>] على منطق حساب الضرائب:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000044B000000DBBCCDF4B6.png" width="550" height="109" style="display:inline-block; margin:4px;width:14.54cm;height:2.896cm;" class="odt-zoomable" data-zoom-src="images/100000000000044B000000DBBCCDF4B6.png" /></td></tr></table>
 
-<p>تتكون طبقة [الويب] من خدمة الويب التي تستجيب لعملاء الويب. تذكر أن هؤلاء العملاء يوجهون طلبًا إلى خدمة الويب عن طريق إرسال المعلمة التالية: <em>params=married,children,salary</em>. هذه خدمة ويب مشابهة لتلك التي أنشأناها في الأقسام السابقة. وفيما يلي شفرة البرمجة الخاصة بها:</p>
+<p>تتكون طبقة [الويب] من خدمة الويب التي تستجيب لعملاء الويب. تذكر أن هؤلاء العملاء يوجهون طلبًا إلى خدمة الويب عن طريق إرسال المعلمة التالية: <em><bdi dir="ltr" class="odt-ltr-term">params</bdi>=<bdi dir="ltr" class="odt-ltr-term">married</bdi>,<bdi dir="ltr" class="odt-ltr-term">children</bdi>,<bdi dir="ltr" class="odt-ltr-term">salary</bdi></em>. هذه خدمة ويب مشابهة لتلك التي أنشأناها في الأقسام السابقة. وفيما يلي شفرة البرمجة الخاصة بها:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -1468,21 +1470,21 @@
 <ul>
   <li>السطر 4: تحتاج طبقة [الويب] إلى الفئات من طبقة [الأعمال]
   </li>
-  <li>الأسطر 30–40: الإشارة إلى طبقة [business] محددة بنطاق الجلسة. إذا تذكرنا أن طبقة [business] هذه تحتوي على إشارة إلى طبقة [DAO] وأن الأخيرة تخزن بيانات نظام إدارة قواعد البيانات (DBMS)، يمكننا أن نرى أن:
+  <li>الأسطر 30–40: الإشارة إلى طبقة [<bdi dir="ltr" class="odt-ltr-term">business</bdi>] محددة بنطاق الجلسة. إذا تذكرنا أن طبقة [<bdi dir="ltr" class="odt-ltr-term">business</bdi>] هذه تحتوي على إشارة إلى طبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>] وأن الأخيرة تخزن بيانات نظام إدارة قواعد البيانات (<bdi dir="ltr" class="odt-ltr-term">DBMS</bdi>)، يمكننا أن نرى أن:
     <ul>
       <li>أن الطلب الأول للعميل سيؤدي إلى الوصول إلى نظام إدارة قواعد البيانات
       </li>
-      <li>أن الطلبات اللاحقة من نفس العميل ستستخدم البيانات المخزنة بواسطة طبقة [DAO]. وبالتالي، لا يوجد وصول إلى نظام إدارة قواعد البيانات (DBMS).
+      <li>أن الطلبات اللاحقة من نفس العميل ستستخدم البيانات المخزنة بواسطة طبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>]. وبالتالي، لا يوجد وصول إلى نظام إدارة قواعد البيانات (<bdi dir="ltr" class="odt-ltr-term">DBMS</bdi>).
       </li>
     </ul>
   </li>
-  <li>السطر 34: إنشاء طبقة [الأعمال] التي تعمل مع طبقة [DAO] التي تم تنفيذها لنظام إدارة قواعد البيانات MySQL
+  <li>السطر 34: إنشاء طبقة [الأعمال] التي تعمل مع طبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>] التي تم تنفيذها لنظام إدارة قواعد البيانات <bdi dir="ltr" class="odt-ltr-term">MySQL</bdi>
   </li>
-  <li>الأسطر 35-37: معالجة خطأ محتمل في العملية السابقة. في هذه الحالة، يتم إرسال سطر<i> &lt;error&gt;message&lt;/error&gt; </i>إلى العميل.
+  <li>الأسطر 35-37: معالجة خطأ محتمل في العملية السابقة. في هذه الحالة، يتم إرسال سطر<i> &lt;<bdi dir="ltr" class="odt-ltr-term">error</bdi>&gt;<bdi dir="ltr" class="odt-ltr-term">message</bdi>&lt;/<bdi dir="ltr" class="odt-ltr-term">error</bdi>&gt; </i>إلى العميل.
   </li>
-  <li>السطر 43: استرداد المعلمة &#x27;params&#x27; التي أرسلها العميل.
+  <li>السطر 43: استرداد المعلمة &#x27;<bdi dir="ltr" class="odt-ltr-term">params</bdi>&#x27; التي أرسلها العميل.
   </li>
-  <li>الأسطر 46-49: التحقق من عدد العناصر الموجودة في &quot;params&quot;
+  <li>الأسطر 46-49: التحقق من عدد العناصر الموجودة في &quot;<bdi dir="ltr" class="odt-ltr-term">params</bdi>&quot;
   </li>
   <li>الأسطر 51–55: التحقق من صحة المعلومة الأولى
   </li>
@@ -1497,7 +1499,7 @@
 </ul>
 
 <p><strong>النتائج</strong></p>
-<p>تذكر أن العميل [client_impots_web_05] يستخدم الملف التالي [data.txt]:</p>
+<p>تذكر أن العميل [<bdi dir="ltr" class="odt-ltr-term">client</bdi>_impots_web_05] يستخدم الملف التالي [<bdi dir="ltr" class="odt-ltr-term">data.txt</bdi>]:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>oui,2,200000
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>non,2,200000
 <a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>oui,3,200000
@@ -1505,7 +1507,7 @@
 <a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>oui,5,50000
 <a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>non,0,3000000
 </code></pre></div>
-<p>بناءً على هذه الأسطر (متزوج، أطفال، راتب)، يستعلم العميل عن خادم حساب الضرائب ويكتب النتائج في ملف نصي [results.txt]. بعد تشغيل العميل، يكون محتوى هذا الملف كما يلي:</p>
+<p>بناءً على هذه الأسطر (متزوج، أطفال، راتب)، يستعلم العميل عن خادم حساب الضرائب ويكتب النتائج في ملف نصي [<bdi dir="ltr" class="odt-ltr-term">results.txt</bdi>]. بعد تشغيل العميل، يكون محتوى هذا الملف كما يلي:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>oui:2:200000:22504
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>non:2:200000:33388
 <a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>oui:3:200000:16400

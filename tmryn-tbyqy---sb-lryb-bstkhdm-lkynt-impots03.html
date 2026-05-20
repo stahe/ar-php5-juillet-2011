@@ -57,6 +57,8 @@
     
       <link rel="stylesheet" href="stylesheets/focus.css">
     
+      <link rel="stylesheet" href="stylesheets/bidi.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -676,8 +678,8 @@
 
 <p><a id="refheading399101881943603"></a>
 <a id="impots03"></a></p>
-<h1 id="6-impots_03">6. <span style="color: #365f91"><strong>تمرين تطبيقي – حساب الضرائب باستخدام الكائنات (impots_03)</strong></span></h1>
-<p>نعود إلى التمرين الذي درسناه سابقًا (القسمان<a href="#impots01"><u><span style="color: #0563c1"> 4.2</span></u></a> و<a href="#impots02"><u><span style="color: #0563c1"> 4.3</span></u></a>) لحله باستخدام كود PHP يستخدم فئة.</p>
+<h1 id="6-impots_03">6. <span style="color: #365f91"><strong>تمرين تطبيقي – حساب الضرائب باستخدام الكائنات (<bdi dir="ltr" class="odt-ltr-term">impots</bdi>_03)</strong></span></h1>
+<p>نعود إلى التمرين الذي درسناه سابقًا (القسمان<a href="#impots01"><u><span style="color: #0563c1"> 4.2</span></u></a> و<a href="#impots02"><u><span style="color: #0563c1"> 4.3</span></u></a>) لحله باستخدام كود <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> يستخدم فئة.</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -812,12 +814,12 @@
 <span class="odt-code-line"><span class="odt-code-line-content">?&gt;</span></span>
 </code></pre></div>
 
-<p><span style="color: #000000">ملف [taxes.txt]:</span></p>
+<p><span style="color: #000000">ملف [<bdi dir="ltr" class="odt-ltr-term">taxes.txt</bdi>]:</span></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>12620:13190:15640:24740:31810:39970:48360:55790:92970:127860:151250:172040:195000:0
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>0:0.05:0.1:0.15:0.2:0.25:0.3:0.35:0.4:0.45:0.5:0.55:0.6:0.65
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>0:631:1290.5:2072.5:3309.5:4900:6898.5:9316.5:12106:16754.5:23147.5:30710:39312:49062
 </code></pre></div>
-<p><span style="color: #000000">الملف [data.txt]</span></p>
+<p><span style="color: #000000">الملف [<bdi dir="ltr" class="odt-ltr-term">data.txt</bdi>]</span></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>oui,2,200000
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>non,2,200000
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>oui,3,200000
@@ -826,7 +828,7 @@
 <a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>non,0,3000000
 </code></pre></div>
 <p><strong>النتائج</strong>: تلك التي تم الحصول عليها بالفعل في الإصدارات التي تحتوي على جداول وملفات.</p>
-<p>الملف [results.txt]</p>
+<p>الملف [<bdi dir="ltr" class="odt-ltr-term">results.txt</bdi>]</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>oui:2:200000:22504
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>non:2:200000:33388
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>oui:3:200000:16400
@@ -836,16 +838,16 @@
 </code></pre></div>
 <p><strong>تعليقات</strong></p>
 <ul>
-<li>السطر 4: فئة <strong>Taxes</strong>. وهي تغلف البيانات والطرق لحساب الضرائب:</li>
+<li>السطر 4: فئة <strong><bdi dir="ltr" class="odt-ltr-term">Taxes</bdi></strong>. وهي تغلف البيانات والطرق لحساب الضرائب:</li>
 <li><strong>البيانات</strong>: الأسطر 7–9 – هذه هي مصفوفات البيانات الثلاثة المستخدمة لحساب الضريبة. يتم تهيئة هذه المصفوفات الثلاث بواسطة المنشئ في السطر 13 من ملف نصي.</li>
 <li><strong>الأساليب</strong>: السطر 32 – تقوم الأسلوب <code>*calculate</code>* بحساب الضريبة.</li>
-<li>السطران 17 و22: عندما يتعذر على المنشئ إنشاء كائن Taxes، فإنه يرمي استثناءً.</li>
-<li>السطر 25: تم تعريف فئة <em>Utilities</em> لتغليف الدالة <em>cutNewLineChar</em>.</li>
-<li>الأسطر 26–28: تهيئة الحقول الخاصة الثلاثة لفئة <em>Taxes</em></li>
+<li>السطران 17 و22: عندما يتعذر على المنشئ إنشاء كائن <bdi dir="ltr" class="odt-ltr-term">Taxes</bdi>، فإنه يرمي استثناءً.</li>
+<li>السطر 25: تم تعريف فئة <em><bdi dir="ltr" class="odt-ltr-term">Utilities</bdi></em> لتغليف الدالة <em><bdi dir="ltr" class="odt-ltr-term">cutNewLineChar</bdi></em>.</li>
+<li>الأسطر 26–28: تهيئة الحقول الخاصة الثلاثة لفئة <em><bdi dir="ltr" class="odt-ltr-term">Taxes</bdi></em></li>
 <li>السطر 32: تقوم طريقة <code>*calculate</code><em> لفئة <code>*Taxes</code></em> بحساب ضريبة دافع الضرائب.</li>
-<li>الأسطر 65-78: فئة <em>Utilities</em></li>
-<li>الأسطر 89-94: إنشاء كائن <em>Taxes</em> مع معالجة الاستثناءات. سيستخدم هذا الإنشاء الملف النصي $IMPOTS لملء الحقول الخاصة الثلاثة لكائن <em>Taxes</em>.</li>
-<li>السطر 96: إنشاء كائن <em>Utilities</em> للوصول إلى الدالة <em>cutNewLineChar</em>.</li>
+<li>الأسطر 65-78: فئة <em><bdi dir="ltr" class="odt-ltr-term">Utilities</bdi></em></li>
+<li>الأسطر 89-94: إنشاء كائن <em><bdi dir="ltr" class="odt-ltr-term">Taxes</bdi></em> مع معالجة الاستثناءات. سيستخدم هذا الإنشاء الملف النصي $<bdi dir="ltr" class="odt-ltr-term">IMPOTS</bdi> لملء الحقول الخاصة الثلاثة لكائن <em><bdi dir="ltr" class="odt-ltr-term">Taxes</bdi></em>.</li>
+<li>السطر 96: إنشاء كائن <em><bdi dir="ltr" class="odt-ltr-term">Utilities</bdi></em> للوصول إلى الدالة <em><bdi dir="ltr" class="odt-ltr-term">cutNewLineChar</bdi></em>.</li>
 </ul>
 
 

@@ -57,6 +57,8 @@
     
       <link rel="stylesheet" href="stylesheets/focus.css">
     
+      <link rel="stylesheet" href="stylesheets/bidi.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -750,26 +752,26 @@
 <h2 id="41">4.1. <span style="color: #4f81bd">المشكلة</span></h2>
 <p>نهدف إلى كتابة برنامج لحساب ضريبة دافع الضرائب. سنأخذ في الاعتبار الحالة المبسطة لدافع الضرائب الذي لا يملك سوى راتبه ليبلغ عنه:</p>
 <ul>
-<li>يُحسب عدد الحصص الخاصة بالموظف <strong>على النحو التالي: nbParts = nbEnfants / 2 + 1</strong> إذا كان غير متزوج، أو <strong>nbEnfants / 2 + 2</strong> إذا كان متزوجًا، حيث <em>nbEnfants</em> هو عدد أطفاله.</li>
-<li>نحسب دخلهم الخاضع للضريبة <strong>R = 0.72 * S،</strong> حيث S هو راتبهم السنوي</li>
-<li>نحسب معامل الأسرة <strong>Q = R / N</strong></li>
+<li>يُحسب عدد الحصص الخاصة بالموظف <strong>على النحو التالي: <bdi dir="ltr" class="odt-ltr-term">nbParts</bdi> = <bdi dir="ltr" class="odt-ltr-term">nbEnfants</bdi> / 2 + 1</strong> إذا كان غير متزوج، أو <strong><bdi dir="ltr" class="odt-ltr-term">nbEnfants</bdi> / 2 + 2</strong> إذا كان متزوجًا، حيث <em><bdi dir="ltr" class="odt-ltr-term">nbEnfants</bdi></em> هو عدد أطفاله.</li>
+<li>نحسب دخلهم الخاضع للضريبة <strong><bdi dir="ltr" class="odt-ltr-term">R</bdi> = 0.72 * <bdi dir="ltr" class="odt-ltr-term">S</bdi>،</strong> حيث <bdi dir="ltr" class="odt-ltr-term">S</bdi> هو راتبهم السنوي</li>
+<li>نحسب معامل الأسرة <strong><bdi dir="ltr" class="odt-ltr-term">Q</bdi> = <bdi dir="ltr" class="odt-ltr-term">R</bdi> / <bdi dir="ltr" class="odt-ltr-term">N</bdi></strong></li>
 </ul>
-<p>نحسب ضريبتهم I بناءً على البيانات التالية</p>
+<p>نحسب ضريبتهم <bdi dir="ltr" class="odt-ltr-term">I</bdi> بناءً على البيانات التالية</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">12620.0</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">0</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">0</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">13,190</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">0.05</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">631</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">15,640</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">0.1</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">1,290.5</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">24,740</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">0.15</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">2,072.5</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">31,810</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">0.2</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">3,309.5</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">39,970</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">0.25</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">4900</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">48,360</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">0.3</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">6,898.5</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">55,790</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">0.35</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">9,316.5</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">92,970</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">0.4</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">12,106</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">127,860</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">0.45</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">16,754.5</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">151,250</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">0.50</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">23,147.5</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">172,040</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">0.55</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">30,710</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">195,000</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">0.60</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">39,312</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">0</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">0.65</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">49,062</div></td></tr></table>
 
-<p>يحتوي كل صف على 3 حقول. لحساب الضريبة I، نبحث عن الصف الأول الذي يكون فيه <em>QF &lt;= الحقل 1</em>. على سبيل المثال، إذا كان QF = 30000، فسنجد الصف </p>
+<p>يحتوي كل صف على 3 حقول. لحساب الضريبة <bdi dir="ltr" class="odt-ltr-term">I</bdi>، نبحث عن الصف الأول الذي يكون فيه <em><bdi dir="ltr" class="odt-ltr-term">QF</bdi> &lt;= الحقل 1</em>. على سبيل المثال، إذا كان <bdi dir="ltr" class="odt-ltr-term">QF</bdi> = 30000، فسنجد الصف </p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>    24740        0.15        2072.5
 </code></pre></div>
-<p>الضريبة I تساوي إذن <strong>0.15*R - 2072.5*nbParts</strong>. إذا كان QF بحيث لا تتحقق الشرط <em>QF&lt;=field1</em> أبدًا، يتم استخدام المعاملات من الصف الأخير. هنا:</p>
+<p>الضريبة <bdi dir="ltr" class="odt-ltr-term">I</bdi> تساوي إذن <strong>0.15*<bdi dir="ltr" class="odt-ltr-term">R</bdi> - 2072.5*<bdi dir="ltr" class="odt-ltr-term">nbParts</bdi></strong>. إذا كان <bdi dir="ltr" class="odt-ltr-term">QF</bdi> بحيث لا تتحقق الشرط <em><bdi dir="ltr" class="odt-ltr-term">QF</bdi>&lt;=<bdi dir="ltr" class="odt-ltr-term">field1</bdi></em> أبدًا، يتم استخدام المعاملات من الصف الأخير. هنا:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>    0                0.65        49062
 </code></pre></div>
-<p>مما يعطي الضريبة I = 0.65*R – 49062*nbParts.</p>
+<p>مما يعطي الضريبة <bdi dir="ltr" class="odt-ltr-term">I</bdi> = 0.65*<bdi dir="ltr" class="odt-ltr-term">R</bdi> – 49062*<bdi dir="ltr" class="odt-ltr-term">nbParts.</bdi></p>
 <p><a id="refheading398861881943603"></a>
 <a id="impots01"></a></p>
-<h2 id="42-impots_01">4.2. <span style="color: #4f81bd">الإصدار باستخدام المصفوفات (impots_01)</span></h2>
+<h2 id="42-impots_01">4.2. <span style="color: #4f81bd">الإصدار باستخدام المصفوفات (<bdi dir="ltr" class="odt-ltr-term">impots</bdi>_01)</span></h2>
 <p>نقدم برنامجًا أوليًا حيث:</p>
 <ul>
-<li>توجد البيانات اللازمة لحساب الضريبة في ثلاثة مصفوفات (limits، coeffR، coeffN)</li>
+<li>توجد البيانات اللازمة لحساب الضريبة في ثلاثة مصفوفات (<bdi dir="ltr" class="odt-ltr-term">limits</bdi>، <bdi dir="ltr" class="odt-ltr-term">coeffR</bdi>، <bdi dir="ltr" class="odt-ltr-term">coeffN</bdi>)</li>
 <li>توجد بيانات دافع الضرائب (متزوج، أطفال، راتب) في ملف نصي أول</li>
 <li>يتم تخزين نتائج حساب الضريبة (متزوج، أطفال، راتب، ضريبة) في ملف نصي ثانٍ</li>
 </ul>
@@ -862,7 +864,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content">?&gt;</span></span>
 </code></pre></div>
 
-<p>ملف البيانات <em>data.txt</em> (متزوج، أطفال، راتب):</p>
+<p>ملف البيانات <em><bdi dir="ltr" class="odt-ltr-term">data.txt</bdi></em> (متزوج، أطفال، راتب):</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>oui,2,200000
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>non,2,200000
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>oui,3,200000
@@ -870,7 +872,7 @@
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>oui,5,50000
 <a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>non,0,3000000
 </code></pre></div>
-<p>ملفات <em>results.txt</em> (متزوج، أطفال، راتب، ضريبة) للنتائج التي تم الحصول عليها:</p>
+<p>ملفات <em><bdi dir="ltr" class="odt-ltr-term">results.txt</bdi></em> (متزوج، أطفال، راتب، ضريبة) للنتائج التي تم الحصول عليها:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>oui:2:200000:22504
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>non:2:200000:33388
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>oui:3:200000:16400
@@ -891,22 +893,22 @@
 <li>السطر 31: يتم حساب الضريبة</li>
 <li>السطر 33: يتم تخزين الضريبة في ملف النتائج</li>
 <li>السطران 37-38: بمجرد الانتهاء من معالجة ملف دافع الضرائب بالكامل، يتم إغلاق الملفات</li>
-<li>السطر 44: الدالة التي تزيل حرف نهاية السطر من السطر $line. حرف نهاية السطر هو السلسلة &quot;\r\n&quot; في أنظمة Windows، و&quot;\n&quot; في أنظمة Unix. والنتيجة هي سلسلة الإدخال بدون حرف نهاية السطر.</li>
-<li>السطران 47-48: ترجع <em>الدالة substr($string, $start, $size)</em> السلسلة الفرعية من <em>$string</em> التي تبدأ من الحرف <em>$start</em> وتحتوي على <em>$size</em> حرفًا كحد أقصى.</li>
-<li>السطر 63: <em>strtolower($string)</em> تحول <em>$string</em> إلى أحرف صغيرة</li>
-<li>السطر 76: تضيف <em>الدالة array_push($array, $element) العنصر $element</em> إلى نهاية <em>المصفوفة $array</em>. لاحظ أن المصفوفة <em>$limits</em> تُمرر بالقيمة إلى الدالة <em>calculateTax (</em>السطر 56<em>)</em>. وبالتالي، تتم عملية إضافة العنصر هذه على نسخة من المعلمة الفعلية، التي تظل دون تغيير.</li>
-<li>السطر 84: تُرجع الدالة <em>floor($x)</em> القيمة الصحيحة الأقرب إلى $x.</li>
+<li>السطر 44: الدالة التي تزيل حرف نهاية السطر من السطر $<bdi dir="ltr" class="odt-ltr-term">line.</bdi> حرف نهاية السطر هو السلسلة &quot;\r\n&quot; في أنظمة <bdi dir="ltr" class="odt-ltr-term">Windows</bdi>، و&quot;\n&quot; في أنظمة <bdi dir="ltr" class="odt-ltr-term">Unix.</bdi> والنتيجة هي سلسلة الإدخال بدون حرف نهاية السطر.</li>
+<li>السطران 47-48: ترجع <em>الدالة <bdi dir="ltr" class="odt-ltr-term">substr</bdi>($<bdi dir="ltr" class="odt-ltr-term">string</bdi>, $<bdi dir="ltr" class="odt-ltr-term">start</bdi>, $<bdi dir="ltr" class="odt-ltr-term">size</bdi>)</em> السلسلة الفرعية من <em>$<bdi dir="ltr" class="odt-ltr-term">string</bdi></em> التي تبدأ من الحرف <em>$<bdi dir="ltr" class="odt-ltr-term">start</bdi></em> وتحتوي على <em>$<bdi dir="ltr" class="odt-ltr-term">size</bdi></em> حرفًا كحد أقصى.</li>
+<li>السطر 63: <em><bdi dir="ltr" class="odt-ltr-term">strtolower</bdi>($<bdi dir="ltr" class="odt-ltr-term">string</bdi>)</em> تحول <em>$<bdi dir="ltr" class="odt-ltr-term">string</bdi></em> إلى أحرف صغيرة</li>
+<li>السطر 76: تضيف <em>الدالة <bdi dir="ltr" class="odt-ltr-term">array</bdi>_push($<bdi dir="ltr" class="odt-ltr-term">array</bdi>, $<bdi dir="ltr" class="odt-ltr-term">element</bdi>) العنصر $<bdi dir="ltr" class="odt-ltr-term">element</bdi></em> إلى نهاية <em>المصفوفة $<bdi dir="ltr" class="odt-ltr-term">array</bdi></em>. لاحظ أن المصفوفة <em>$<bdi dir="ltr" class="odt-ltr-term">limits</bdi></em> تُمرر بالقيمة إلى الدالة <em><bdi dir="ltr" class="odt-ltr-term">calculateTax</bdi> (</em>السطر 56<em>)</em>. وبالتالي، تتم عملية إضافة العنصر هذه على نسخة من المعلمة الفعلية، التي تظل دون تغيير.</li>
+<li>السطر 84: تُرجع الدالة <em><bdi dir="ltr" class="odt-ltr-term">floor</bdi>($x)</em> القيمة الصحيحة الأقرب إلى $<bdi dir="ltr" class="odt-ltr-term">x.</bdi></li>
 </ul>
 <p><a id="refheading398881881943603"></a>
 <a id="impots02"></a></p>
-<h2 id="43-impots_02">4.3. <span style="color: #4f81bd"><strong><span style="color: #4f81bd">الإصدار الذي يستخدم ملفات نصية (impots_02)</span></strong></span></h2>
-<p>يختلف هذا الإصدار الجديد عن الإصدار السابق فقط في أن البيانات ($limites، $coeffR، $coeffN) اللازمة لحساب الضريبة موجودة الآن في ملف نصي بالصيغة التالية:</p>
-<p>ملف <em>impots.txt</em>:</p>
+<h2 id="43-impots_02">4.3. <span style="color: #4f81bd"><strong><span style="color: #4f81bd">الإصدار الذي يستخدم ملفات نصية (<bdi dir="ltr" class="odt-ltr-term">impots</bdi>_02)</span></strong></span></h2>
+<p>يختلف هذا الإصدار الجديد عن الإصدار السابق فقط في أن البيانات ($<bdi dir="ltr" class="odt-ltr-term">limites</bdi>، $<bdi dir="ltr" class="odt-ltr-term">coeffR</bdi>، $<bdi dir="ltr" class="odt-ltr-term">coeffN</bdi>) اللازمة لحساب الضريبة موجودة الآن في ملف نصي بالصيغة التالية:</p>
+<p>ملف <em><bdi dir="ltr" class="odt-ltr-term">impots.txt</bdi></em>:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>12620:13190:15640:24740:31810:39970:48360:55790:92970:127860:151250:172040:195000:0
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>0:0.05:0.1:0.15:0.2:0.25:0.3:0.35:0.4:0.45:0.5:0.55:0.6:0.65
 <a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>0:631:1290.5:2072.5:3309.5:4900:6898.5:9316.5:12106:16754.5:23147.5:30710:39312:49062
 </code></pre></div>
-<p>تقوم النسخة الجديدة ببساطة بقراءة البيانات من ملف [impots.txt] ووضعها في ثلاثة مصفوفات <em>($limites، $coeffR، $coeffN)</em>. وهذا يعيدنا إلى الحالة السابقة. نقدم التغييرات فقط:</p>
+<p>تقوم النسخة الجديدة ببساطة بقراءة البيانات من ملف [<bdi dir="ltr" class="odt-ltr-term">impots.txt</bdi>] ووضعها في ثلاثة مصفوفات <em>($<bdi dir="ltr" class="odt-ltr-term">limites</bdi>، $<bdi dir="ltr" class="odt-ltr-term">coeffR</bdi>، $<bdi dir="ltr" class="odt-ltr-term">coeffN</bdi>)</em>. وهذا يعيدنا إلى الحالة السابقة. نقدم التغييرات فقط:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -968,11 +970,11 @@
 
 <p><strong>تعليقات</strong></p>
 <ul>
-<li>السطر 11: تعالج الدالة <em>getTables($IMPOTS)</em> الملف النصي <em>$IMPOTS</em> لاستخراج الجداول الثلاثة (<em>$limites، $coeffR، $coeffN</em>). والنتيجة المرجعة هي ($error، <em>$limites، $coeffR، $coeffN</em>)، حيث <em>$error</em> عبارة عن رسالة خطأ؛ وتكون فارغة في حالة عدم حدوث أي خطأ.</li>
-<li>السطر 40: الدالة <em>getTables($IMPOTS)</em>.</li>
-<li>السطر 43: تُرجع الدالة <em>files_exists(filename)</em> القيمة المنطقية <em>true</em> إذا كان الملف <em>filename</em> موجودًا، و <em>false</em> في حالة عدم وجوده.</li>
-<li>السطر 46: تقرأ الدالة <em>file(filename)</em> ملف النص <em>filename</em> بالكامل. وتُرجع مصفوفة يكون كل عنصر فيها سطرًا من ملف النص. ونظرًا لأن ملف <em>impots.txt</em> يحتوي على ثلاثة أسطر من النص، فستُرجع الدالة مصفوفة ذات ثلاثة عناصر.</li>
-<li>الأسطر 50–52: استخدم الأسطر الثلاثة التي تم استردادها لإنشاء المصفوفات الثلاثة (<em>$limits، $coeffR، $coeffN</em>)</li>
+<li>السطر 11: تعالج الدالة <em><bdi dir="ltr" class="odt-ltr-term">getTables</bdi>($<bdi dir="ltr" class="odt-ltr-term">IMPOTS</bdi>)</em> الملف النصي <em>$<bdi dir="ltr" class="odt-ltr-term">IMPOTS</bdi></em> لاستخراج الجداول الثلاثة (<em>$<bdi dir="ltr" class="odt-ltr-term">limites</bdi>، $<bdi dir="ltr" class="odt-ltr-term">coeffR</bdi>، $<bdi dir="ltr" class="odt-ltr-term">coeffN</bdi></em>). والنتيجة المرجعة هي ($<bdi dir="ltr" class="odt-ltr-term">error</bdi>، <em>$<bdi dir="ltr" class="odt-ltr-term">limites</bdi>، $<bdi dir="ltr" class="odt-ltr-term">coeffR</bdi>، $<bdi dir="ltr" class="odt-ltr-term">coeffN</bdi></em>)، حيث <em>$<bdi dir="ltr" class="odt-ltr-term">error</bdi></em> عبارة عن رسالة خطأ؛ وتكون فارغة في حالة عدم حدوث أي خطأ.</li>
+<li>السطر 40: الدالة <em><bdi dir="ltr" class="odt-ltr-term">getTables</bdi>($<bdi dir="ltr" class="odt-ltr-term">IMPOTS</bdi>)</em>.</li>
+<li>السطر 43: تُرجع الدالة <em><bdi dir="ltr" class="odt-ltr-term">files</bdi>_exists(<bdi dir="ltr" class="odt-ltr-term">filename</bdi>)</em> القيمة المنطقية <em><bdi dir="ltr" class="odt-ltr-term">true</bdi></em> إذا كان الملف <em><bdi dir="ltr" class="odt-ltr-term">filename</bdi></em> موجودًا، و <em><bdi dir="ltr" class="odt-ltr-term">false</bdi></em> في حالة عدم وجوده.</li>
+<li>السطر 46: تقرأ الدالة <em><bdi dir="ltr" class="odt-ltr-term">file</bdi>(<bdi dir="ltr" class="odt-ltr-term">filename</bdi>)</em> ملف النص <em><bdi dir="ltr" class="odt-ltr-term">filename</bdi></em> بالكامل. وتُرجع مصفوفة يكون كل عنصر فيها سطرًا من ملف النص. ونظرًا لأن ملف <em><bdi dir="ltr" class="odt-ltr-term">impots.txt</bdi></em> يحتوي على ثلاثة أسطر من النص، فستُرجع الدالة مصفوفة ذات ثلاثة عناصر.</li>
+<li>الأسطر 50–52: استخدم الأسطر الثلاثة التي تم استردادها لإنشاء المصفوفات الثلاثة (<em>$<bdi dir="ltr" class="odt-ltr-term">limits</bdi>، $<bdi dir="ltr" class="odt-ltr-term">coeffR</bdi>، $<bdi dir="ltr" class="odt-ltr-term">coeffN</bdi></em>)</li>
 </ul>
 <p>النتائج التي تم الحصول عليها هي نفس تلك التي تم الحصول عليها في الإصدار السابق.</p>
 

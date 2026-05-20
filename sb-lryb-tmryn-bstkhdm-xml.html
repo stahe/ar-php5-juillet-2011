@@ -55,6 +55,8 @@
     
       <link rel="stylesheet" href="stylesheets/focus.css">
     
+      <link rel="stylesheet" href="stylesheets/bidi.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -731,10 +733,10 @@
 
 
 
-<h1 id="13-xml">13. <span style="color: #365f91">حساب الضرائب: تمرين باستخدام XML</span></h1>
-<p>في هذا التمرين، الذي درسناه مرارًا وتكرارًا، يعيد الخادم النتائج إلى العميل في شكل دفق XML.</p>
+<h1 id="13-xml">13. <span style="color: #365f91">حساب الضرائب: تمرين باستخدام <bdi dir="ltr" class="odt-ltr-term">XML</bdi></span></h1>
+<p>في هذا التمرين، الذي درسناه مرارًا وتكرارًا، يعيد الخادم النتائج إلى العميل في شكل دفق <bdi dir="ltr" class="odt-ltr-term">XML.</bdi></p>
 <p><a id="refheading400061881943603"></a></p>
-<h2 id="131-impots_05b_web">13.1. <span style="color: #4f81bd">الخادم (impots_05B_web)</span></h2>
+<h2 id="131-impots_05b_web">13.1. <span style="color: #4f81bd">الخادم (<bdi dir="ltr" class="odt-ltr-term">impots</bdi>_05B_web)</span></h2>
 <p>تتميز خدمة الويب لحساب الضرائب التي تمت كتابتها سابقًا بهيكلية متعددة الطبقات:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000456000000DB13FE6952.png" width="555" height="109" style="display:inline-block; margin:4px;width:14.684cm;height:2.896cm;" class="odt-zoomable" data-zoom-src="images/1000000000000456000000DB13FE6952.png" /></td></tr></table>
 
@@ -742,14 +744,14 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>&lt;erreur&gt;message d&#39;erreur&lt;/erreur&gt;
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>&lt;impot&gt;montant de l&#39;impôt&lt;/impot&gt;
 </code></pre></div>
-<p>هذا ليس مستند XML صحيح التكوين لأنه يفتقر إلى علامة الجذر. سترسل خدمة الويب الجديدة ردها بالصيغة التالية:</p>
+<p>هذا ليس مستند <bdi dir="ltr" class="odt-ltr-term">XML</bdi> صحيح التكوين لأنه يفتقر إلى علامة الجذر. سترسل خدمة الويب الجديدة ردها بالصيغة التالية:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>&lt;reponse&gt;&lt;erreur&gt;message d&#39;erreur&lt;/erreur&gt;&lt;/reponse&gt;
 </code></pre></div>
 <p>أو</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>&lt;reponse&gt;&lt;impot&gt;montant de l&#39;impôt&lt;/impot&gt;&lt;/reponse&gt;
 </code></pre></div>
-<p>في كلتا الحالتين، يكون الرد عبارة عن مستند XML صحيح التكوين يمكن معالجته بواسطة وحدة [simpleXML].</p>
-<p>في بنية الطبقات الثلاث، لا يلزم تعديل سوى طبقة [web]. ويصبح كودها [impots_05B_web] كما يلي:</p>
+<p>في كلتا الحالتين، يكون الرد عبارة عن مستند <bdi dir="ltr" class="odt-ltr-term">XML</bdi> صحيح التكوين يمكن معالجته بواسطة وحدة [<bdi dir="ltr" class="odt-ltr-term">simpleXML</bdi>].</p>
+<p>في بنية الطبقات الثلاث، لا يلزم تعديل سوى طبقة [web]. ويصبح كودها [<bdi dir="ltr" class="odt-ltr-term">impots</bdi>_05B_web] كما يلي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -828,8 +830,8 @@
 
 <p>تم تعديل تنسيق استجابة خدمة الويب في الأسطر 35 و47 و53 و58 و64 و71.</p>
 <p><a id="refheading400081881943603"></a></p>
-<h2 id="132-client_impots_05b_web">13.2. <span style="color: #4f81bd">العميل (client_impots_05b_web)</span></h2>
-<p>تم تعديل العميل لمراعاة تنسيق الاستجابة الجديد. نستخدم [simpleXML] لمعالجته:</p>
+<h2 id="132-client_impots_05b_web">13.2. <span style="color: #4f81bd">العميل (<bdi dir="ltr" class="odt-ltr-term">client</bdi>_impots_05b_web)</span></h2>
+<p>تم تعديل العميل لمراعاة تنسيق الاستجابة الجديد. نستخدم [<bdi dir="ltr" class="odt-ltr-term">simpleXML</bdi>] لمعالجته:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -875,9 +877,9 @@
 </code></pre></div>
 
 <ul>
-  <li>السطر 32: يتم قراءة استجابة الخادم. وهي عبارة عن مستند XML.
+  <li>السطر 32: يتم قراءة استجابة الخادم. وهي عبارة عن مستند <bdi dir="ltr" class="odt-ltr-term">XML.</bdi>
   </li>
-  <li>السطر 36: يتم إنشاء كائن SimpleXML من مستند XML المستلم.
+  <li>السطر 36: يتم إنشاء كائن <bdi dir="ltr" class="odt-ltr-term">SimpleXML</bdi> من مستند <bdi dir="ltr" class="odt-ltr-term">XML</bdi> المستلم.
   </li>
   <li>السطر 37: أي رسالة خطأ
   </li>

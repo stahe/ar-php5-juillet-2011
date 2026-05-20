@@ -57,6 +57,8 @@
     
       <link rel="stylesheet" href="stylesheets/focus.css">
     
+      <link rel="stylesheet" href="stylesheets/bidi.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -873,14 +875,14 @@
 </code></pre></div>
 <p><strong>تعليقات</strong></p>
 <ul>
-<li>السطر 4: تشير الصيغة <em>$obj-&gt;attr</em> إلى السمة <em>attr</em> للمتغير <em>$obj</em>. إذا لم تكن موجودة، يتم إنشاؤها، مما يجعل المتغير <em>$obj</em> كائنًا له سمات.</li>
-<li>السطر 13: التعبير <em>$obj2 =</em> $obj1، عندما يكون <em>$obj1</em> كائنًا، يمثل نسخًا للكائنات عن <strong>طريق الإشارة</strong>. وبالتالي، فإن <em>$obj2 و$obj1</em> هما إشارتان إلى الكائن نفسه. ويمكن تعديل الكائن نفسه من خلال أي من الإشارتين.</li>
-<li>السطر 20: يعين التعبير <em>$obj3=&amp;$obj1</em> مرجع (عنوان) المتغير <em>$obj1</em> إلى <em>$obj3</em>. إذا كان <em>$obj1</em> كائنًا، كما هو الحال هنا، فإن التعبير السابق يعادل <em>$obj3=$obj1</em>.</li>
+<li>السطر 4: تشير الصيغة <em>$<bdi dir="ltr" class="odt-ltr-term">obj-</bdi>&gt;<bdi dir="ltr" class="odt-ltr-term">attr</bdi></em> إلى السمة <em><bdi dir="ltr" class="odt-ltr-term">attr</bdi></em> للمتغير <em>$obj</em>. إذا لم تكن موجودة، يتم إنشاؤها، مما يجعل المتغير <em>$obj</em> كائنًا له سمات.</li>
+<li>السطر 13: التعبير <em>$<bdi dir="ltr" class="odt-ltr-term">obj2</bdi> =</em> $<bdi dir="ltr" class="odt-ltr-term">obj1</bdi>، عندما يكون <em>$<bdi dir="ltr" class="odt-ltr-term">obj1</bdi></em> كائنًا، يمثل نسخًا للكائنات عن <strong>طريق الإشارة</strong>. وبالتالي، فإن <em>$<bdi dir="ltr" class="odt-ltr-term">obj2</bdi> و$<bdi dir="ltr" class="odt-ltr-term">obj1</bdi></em> هما إشارتان إلى الكائن نفسه. ويمكن تعديل الكائن نفسه من خلال أي من الإشارتين.</li>
+<li>السطر 20: يعين التعبير <em>$<bdi dir="ltr" class="odt-ltr-term">obj3</bdi>=&amp;$<bdi dir="ltr" class="odt-ltr-term">obj1</bdi></em> مرجع (عنوان) المتغير <em>$<bdi dir="ltr" class="odt-ltr-term">obj1</bdi></em> إلى <em>$<bdi dir="ltr" class="odt-ltr-term">obj3</bdi></em>. إذا كان <em>$<bdi dir="ltr" class="odt-ltr-term">obj1</bdi></em> كائنًا، كما هو الحال هنا، فإن التعبير السابق يعادل <em>$<bdi dir="ltr" class="odt-ltr-term">obj3</bdi>=$<bdi dir="ltr" class="odt-ltr-term">obj1</bdi></em>.</li>
 <li>السطران 28-29: يوضحان أنه يمكن تصفح الكائن مثل القاموس. مفاتيح القاموس هي أسماء السمات، وقيم القاموس هي قيم تلك السمات نفسها.</li>
-<li>السطر 27: يمكن تطبيق دالة <em>count</em> على كائن ولكنها لا تُرجع، كما قد يتوقع المرء، عدد السمات. لذلك، يشترك الكائن في أوجه تشابه مع القاموس ولكنه ليس قاموسًا.
+<li>السطر 27: يمكن تطبيق دالة <em><bdi dir="ltr" class="odt-ltr-term">count</bdi></em> على كائن ولكنها لا تُرجع، كما قد يتوقع المرء، عدد السمات. لذلك، يشترك الكائن في أوجه تشابه مع القاموس ولكنه ليس قاموسًا.
 <a id="refheading398941881943603"></a></li>
 </ul>
-<h2 id="52-person-example_15">5.2. <span style="color: #4f81bd">فئة Person بدون سمات مُعلنة (example_15)</span></h2>
+<h2 id="52-person-example_15">5.2. <span style="color: #4f81bd">فئة <bdi dir="ltr" class="odt-ltr-term">Person</bdi> بدون سمات مُعلنة (<bdi dir="ltr" class="odt-ltr-term">example</bdi>_15)</span></h2>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -914,14 +916,14 @@
 </code></pre></div>
 <p><strong>تعليقات</strong></p>
 <ul>
-<li>الأسطر 3–13: تعريف <strong>فئة</strong> <em>Person</em>. الفئة هي نموذج يُستخدم لإنشاء كائنات. وتُعد الفئة مجموعة من <strong>السمات</strong> والوظائف التي تُسمى <strong>«الأساليب</strong>». ولا يلزم إعلان السمات.</li>
-<li>الأسطر 9–12: تعرض الطريقة <em>identity</em> قيم ثلاث سمات لم يتم الإعلان عنها في الفئة. تشير الكلمة الرئيسية <strong>$this</strong> إلى الكائن الذي تُطبق عليه الطريقة.</li>
-<li>السطر 17: يتم إنشاء كائن <em>$p</em> من النوع <em>Person</em>. تُستخدم الكلمة الرئيسية <strong>new</strong> لإنشاء كائن جديد. تُرجع العملية <strong>مرجعًا</strong> إلى الكائن الذي تم إنشاؤه (أي عنوان). هناك عدة طرق لكتابة ذلك: <em>new Person()</em>، <em>new</em> Person، <em>new person</em>. لا يُفرق اسم الفئة بين الأحرف الكبيرة والصغيرة.</li>
-<li>الأسطر 18-20: يتم إنشاء السمات الثلاث المطلوبة بواسطة طريقة <em>identity</em> في الكائن $p.</li>
-<li>السطر 22: يتم تطبيق طريقة <em>identity</em> لفئة <em>Person</em> على الكائن <em>$p</em>. في كود (الأسطر 9–11) لطريقة identity، يشير <em>$this</em> إلى نفس الكائن الذي يشير إليه <em>$p</em>.
+<li>الأسطر 3–13: تعريف <strong>فئة</strong> <em><bdi dir="ltr" class="odt-ltr-term">Person</bdi></em>. الفئة هي نموذج يُستخدم لإنشاء كائنات. وتُعد الفئة مجموعة من <strong>السمات</strong> والوظائف التي تُسمى <strong>«الأساليب</strong>». ولا يلزم إعلان السمات.</li>
+<li>الأسطر 9–12: تعرض الطريقة <em><bdi dir="ltr" class="odt-ltr-term">identity</bdi></em> قيم ثلاث سمات لم يتم الإعلان عنها في الفئة. تشير الكلمة الرئيسية <strong>$<bdi dir="ltr" class="odt-ltr-term">this</bdi></strong> إلى الكائن الذي تُطبق عليه الطريقة.</li>
+<li>السطر 17: يتم إنشاء كائن <em>$p</em> من النوع <em><bdi dir="ltr" class="odt-ltr-term">Person</bdi></em>. تُستخدم الكلمة الرئيسية <strong>new</strong> لإنشاء كائن جديد. تُرجع العملية <strong>مرجعًا</strong> إلى الكائن الذي تم إنشاؤه (أي عنوان). هناك عدة طرق لكتابة ذلك: <em><bdi dir="ltr" class="odt-ltr-term">new Person</bdi>()</em>، <em>new</em> <bdi dir="ltr" class="odt-ltr-term">Person</bdi>، <em><bdi dir="ltr" class="odt-ltr-term">new person</bdi></em>. لا يُفرق اسم الفئة بين الأحرف الكبيرة والصغيرة.</li>
+<li>الأسطر 18-20: يتم إنشاء السمات الثلاث المطلوبة بواسطة طريقة <em><bdi dir="ltr" class="odt-ltr-term">identity</bdi></em> في الكائن $<bdi dir="ltr" class="odt-ltr-term">p.</bdi></li>
+<li>السطر 22: يتم تطبيق طريقة <em><bdi dir="ltr" class="odt-ltr-term">identity</bdi></em> لفئة <em><bdi dir="ltr" class="odt-ltr-term">Person</bdi></em> على الكائن <em>$p</em>. في كود (الأسطر 9–11) لطريقة <bdi dir="ltr" class="odt-ltr-term">identity</bdi>، يشير <em>$<bdi dir="ltr" class="odt-ltr-term">this</bdi></em> إلى نفس الكائن الذي يشير إليه <em>$p</em>.
 <a id="refheading398961881943603"></a></li>
 </ul>
-<h2 id="53-person-example_16">5.3. <span style="color: #4f81bd">فئة Person مع السمات المعلنة (example_16)</span></h2>
+<h2 id="53-person-example_16">5.3. <span style="color: #4f81bd">فئة <bdi dir="ltr" class="odt-ltr-term">Person</bdi> مع السمات المعلنة (<bdi dir="ltr" class="odt-ltr-term">example</bdi>_16)</span></h2>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -958,8 +960,8 @@
 <li>الأسطر 6–8: يتم إعلان سمات الفئة بشكل صريح باستخدام الكلمة الرئيسية <strong>var</strong>.
 <a id="refheading398981881943603"></a></li>
 </ul>
-<h2 id="54-person-example_17">5.4. <span style="color: #4f81bd">فئة Person مع منشئ (example_17)</span></h2>
-<p>أظهرت الأمثلة السابقة فئات <em>Person</em> غريبة كما كانت موجودة في PHP 4. لا يُنصح باتباع هذه الأمثلة. نقدم الآن فئة <em>Person</em> تتبع أفضل ممارسات PHP 5:</p>
+<h2 id="54-person-example_17">5.4. <span style="color: #4f81bd">فئة <bdi dir="ltr" class="odt-ltr-term">Person</bdi> مع منشئ (<bdi dir="ltr" class="odt-ltr-term">example</bdi>_17)</span></h2>
+<p>أظهرت الأمثلة السابقة فئات <em><bdi dir="ltr" class="odt-ltr-term">Person</bdi></em> غريبة كما كانت موجودة في <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> 4. لا يُنصح باتباع هذه الأمثلة. نقدم الآن فئة <em><bdi dir="ltr" class="odt-ltr-term">Person</bdi></em> تتبع أفضل ممارسات <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> 5:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -1030,17 +1032,17 @@
 </code></pre></div>
 <p><strong>تعليقات</strong></p>
 <ul>
-<li>السطور 3-48: فئة <em>Person</em></li>
+<li>السطور 3-48: فئة <em><bdi dir="ltr" class="odt-ltr-term">Person</bdi></em></li>
 <li>الأسطر 6-8: السمات <strong>الخاصة</strong> بالفئة. هذه السمات مرئية فقط داخل الفئة. الكلمات الرئيسية الأخرى التي يمكن استخدامها هي:</li>
-<li><strong>public</strong>: تجعل السمة سمة عامة مرئية من خارج الفئة</li>
-<li><strong>protected</strong>: تجعل السمة سمة محمية يمكن رؤيتها من داخل الفئة والفئات المشتقة منها.</li>
+<li><strong><bdi dir="ltr" class="odt-ltr-term">public</bdi></strong>: تجعل السمة سمة عامة مرئية من خارج الفئة</li>
+<li><strong><bdi dir="ltr" class="odt-ltr-term">protected</bdi></strong>: تجعل السمة سمة محمية يمكن رؤيتها من داخل الفئة والفئات المشتقة منها.</li>
 <li>نظرًا لأن السمات خاصة، فلا يمكن الوصول إليها من خارج الفئة. لذلك، لا يمكننا كتابة الكود التالي:</li>
 </ul>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
 <span class="normal"><a href="#__codelineno-4-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>$p=new Personne() ;
 <a id="__codelineno-4-2" name="__codelineno-4-2"></a>$p-&gt;nom=&quot;Landru&quot; ;
 </code></pre></div></td></tr></table></div>
-<p>هنا، نحن خارج فئة <em>Person</em>. وبما أن السمة <em>name</em> خاصة، فإن السطر 2 غير صحيح. لتهيئة الحقول الخاصة للكائن $p، هناك طريقتان:</p>
+<p>هنا، نحن خارج فئة <em><bdi dir="ltr" class="odt-ltr-term">Person</bdi></em>. وبما أن السمة <em><bdi dir="ltr" class="odt-ltr-term">name</bdi></em> خاصة، فإن السطر 2 غير صحيح. لتهيئة الحقول الخاصة للكائن $p، هناك طريقتان:</p>
 <ul>
 <li>(تابع)<ul>
 <li>استخدام طرق <strong>set</strong> و <strong>get</strong> العامة (يمكن أن تكون أسماء هذه الطرق أي شيء) من الأسطر 11–33. يمكننا بعد ذلك كتابة:</li>
@@ -1059,12 +1061,12 @@
 </ul>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a>$p=new Personne(&quot;Michel&quot;,&quot;Landru&quot;,44) ;
 </code></pre></div></td></tr></table></div>
-<p>يستدعي الكود أعلاه تلقائيًا طريقة فئة <em>Person</em> المسماة <em>__construct</em>.</p>
+<p>يستدعي الكود أعلاه تلقائيًا طريقة فئة <em><bdi dir="ltr" class="odt-ltr-term">Person</bdi></em> المسماة <em>__construct</em>.</p>
 <ul>
-<li>السطر 54: يعرض هذا السطر Person <em>$p</em> كسلسلة. للقيام بذلك، يتم استخدام طريقة فئة <em>Person</em> المسماة <em>__toString</em>.</li>
+<li>السطر 54: يعرض هذا السطر <bdi dir="ltr" class="odt-ltr-term">Person</bdi> <em>$p</em> كسلسلة. للقيام بذلك، يتم استخدام طريقة فئة <em><bdi dir="ltr" class="odt-ltr-term">Person</bdi></em> المسماة <em>__toString</em>.</li>
 </ul>
 <p><a id="refheading399001881943603"></a></p>
-<h2 id="55-person-example_18">5.5. <span style="color: #4f81bd">فئة Person مع فحوصات الصحة في المنشئ (example_18)</span></h2>
+<h2 id="55-person-example_18">5.5. <span style="color: #4f81bd">فئة <bdi dir="ltr" class="odt-ltr-term">Person</bdi> مع فحوصات الصحة في المنشئ (<bdi dir="ltr" class="odt-ltr-term">example</bdi>_18)</span></h2>
 <p>يعد منشئ الفئة المكان المناسب للتحقق من صحة قيم تهيئة الكائن. ومع ذلك، يمكن أيضًا تهيئة الكائن عبر طرق <em>set</em> الخاصة به أو ما يعادلها. لتجنب تكرار نفس الفحوصات في مكانين مختلفين، سنضعها داخل طرق <em>set</em>. إذا تبين أن قيمة تهيئة الكائن غير صحيحة، فسيتم إصدار <strong>استثناء</strong>. فيما يلي مثال على ذلك:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
@@ -1152,16 +1154,16 @@
 </code></pre></div>
 <p><strong>تعليقات</strong></p>
 <ul>
-<li>الأسطر 23-30: تهيئة السمة <em>first_name</em> والتحقق من قيمة التهيئة</li>
+<li>الأسطر 23-30: تهيئة السمة <em><bdi dir="ltr" class="odt-ltr-term">first</bdi>_name</em> والتحقق من قيمة التهيئة</li>
 <li>السطر 25: استخدام تعبير عادي. الاسم الأول هو تسلسل من حرف واحد أو أكثر، قد يتبعه أو يسبقه مسافات.</li>
 <li>السطر 26: إذا كان الاسم الأخير فارغًا، يتم إلقاء استثناء؛ وإلا، يتم تخزين الاسم الأول (السطر 28)</li>
-<li>السطر 66: استخدام منشئ فئة <em>Person</em></li>
-<li>السطر 68: استخدام طريقة <em>__toString</em> لفئة <em>Person</em></li>
-<li>الأسطر 70-74: معالجة أي استثناء يتم إلقائه بواسطة منشئ فئة <em>Person</em>.</li>
+<li>السطر 66: استخدام منشئ فئة <em><bdi dir="ltr" class="odt-ltr-term">Person</bdi></em></li>
+<li>السطر 68: استخدام طريقة <em>__toString</em> لفئة <em><bdi dir="ltr" class="odt-ltr-term">Person</bdi></em></li>
+<li>الأسطر 70-74: معالجة أي استثناء يتم إلقائه بواسطة منشئ فئة <em><bdi dir="ltr" class="odt-ltr-term">Person</bdi></em>.</li>
 </ul>
 <p><a id="refheading399021881943603"></a></p>
 <h2 id="56-_19">5.6. <span style="color: #4f81bd">إضافة طريقة تعمل كمنشئ ثانٍ (مثال_19)</span></h2>
-<p>في PHP 5، لا يمكن وجود عدة منشئات بمعلمات مختلفة تسمح بإنشاء كائن بطرق متنوعة. لذلك يمكننا استخدام طرق تعمل كمنشئات:</p>
+<p>في <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> 5، لا يمكن وجود عدة منشئات بمعلمات مختلفة تسمح بإنشاء كائن بطرق متنوعة. لذلك يمكننا استخدام طرق تعمل كمنشئات:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -1222,10 +1224,10 @@
 </code></pre></div>
 <p><strong>تعليقات</strong></p>
 <ul>
-<li>الأسطر 26-29: تسمح لك طريقة <em>initWithPerson</em> بتعيين قيم سمات كائن <em>Person</em> آخر إلى الكائن الحالي. هنا، تستدعي المنشئ __construct، ولكن هذا ليس إلزامياً.
+<li>الأسطر 26-29: تسمح لك طريقة <em><bdi dir="ltr" class="odt-ltr-term">initWithPerson</bdi></em> بتعيين قيم سمات كائن <em><bdi dir="ltr" class="odt-ltr-term">Person</bdi></em> آخر إلى الكائن الحالي. هنا، تستدعي المنشئ __construct، ولكن هذا ليس إلزامياً.
 <a id="refheading399041881943603"></a></li>
 </ul>
-<h2 id="57-person-example_20">5.7. <span style="color: #4f81bd">مصفوفة من كائنات Person (example_20)</span></h2>
+<h2 id="57-person-example_20">5.7. <span style="color: #4f81bd">مصفوفة من كائنات <bdi dir="ltr" class="odt-ltr-term">Person</bdi> (<bdi dir="ltr" class="odt-ltr-term">example</bdi>_20)</span></h2>
 <p>يوضح المثال التالي أنه يمكنك إنشاء مصفوفات من الكائنات.</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
@@ -1284,10 +1286,10 @@
 <ul>
 <li>السطر 39: إنشاء مصفوفة من شخصين</li>
 <li>السطر 42: تكرار المصفوفة</li>
-<li>السطر 43: <em>$group[$i]</em> هو كائن من نوع <em>Person</em>. تُستخدم طريقة <em>__toString</em> لعرضه.
+<li>السطر 43: <em>$<bdi dir="ltr" class="odt-ltr-term">group</bdi>[$i]</em> هو كائن من نوع <em><bdi dir="ltr" class="odt-ltr-term">Person</bdi></em>. تُستخدم طريقة <em>__toString</em> لعرضه.
 <a id="refheading399061881943603"></a></li>
 </ul>
-<h2 id="58-person-example_21">5.8. <span style="color: #4f81bd">إنشاء فئة مشتقة من فئة Person (example_21)</span></h2>
+<h2 id="58-person-example_21">5.8. <span style="color: #4f81bd">إنشاء فئة مشتقة من فئة <bdi dir="ltr" class="odt-ltr-term">Person</bdi> (<bdi dir="ltr" class="odt-ltr-term">example</bdi>_21)</span></h2>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -1375,23 +1377,23 @@
 </code></pre></div>
 <p><strong>تعليقات</strong></p>
 <ul>
-<li>الأسطر 3-35: فئة <em>Person</em></li>
-<li>السطر 38: فئة <em>Teacher</em> تمتد من فئة <em>Person.</em> فئة <em>Teacher</em> المشتقة ترث سمات وأساليب فئتها الأم.</li>
-<li>السطر 41: تضيف فئة <em>Teacher</em> سمة جديدة، وهي <em>subject،</em> وهي سمة خاصة بها</li>
-<li>السطر 55: يأخذ منشئ فئة <em>Teacher</em> 4 معلمات<ul>
-<li>3 لتهيئة فئتها الأم (first_name، last_name، age)</li>
-<li>1 لتهيئة نفسها (subject)</li>
+<li>الأسطر 3-35: فئة <em><bdi dir="ltr" class="odt-ltr-term">Person</bdi></em></li>
+<li>السطر 38: فئة <em><bdi dir="ltr" class="odt-ltr-term">Teacher</bdi></em> تمتد من فئة <em><bdi dir="ltr" class="odt-ltr-term">Person.</bdi></em> فئة <em><bdi dir="ltr" class="odt-ltr-term">Teacher</bdi></em> المشتقة ترث سمات وأساليب فئتها الأم.</li>
+<li>السطر 41: تضيف فئة <em><bdi dir="ltr" class="odt-ltr-term">Teacher</bdi></em> سمة جديدة، وهي <em><bdi dir="ltr" class="odt-ltr-term">subject</bdi>،</em> وهي سمة خاصة بها</li>
+<li>السطر 55: يأخذ منشئ فئة <em><bdi dir="ltr" class="odt-ltr-term">Teacher</bdi></em> 4 معلمات<ul>
+<li>3 لتهيئة فئتها الأم (<bdi dir="ltr" class="odt-ltr-term">first</bdi>_name، <bdi dir="ltr" class="odt-ltr-term">last</bdi>_name، age)</li>
+<li>1 لتهيئة نفسها (<bdi dir="ltr" class="odt-ltr-term">subject</bdi>)</li>
 </ul>
 </li>
-<li>السطر 57: الفئة المشتقة لديها حق الوصول إلى طرق ومنشئات فئتها الأصلية عبر الكلمة الرئيسية <strong>parent::</strong>. هنا، نمرر المعلمات (first_name، last_name، age) إلى منشئ الفئة الأصلية.</li>
+<li>السطر 57: الفئة المشتقة لديها حق الوصول إلى طرق ومنشئات فئتها الأصلية عبر الكلمة الرئيسية <strong><bdi dir="ltr" class="odt-ltr-term">parent::</bdi></strong>. هنا، نمرر المعلمات (<bdi dir="ltr" class="odt-ltr-term">first</bdi>_name، <bdi dir="ltr" class="odt-ltr-term">last</bdi>_name، age) إلى منشئ الفئة الأصلية.</li>
 <li>السطر 64: تستخدم طريقة <em>__toString</em> للفئة المشتقة طريقة <em>__toString</em> للفئة الأصلية.</li>
-<li>السطر 71: مصفوفة تحتوي على كائن <em>Teacher</em> وكائن <em>Person</em>.</li>
+<li>السطر 71: مصفوفة تحتوي على كائن <em><bdi dir="ltr" class="odt-ltr-term">Teacher</bdi></em> وكائن <em><bdi dir="ltr" class="odt-ltr-term">Person</bdi></em>.</li>
 <li>السطر 74: نقوم بتكرار عناصر المصفوفة</li>
-<li>السطر 75: سيتم استدعاء طريقة <em>__toString</em> لكل عنصر من عناصر <em>$group[$i]</em>. تحتوي فئة <em>Person</em> على طريقة <em>__toString</em>. أما فئة <em>Teacher</em> فتحتوي على طريقتين: طريقة الفئة الأم وطريقتها الخاصة. قد يتساءل المرء أيهما سيتم استدعاؤه. يظهر التنفيذ أن الطريقة التي تم استدعاؤها هي طريقة فئة <em>Teacher</em>. وهذا هو الحال دائمًا: عندما يتم استدعاء طريقة على كائن، يتم البحث عنها بالترتيب التالي: في الكائن نفسه، ثم في فئته الأصلية إن وجدت، ثم في الفئة الأصلية للفئة الأصلية، وهكذا دواليك... ويتوقف البحث بمجرد العثور على الطريقة.
+<li>السطر 75: سيتم استدعاء طريقة <em>__toString</em> لكل عنصر من عناصر <em>$<bdi dir="ltr" class="odt-ltr-term">group</bdi>[$i]</em>. تحتوي فئة <em><bdi dir="ltr" class="odt-ltr-term">Person</bdi></em> على طريقة <em>__toString</em>. أما فئة <em><bdi dir="ltr" class="odt-ltr-term">Teacher</bdi></em> فتحتوي على طريقتين: طريقة الفئة الأم وطريقتها الخاصة. قد يتساءل المرء أيهما سيتم استدعاؤه. يظهر التنفيذ أن الطريقة التي تم استدعاؤها هي طريقة فئة <em><bdi dir="ltr" class="odt-ltr-term">Teacher</bdi></em>. وهذا هو الحال دائمًا: عندما يتم استدعاء طريقة على كائن، يتم البحث عنها بالترتيب التالي: في الكائن نفسه، ثم في فئته الأصلية إن وجدت، ثم في الفئة الأصلية للفئة الأصلية، وهكذا دواليك... ويتوقف البحث بمجرد العثور على الطريقة.
 <a id="refheading399081881943603"></a></li>
 </ul>
-<h2 id="59-person-example_22">5.9. <span style="color: #4f81bd">إنشاء فئة ثانية مشتقة من فئة Person (example_22)</span></h2>
-<p>يُنشئ المثال التالي فئة <em>Student</em> مشتقة من فئة <em>Person</em>:</p>
+<h2 id="59-person-example_22">5.9. <span style="color: #4f81bd">إنشاء فئة ثانية مشتقة من فئة <bdi dir="ltr" class="odt-ltr-term">Person</bdi> (<bdi dir="ltr" class="odt-ltr-term">example</bdi>_22)</span></h2>
+<p>يُنشئ المثال التالي فئة <em><bdi dir="ltr" class="odt-ltr-term">Student</bdi></em> مشتقة من فئة <em><bdi dir="ltr" class="odt-ltr-term">Person</bdi></em>:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -1566,14 +1568,14 @@
 </code></pre></div>
 <p><strong>تعليقات</strong></p>
 <ul>
-<li>الأسطر 4–8: تحدد واجهة <em>IExample</em> طريقتين: دالة <em>add</em> (السطر 5) ودالة <em>subtract</em> (السطر 7). لا تحدد الواجهة الكود الخاص بهاتين الطريقتين. ستقوم الفئات التي تنفذ الواجهة بذلك.</li>
-<li>السطر 11: <strong>تنفذ</strong> الفئة <em>Class1</em> واجهة <em>IExample</em>. وبالتالي، فإنها تحدد كودًا لطريقة <em>add</em> (السطر 13) وطريقة <em>subtract</em> (السطر 17).</li>
-<li>الأسطر 24–34: ينطبق الأمر نفسه على فئة <em>Class2</em>.</li>
+<li>الأسطر 4–8: تحدد واجهة <em><bdi dir="ltr" class="odt-ltr-term">IExample</bdi></em> طريقتين: دالة <em>add</em> (السطر 5) ودالة <em><bdi dir="ltr" class="odt-ltr-term">subtract</bdi></em> (السطر 7). لا تحدد الواجهة الكود الخاص بهاتين الطريقتين. ستقوم الفئات التي تنفذ الواجهة بذلك.</li>
+<li>السطر 11: <strong>تنفذ</strong> الفئة <em><bdi dir="ltr" class="odt-ltr-term">Class1</bdi></em> واجهة <em><bdi dir="ltr" class="odt-ltr-term">IExample</bdi></em>. وبالتالي، فإنها تحدد كودًا لطريقة <em>add</em> (السطر 13) وطريقة <em><bdi dir="ltr" class="odt-ltr-term">subtract</bdi></em> (السطر 17).</li>
+<li>الأسطر 24–34: ينطبق الأمر نفسه على فئة <em><bdi dir="ltr" class="odt-ltr-term">Class2</bdi></em>.</li>
 <li>السطر 37: تأخذ طريقة <code>*calculer</code><em> ثلاثة معلمات: عددين صحيحين، <code>*$a*</code> و</em><code>$b*</code>، وكائن <code>*$interface</code><em> الذي ينفذ واجهة <code>*IExemple</code></em>. كان بإمكاننا كتابة <em><code>function calculate($a, $b, $interface)</code></em> دون تحديد نوع <em><code>IExample</code></em> للمعلمة <code>*$interface*</code>. وبتحديد ذلك، نسمح لمترجم PHP بالتحقق من أن المعلمة الفعلية هي بالفعل كائن ينفذ واجهة <code>*IExample</code>*.</li>
-<li>السطران 38-39: استخدام طريقتي <em>add</em> و <em>subtract</em> في كائن $interface. ونظرًا لأنه يُنفِّذ واجهة IExample، فإننا نعلم أنه يحتوي على هاتين الطريقتين.</li>
-<li>السطران 44-45: إنشاء كائنين من أنواع مختلفة، وكلاهما ينفذ واجهة <em>IExample</em>.</li>
-<li>السطر 47: نمرر الكائن <em>$c1</em> من النوع Class1، الذي ينفذ واجهة IExample، إلى الدالة <em>calculate</em>.</li>
-<li>السطر 48: يتم تمرير الكائن <em>$c2</em> من النوع Class2، الذي ينفذ واجهة IExample، إلى الدالة <em>calculate</em>.</li>
+<li>السطران 38-39: استخدام طريقتي <em>add</em> و <em><bdi dir="ltr" class="odt-ltr-term">subtract</bdi></em> في كائن $<bdi dir="ltr" class="odt-ltr-term">interface.</bdi> ونظرًا لأنه يُنفِّذ واجهة <bdi dir="ltr" class="odt-ltr-term">IExample</bdi>، فإننا نعلم أنه يحتوي على هاتين الطريقتين.</li>
+<li>السطران 44-45: إنشاء كائنين من أنواع مختلفة، وكلاهما ينفذ واجهة <em><bdi dir="ltr" class="odt-ltr-term">IExample</bdi></em>.</li>
+<li>السطر 47: نمرر الكائن <em>$c1</em> من النوع <bdi dir="ltr" class="odt-ltr-term">Class1</bdi>، الذي ينفذ واجهة <bdi dir="ltr" class="odt-ltr-term">IExample</bdi>، إلى الدالة <em><bdi dir="ltr" class="odt-ltr-term">calculate</bdi></em>.</li>
+<li>السطر 48: يتم تمرير الكائن <em>$c2</em> من النوع <bdi dir="ltr" class="odt-ltr-term">Class2</bdi>، الذي ينفذ واجهة <bdi dir="ltr" class="odt-ltr-term">IExample</bdi>، إلى الدالة <em><bdi dir="ltr" class="odt-ltr-term">calculate</bdi></em>.</li>
 </ul>
 
 
